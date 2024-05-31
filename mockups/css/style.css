@@ -1,0 +1,98 @@
+:root {
+  color-scheme: only dark;
+  --main-bg-color: #2e2e3e;
+  --black: #1b1b1b;
+  --white: white;
+  --text: var(--white);
+  --accent: #92ca52;
+  --gap: 1.5rem;
+  --fluid-gap: clamp(0.75rem, 3vw, 1.5rem);
+}
+
+html,
+body {
+  color: var(--text);
+  font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+    sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+/* Themes */
+
+.theme-gothic {
+  background: url(../img/horror.png) no-repeat var(--black);
+}
+
+#layout {
+  min-height: 100vh;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  border: var(--text) 1px solid;
+  padding: var(--gap);
+}
+
+.profile-pic {
+  max-width: 100%;
+}
+
+.photo-and-text {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--gap);
+  padding: 1rem 0;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 880px) {
+  .photo-and-text {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .photo-and-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-list {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--fluid-gap) / 4) var(--gap);
+  list-style-type: none;
+}
+
+.nav-list li {
+  flex: auto;
+  text-align: center;
+}
+
+.nav-list a {
+  color: var(--accent);
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* About Me */
+.social-tag {
+  padding-top: 4rem;
+  font-weight: bold;
+}
