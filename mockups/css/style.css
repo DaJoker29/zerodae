@@ -37,41 +37,9 @@ header {
   margin: 0 auto;
 }
 
-/* Themes */
-
-.theme-gothic {
-  background: url(../img/horror.png) no-repeat var(--black);
-}
-
-#layout {
-  min-height: 100vh;
-}
-
-.content {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-  border: rgba(255, 255, 255, 0.2) 2px solid;
-  padding: var(--gap);
-}
-
-.profile-pic {
-  max-width: 100%;
-}
-
-.photo-and-text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap);
-  padding: 1rem 0;
-}
-
-/* Links */
 a {
   color: var(--accent);
 }
-
-/* Navigation */
 
 nav {
   display: flex;
@@ -84,6 +52,45 @@ ul {
   padding: 0;
 }
 
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Themes */
+.theme-gothic .hero {
+  background-color: var(--black);
+  background-image: url(../img/horror.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.theme-gothic .photo-and-text {
+  max-width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  border-width: 1px 0;
+  border-color: rgba(55, 55, 55, 0.3);
+  border-style: solid;
+}
+
+.profile-pic {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Navigation */
+
 .nav-list {
   width: 100%;
   display: flex;
@@ -94,11 +101,6 @@ ul {
 
 .nav-list li {
   text-align: center;
-}
-
-nav a {
-  font-weight: bold;
-  text-decoration: none;
 }
 
 /* About Me */
@@ -117,28 +119,9 @@ nav a {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1200px) {
-  .photo-and-text {
+@media only screen and (max-width: 900px) {
+  .theme-gothic .photo-and-text {
     display: flex;
     flex-direction: column;
-  }
-
-  .content {
-    border: 0;
-  }
-
-  .profile-pic {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  .social-tag {
-    margin: 0 auto;
-    text-align: center;
-    padding-top: inherit;
-  }
-
-  .social-icons {
-    justify-content: center;
   }
 }
