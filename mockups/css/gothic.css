@@ -1,0 +1,78 @@
+.theme-gothic .hero {
+  background-color: var(--black);
+  background-image: url(../img/horror.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-width: 1px 0;
+  border-color: rgba(55, 55, 55, 0.3);
+  border-style: solid;
+}
+
+.theme-gothic .photo-and-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.theme-gothic .profile-pic {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.theme-gothic .social-tag {
+  padding-top: 4rem;
+  font-weight: bold;
+}
+
+.theme-gothic .social-icons {
+  margin: 1rem 0;
+  display: flex;
+  gap: calc(var(--fluid-gap) / 4) var(--gap);
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.theme-gothic .side-projects article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  grid-auto-rows: auto;
+  margin-bottom: 4rem;
+}
+
+.theme-gothic .side-projects img {
+  filter: opacity(0.85);
+}
+
+.theme-gothic h3::before {
+  content: '\2192';
+  padding-right: 0.5rem;
+}
+
+.theme-gothic article p,
+.theme-gothic article ul,
+.theme-gothic .enjoying ul {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.enjoying ul li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .theme-gothic .photo-and-text,
+  .theme-gothic .side-projects article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .theme-gothic .side-projects article {
+    display: flex;
+    flex-direction: column;
+  }
+}

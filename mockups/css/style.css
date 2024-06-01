@@ -1,3 +1,6 @@
+@import url('navigation.css');
+@import url('gothic.css');
+
 :root {
   color-scheme: only dark;
   --main-bg-color: #2e2e3e;
@@ -5,25 +8,69 @@
   --white: white;
   --text: var(--white);
   --accent: #92ca52;
-  --gap: 1.5rem;
-  --fluid-gap: clamp(0.75rem, 3vw, 1.5rem);
+  --gap: 2rem;
+  --fluid-gap: clamp(1rem, 3vw, 2rem);
+  --content-width: 1200px;
+  --content-perc: 90%;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
 }
 
 html,
 body {
-  color: var(--text);
   font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
     sans-serif;
   font-size: 1.125rem;
   line-height: 1.75;
+  color: var(--text);
 }
 
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* GENERAL STYLES */
 p {
   margin: 0 0 1rem;
 }
 
-h1 {
-  margin: 0 0 2rem;
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 2rem;
 }
 
 hr {
@@ -31,97 +78,25 @@ hr {
   margin: 2rem 0;
 }
 
-header {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 a {
   color: var(--accent);
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-ul {
-  padding: 0;
-}
-
-nav a {
   font-weight: bold;
   text-decoration: none;
 }
 
-/* Themes */
-.theme-gothic .hero {
-  background-color: var(--black);
-  background-image: url(../img/horror.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.theme-gothic .photo-and-text {
-  max-width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: var(--gap);
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
 
 .content {
   margin: 0;
   padding: 0;
-  border-width: 1px 0;
-  border-color: rgba(55, 55, 55, 0.3);
-  border-style: solid;
 }
 
-.profile-pic {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-/* Navigation */
-
-.nav-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: calc(var(--fluid-gap) / 4) var(--gap);
-  list-style-type: none;
-}
-
-.nav-list li {
-  text-align: center;
-}
-
-/* About Me */
-.social-tag {
-  padding-top: 4rem;
-  margin: 0;
-  font-weight: bold;
-}
-
-.social-icons {
-  margin: 1rem 0;
-  display: flex;
-  gap: calc(var(--fluid-gap) / 4) var(--gap);
-  list-style-type: none;
-  flex-wrap: wrap;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 900px) {
-  .theme-gothic .photo-and-text {
-    display: flex;
-    flex-direction: column;
-  }
+.container {
+  width: var(--content-perc);
+  max-width: var(--content-width);
+  margin: 2rem auto;
 }
