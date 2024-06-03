@@ -1,23 +1,39 @@
 @import url('navigation.css');
-/* @import url('gothic.css'); */
 
 :root {
-  color-scheme: only dark;
-  --main-bg-color: #2e2e3e;
+  /* Color Theme */
+  color-scheme: dark;
   --black: #1b1b1b;
   --white: white;
   --light-gray: #b1b1b1;
-  --text: var(--white);
-  --accent: #92ca52;
+  --red: #be0027;
   --orange: #fb8a2e;
+  --yellow: yellow;
+  --cream: #decba5;
+  --shale: #abb8af;
+  --gold: #dbc65d;
+  --darkblue: #00387b;
+  --skyblue: #00c4cc;
+  --oceangreen: #335238;
+  --neongreen: #5ecc62;
+  --brown: #543729;
+
+  /* Sizing */
   --gap: 2rem;
   --fluid-gap: clamp(1rem, 3vw, 2rem);
   --content-width: 1200px;
   --content-perc: 90%;
-  --border-color: rgba(55, 55, 55, 0.3);
+
+  /* Typography */
   --font-roboto: 'Roboto', sans-serif;
   --font-raleway: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri,
     'Trebuchet MS', sans-serif;
+
+  /* Needs to be Fixed. */
+  --main-bg-color: #2e2e3e;
+  --text: var(--white);
+  --accent: #92ca52;
+  --border-color: rgba(55, 55, 55, 0.3);
 }
 
 /* CSS RESET */
