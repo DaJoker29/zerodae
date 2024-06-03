@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-width: 1px 0;
-  border-color: rgba(55, 55, 55, 0.3);
+  border-color: var(--border-color);
   border-style: solid;
 }
 
@@ -52,20 +52,71 @@
 }
 
 .theme-gothic article p,
-.theme-gothic article ul,
-.theme-gothic .enjoying ul {
+.theme-gothic article ul {
   margin-left: 4rem;
   margin-right: 4rem;
 }
 
-.enjoying ul li {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/* What I'm Enjoying */
+
+.enjoying .list-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: var(--gap);
+  border-width: 0 0 1px;
+  border-color: var(--border-color);
+  border-style: solid;
+  padding: var(--gap) 0;
+  font-size: 0.95rem;
+  transition: all 250ms;
 }
+
+.enjoying .list-container:hover {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.enjoying .list-container:hover span {
+  color: var(--accent);
+}
+
+.enjoying .list-container li {
+  transition: all 250ms;
+}
+
+.enjoying .list-container:hover li {
+  margin-bottom: 0.75rem;
+}
+
+.enjoying .list-container span {
+  color: var(--light-gray);
+  font-family: var(--font-roboto);
+  font-weight: bold;
+}
+
+.enjoying .list-container ul {
+  margin-left: 0 !important;
+  list-style-type: none;
+}
+
+.enjoying .list-container ul li::before {
+  content: '→';
+  margin-right: 0.2rem;
+  display: inline-block;
+}
+
+/* Things I've Made */
 
 .theme-gothic .text {
   position: sticky;
   top: var(--gap);
+}
+
+@media screen and (max-width: 400px) {
+  .enjoying .list-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 900px) {

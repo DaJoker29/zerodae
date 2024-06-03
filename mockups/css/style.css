@@ -6,12 +6,17 @@
   --main-bg-color: #2e2e3e;
   --black: #1b1b1b;
   --white: white;
+  --light-gray: #b1b1b1;
   --text: var(--white);
   --accent: #92ca52;
   --gap: 2rem;
   --fluid-gap: clamp(1rem, 3vw, 2rem);
   --content-width: 1200px;
   --content-perc: 90%;
+  --border-color: rgba(55, 55, 55, 0.3);
+  --font-roboto: 'Roboto', sans-serif;
+  --font-raleway: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri,
+    'Trebuchet MS', sans-serif;
 }
 
 /* CSS RESET */
