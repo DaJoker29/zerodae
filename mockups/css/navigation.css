@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+.nav a {
+  font-family: var(--font-roboto);
+}
+
+.nav .active {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .nav-list {
   display: flex;
   flex-wrap: wrap;

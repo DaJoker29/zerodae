@@ -9,6 +9,7 @@
   --light-gray: #b1b1b1;
   --text: var(--white);
   --accent: #92ca52;
+  --orange: #fb8a2e;
   --gap: 2rem;
   --fluid-gap: clamp(1rem, 3vw, 2rem);
   --content-width: 1200px;
@@ -86,7 +87,16 @@ hr {
 a {
   color: var(--accent);
   font-weight: bold;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
+  transition: all 200ms;
+}
+
+a:hover {
+  color: var(--orange) !important;
+  text-decoration-color: var(--orange);
+  text-decoration-thickness: 6px;
 }
 
 ul,
@@ -100,8 +110,13 @@ ol {
   padding: 0;
 }
 
-.container {
+.container,
+#site-footer {
   width: var(--content-perc);
   max-width: var(--content-width);
   margin: 2rem auto;
+}
+
+#site-footer {
+  margin-top: 4rem;
 }
