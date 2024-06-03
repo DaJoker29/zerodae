@@ -81,7 +81,7 @@
 }
 
 .enjoying .list-container li {
-  transition: all 250ms;
+  transition: all color 250ms;
 }
 
 .enjoying .list-container:hover li {
