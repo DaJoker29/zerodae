@@ -82,10 +82,20 @@
 
 .enjoying .list-container li {
   transition: all color 250ms;
+  color: var(--accent);
+}
+
+.enjoying .list-container li em {
+  font-weight: bold;
+  color: var(--white);
 }
 
 .enjoying .list-container:hover li {
   margin-bottom: 0.75rem;
+}
+
+.enjoying .list-container:hover li em {
+  /* font-weight: normal; */
 }
 
 .enjoying .list-container span {
