@@ -1,11 +1,24 @@
+.theme-gothic {
+  background-color: var(--brown);
+}
+
+.theme-gothic a {
+  color: var(--neongreen);
+}
+
 .theme-gothic .hero {
-  background-color: var(--black);
+  background-color: var(--neongreen);
   background-image: url(../img/horror.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-width: 1px 0;
   border-color: var(--border-color);
   border-style: solid;
+  color: var(--brown);
+}
+
+.theme-gothic .hero a {
+  color: var(--oceangreen);
 }
 
 .theme-gothic .photo-and-text {
@@ -57,9 +70,9 @@
   margin-right: 4rem;
 }
 
-/* What I'm Enjoying */
+/* What I'm Enjoying*/
 
-.enjoying .list-container {
+.list-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: var(--gap);
@@ -71,48 +84,67 @@
   transition: all 250ms;
 }
 
-.enjoying .list-container:hover {
+.list-container:hover {
   font-size: 1.2rem;
   font-weight: bolder;
 }
 
-.enjoying .list-container:hover span {
-  color: var(--accent);
+.list-container:hover span {
+  color: var(--neongreen);
 }
 
-.enjoying .list-container li {
+.list-container li {
   transition: all color 250ms;
-  color: var(--accent);
+  color: var(--neongreen);
 }
 
-.enjoying .list-container li em {
+.list-container li em {
   font-weight: bold;
   color: var(--white);
 }
 
-.enjoying .list-container:hover li {
+.list-container:hover li {
   margin-bottom: 0.75rem;
 }
 
-.enjoying .list-container:hover li em {
+.list-container:hover li em {
   /* font-weight: normal; */
 }
 
-.enjoying .list-container span {
+.list-container span {
   color: var(--light-gray);
   font-family: var(--font-roboto);
   font-weight: bold;
 }
 
-.enjoying .list-container ul {
+.list-container ul {
   margin-left: 0 !important;
   list-style-type: none;
 }
 
-.enjoying .list-container ul li::before {
+.list-container ul li::before {
   content: '→';
   margin-right: 0.2rem;
   display: inline-block;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
 
 /* Things I've Made */
@@ -123,7 +155,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .enjoying .list-container {
+  .list-container {
     display: flex;
     flex-direction: column;
   }

@@ -16,7 +16,7 @@
   --skyblue: #00c4cc;
   --oceangreen: #335238;
   --neongreen: #5ecc62;
-  --brown: #543729;
+  --brown: #201616;
 
   /* Sizing */
   --gap: 2rem;
@@ -30,7 +30,7 @@
     'Trebuchet MS', sans-serif;
 
   /* Needs to be Fixed. */
-  --main-bg-color: #2e2e3e;
+  /* --main-bg-color: #2e2e3e; */
   --text: var(--white);
   --accent: #92ca52;
   --border-color: rgba(55, 55, 55, 0.3);
@@ -101,7 +101,6 @@ hr {
 }
 
 a {
-  color: var(--accent);
   font-weight: bold;
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
