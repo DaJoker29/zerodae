@@ -6,17 +6,23 @@
   color: var(--neongreen);
 }
 
+.theme-gothic .hero a {
+  color: var(--oceangreen);
+}
+
+.theme-gothic .hero a:hover {
+  color: white !important;
+  text-decoration-color: white;
+}
+
 .theme-gothic .hero {
-  background-color: var(--neongreen);
+  background-color: var(--orange);
   background-image: url(../img/horror.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-width: 1px 0;
   border-color: var(--border-color);
   border-style: solid;
-}
-
-.theme-gothic .hero a {
   color: var(--brown);
 }
 
@@ -104,10 +110,6 @@
 
 .list-container:hover li {
   margin-bottom: 0.75rem;
-}
-
-.list-container:hover li em {
-  /* font-weight: normal; */
 }
 
 .list-container span {
