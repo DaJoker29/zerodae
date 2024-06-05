@@ -1,5 +1,5 @@
 .theme-gothic {
-  background-color: var(--brown);
+  background-color: var(--oceangreen);
 }
 
 .theme-gothic a {
@@ -14,11 +14,10 @@
   border-width: 1px 0;
   border-color: var(--border-color);
   border-style: solid;
-  color: var(--brown);
 }
 
 .theme-gothic .hero a {
-  color: var(--oceangreen);
+  color: var(--brown);
 }
 
 .theme-gothic .photo-and-text {
