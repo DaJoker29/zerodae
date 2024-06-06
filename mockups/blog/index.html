@@ -26,31 +26,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="module" src="../js/index.js"></script>
   </head>
   <body class="theme-fire">
-    <div id="id">
+    <div id="layout">
       <!-- NAVIGATION MENU -->
       <header id="header" class="header">
-        <div class="js-menu is-visible">
+        <button
+          class="header__menu-btn"
+          data-btn="menu"
+          aria-label="Close"
+          aria-haspopup="true"
+          aria-expanded="true"
+        >
+          <span class="header__menu-icon">
+            <i data-menu-icon class="fas fa-bars fa-fw"></i>
+          </span>
+        </button>
+        <div class="js-menu" data-menu-wrapper>
           <nav id="nav" class="nav" role="navigation">
-            <ul class="nav-list">
-              <li>
-                <a href="../" class="expand"
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="../" class="nav__link"
                   ><i class="fas fa-wind"></i>Business</a
                 >
               </li>
-              <li>
-                <a href="../blog" class="active expand"
+              <li class="nav__item">
+                <a href="../blog" class="active nav__link"
                   ><i class="fas fa-fire"></i>Blog</a
                 >
               </li>
-              <li>
-                <a href="../projects" class="expand"
+              <li class="nav__item">
+                <a href="../projects" class="nav__link"
                   ><i class="fas fa-tint"></i>Projects</a
                 >
               </li>
-              <li>
-                <a href="../me" class="expand"
+              <li class="nav__item">
+                <a href="../me" class="nav__link"
                   ><i class="fas fa-seedling"></i>Me</a
                 >
               </li>

@@ -28,34 +28,49 @@
       referrerpolicy="no-referrer"
     />
     <script defer src="../js/app.js"></script>
+    <script defer type="module" src="../js/index.js"></script>
   </head>
   <body class="theme-earth">
     <div id="layout">
+      <!-- NAVIGATION MENU -->
       <header id="header" class="header">
-        <nav id="nav" class="nav container" role="navigation">
-          <ul class="nav-list">
-            <li>
-              <a href="../" class="expand"
-                ><i class="fas fa-wind"></i>Business</a
-              >
-            </li>
-            <li>
-              <a href="../blog" class="expand"
-                ><i class="fas fa-fire"></i>Blog</a
-              >
-            </li>
-            <li>
-              <a href="../projects" class="expand"
-                ><i class="fas fa-tint"></i>Projects</a
-              >
-            </li>
-            <li>
-              <a href="../me" class="expand active"
-                ><i class="fas fa-seedling"></i>Me</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <button
+          class="header__menu-btn"
+          data-btn="menu"
+          aria-label="Close"
+          aria-haspopup="true"
+          aria-expanded="true"
+        >
+          <span class="header__menu-icon">
+            <i data-menu-icon class="fas fa-bars fa-fw"></i>
+          </span>
+        </button>
+        <div class="js-menu" data-menu-wrapper>
+          <nav id="nav" class="nav" role="navigation">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="../" class="nav__link"
+                  ><i class="fas fa-wind"></i>Business</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="../blog" class="nav__link"
+                  ><i class="fas fa-fire"></i>Blog</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="../projects" class="nav__link"
+                  ><i class="fas fa-tint"></i>Projects</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="../me" class="active nav__link"
+                  ><i class="fas fa-seedling"></i>Me</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <!-- Start of Content -->
       <main id="content" class="content">
