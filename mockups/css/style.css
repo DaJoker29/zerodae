@@ -190,7 +190,7 @@ ul {
   pointer-events: none;
   background: linear-gradient(
     42deg,
-    var(--neongreen),
+    var(--orange),
     var(--skyblue),
     var(--yellow)
   );

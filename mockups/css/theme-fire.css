@@ -7,3 +7,70 @@
   background-color: whitesmoke;
   color: var(--black);
 }
+
+.content {
+  padding-top: var(--double-gap);
+  padding-bottom: var(--gap);
+}
+
+.masthead {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--double-gap);
+  padding-bottom: var(--half-gap);
+  border-bottom: 4px solid var(--black);
+}
+
+.site-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 5rem;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.site-tagline {
+  font-weight: 600;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: var(--half-gap);
+  }
+
+  .site-title {
+    font-size: 4rem;
+  }
+
+  .site-tagline {
+    justify-self: start;
+    align-self: start;
+  }
+}
+
+/**
+ * TAGS / SEARCH
+ */
+
+.toolbar {
+  margin-top: var(--half-gap);
+  display: flex;
+  gap: var(--half-gap);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--half-gap);
+}
+
+.tags__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
