@@ -1,10 +1,9 @@
-@import url('navigation.css');
-
 :root {
-  /* Color Theme */
-  color-scheme: dark;
+  /**
+   * PALETTE
+   */
+
   --black: #1b1b1b;
-  --white: white;
   --light-gray: #b1b1b1;
   --red: #be0027;
   --orange: #fb8a2e;
@@ -16,27 +15,39 @@
   --skyblue: #00c4cc;
   --oceangreen: #335238;
   --neongreen: #5ecc62;
-  --brown: #201616;
+  --brown: #4d3c2d;
+  --transparent-border: rgba(55, 55, 55, 0.3);
 
-  /* Sizing */
+  /**
+   * SIZE & SPACING
+   */
+
   --gap: 2rem;
-  --fluid-gap: clamp(1rem, 3vw, 2rem);
+  --half-gap: calc(var(--gap) / 2);
+  --double-gap: calc(var(--gap) * 2);
+  --fluid-gap: clamp(var(--half-gap), 3vw, var(--gap));
   --content-width: 1200px;
   --content-perc: 90%;
 
-  /* Typography */
+  /**
+   * TYPOGRAPHY
+   */
+
   --font-roboto: 'Roboto', sans-serif;
   --font-raleway: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri,
     'Trebuchet MS', sans-serif;
-
-  /* Needs to be Fixed. */
-  /* --main-bg-color: #2e2e3e; */
-  --text: var(--white);
-  --accent: #92ca52;
-  --border-color: rgba(55, 55, 55, 0.3);
 }
 
-/* CSS RESET */
+/**
+ * RESET
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
@@ -49,11 +60,9 @@
 
 html,
 body {
-  font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-    sans-serif;
+  font-family: var(--font-raleway);
   font-size: 1.125rem;
   line-height: 1.75;
-  color: var(--text);
 }
 
 img,
@@ -83,35 +92,33 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* GENERAL STYLES */
+/**
+ * GLOBAL
+ */
+
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 var(--half-gap);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 2rem;
-}
-
-hr {
-  color: rgba(255, 255, 255, 0.2);
-  margin: 2rem 0;
+  margin-bottom: var(--gap);
 }
 
 a {
+  color: inherit;
   font-weight: bold;
   text-decoration-line: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.3em;
   transition: all 200ms;
 }
 
 a:hover {
-  color: var(--orange) !important;
-  text-decoration-color: var(--orange);
-  text-decoration-thickness: 6px;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 0.3em;
 }
 
 ul,
@@ -120,18 +127,17 @@ ol {
   margin: 0;
 }
 
+/** 
+ * UTILITY 
+ */
+
 .content {
   margin: 0;
   padding: 0;
 }
 
-.container,
-#site-footer {
+.container {
   width: var(--content-perc);
   max-width: var(--content-width);
-  margin: 2rem auto;
-}
-
-#site-footer {
-  margin-top: 4rem;
+  margin: 0 auto;
 }

@@ -1,49 +1,111 @@
-.theme-gothic {
+/**
+ * THEME
+ */
+
+.theme-earth {
+  color-scheme: dark;
   background-color: var(--oceangreen);
+  color: white;
 }
 
-.theme-gothic a {
+a {
   color: var(--neongreen);
 }
 
-.theme-gothic .hero a {
-  color: var(--oceangreen);
+a:hover {
+  color: var(--orange);
 }
 
-.theme-gothic .hero a:hover {
-  color: white !important;
-  text-decoration-color: white;
+/**
+* NAVIGATION
+*/
+
+.header {
+  padding: var(--half-gap) 0;
 }
 
-.theme-gothic .hero {
+.nav {
+  margin: 0 auto;
+}
+
+.nav a {
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.nav .active {
+  color: var(--white);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--fluid-gap) / 4) var(--gap);
+  list-style-type: none;
+}
+
+.nav-list svg {
+  margin-right: calc(var(--half-gap) / 2);
+}
+
+/**
+ * HERO
+ */
+
+.hero {
+  padding-top: var(--half-gap);
   background-color: var(--orange);
   background-image: url(../img/horror.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-width: 1px 0;
-  border-color: var(--border-color);
+  border-color: var(--transparent-border);
   border-style: solid;
-  color: var(--brown);
+  /* color: var(--brown); */
+  color: white;
 }
 
-.theme-gothic .photo-and-text {
+.hero p {
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-weight: 900;
+}
+
+.hero a {
+  color: var(--oceangreen);
+}
+
+.hero a:hover {
+  color: white !important;
+  text-decoration-color: white;
+}
+
+.photo-and-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: var(--gap);
 }
 
-.theme-gothic .profile-pic {
+.profile-pic {
   max-width: 80%;
   margin: 0 auto;
 }
 
-.theme-gothic .social-tag {
+.social-tag {
   padding-top: 4rem;
   font-weight: bold;
 }
 
-.theme-gothic .social-icons {
+.social-icons {
   margin: 1rem 0;
   display: flex;
   gap: calc(var(--fluid-gap) / 4) var(--gap);
@@ -51,7 +113,7 @@
   flex-wrap: wrap;
 }
 
-.theme-gothic .side-projects article {
+.side-projects article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap);
@@ -60,17 +122,17 @@
   align-items: start;
 }
 
-.theme-gothic .side-projects img {
+.side-projects img {
   filter: opacity(0.85);
 }
 
-.theme-gothic h3::before {
+h3::before {
   content: '\2192';
   padding-right: 0.5rem;
 }
 
-.theme-gothic article p,
-.theme-gothic article ul {
+article p,
+article ul {
   margin-left: 4rem;
   margin-right: 4rem;
 }
@@ -150,7 +212,7 @@
 
 /* Things I've Made */
 
-.theme-gothic .text {
+.text {
   position: sticky;
   top: var(--gap);
 }
@@ -163,20 +225,20 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .theme-gothic .photo-and-text,
-  .theme-gothic .side-projects article {
+  .photo-and-text,
+  .side-projects article {
     display: flex;
     flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .theme-gothic .side-projects article {
+  .side-projects article {
     display: flex;
     flex-direction: column;
   }
 
-  .theme-gothic .text {
+  .text {
     position: relative;
   }
 }
