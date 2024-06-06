@@ -19,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image" href="../img/horror.png" />
+    <link rel="preload" as="image" href="../img/oriental-tiles.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
@@ -35,16 +35,22 @@
         <nav id="nav" class="nav container" role="navigation">
           <ul class="nav-list">
             <li>
-              <a href="../"><i class="fas fa-wind"></i>Business</a>
+              <a href="../" class="expand"
+                ><i class="fas fa-wind"></i>Business</a
+              >
             </li>
             <li>
-              <a href="../blog"><i class="fas fa-fire"></i>Blog</a>
+              <a href="../blog" class="expand"
+                ><i class="fas fa-fire"></i>Blog</a
+              >
             </li>
             <li>
-              <a href="../projects"><i class="fas fa-tint"></i>Projects</a>
+              <a href="../projects" class="expand"
+                ><i class="fas fa-tint"></i>Projects</a
+              >
             </li>
             <li>
-              <a href="../me" class="active"
+              <a href="../me" class="expand active"
                 ><i class="fas fa-seedling"></i>Me</a
               >
             </li>
@@ -56,15 +62,15 @@
         <!-- Hero -->
         <div class="hero">
           <div class="photo-and-text container">
-            <div class="about-me hidden">
+            <div class="about-me hidden-left">
               <h2>Howdy!</h2>
               <p class="subtitle">
-                I'm Dewitt Buckingham (though some folks call me DJ). I'm a web
-                developer and consultant. I also run games of Dungeons &amp;
-                Dragons online. I live in Manteca, California.
+                <span>I'm Dewitt Buckingham.</span> I'm a web developer and
+                consultant. I also run games of Dungeons &amp; Dragons online. I
+                live in Manteca, California.
               </p>
               <p>
-                <a href="">Hire me!</a>
+                <a href="" class="expand">Hire me!</a>
               </p>
               <p class="social-tag">@dewittbuck</p>
               <ul class="social-icons">
@@ -80,20 +86,20 @@
               </ul>
               <p>
                 Or email me at
-                <a href="mailto:dewitt@zerodaedalus.net"
+                <a href="mailto:dewitt@zerodaedalus.net" class="expand"
                   >dewitt@zerodaedalus.net</a
                 >
               </p>
             </div>
             <img
-              class="profile-pic"
+              class="profile-pic hidden-right"
               src="https://cdn.zerodaedal.us/2024.03.17%20-%20Profile%20Picture.png"
               alt="Dewitt Buckingham"
             />
           </div>
         </div>
         <!-- What I'm Enjoying -->
-        <div class="enjoying">
+        <div class="favorites">
           <div class="container">
             <h2>What I'm Enjoying</h2>
             <div class="list-container">
@@ -172,7 +178,7 @@
           <div class="container">
             <h2>Things I've Made</h2>
             <article>
-              <div class="text hidden">
+              <div class="text hidden-left">
                 <h3><a href="https://mmmyesquite.com">Mmm, Yes, Quite</a></h3>
                 <p>
                   MyQ started as channel where my buddy and I would share goofy
@@ -197,7 +203,7 @@
             </article>
             <article>
               <img src="../img/sfdm.png" alt="" />
-              <div class="text hidden">
+              <div class="text hidden-right">
                 <h3>
                   <a href="https://www.patreon.com/sunflowerdm">SunflowerDM</a>
                 </h3>
@@ -225,7 +231,7 @@
               </div>
             </article>
             <article>
-              <div class="text hidden">
+              <div class="text hidden-left">
                 <h3>Old Podcasts</h3>
                 <p>
                   These are some old podcasts I've been apart of over the years.

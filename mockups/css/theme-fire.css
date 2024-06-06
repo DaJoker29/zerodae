@@ -1,0 +1,9 @@
+/**
+ * THEME
+ */
+
+.theme-fire {
+  color-scheme: light;
+  background-color: whitesmoke;
+  color: var(--black);
+}

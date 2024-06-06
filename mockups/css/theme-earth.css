@@ -16,42 +16,15 @@ a:hover {
   color: var(--orange);
 }
 
-/**
-* NAVIGATION
-*/
-
-.header {
-  padding: var(--half-gap) 0;
-}
-
-.nav {
-  margin: 0 auto;
-}
-
-.nav a {
-  font-weight: 500;
-  font-family: var(--font-roboto);
-  text-decoration: none;
-}
-
-.nav a:hover {
-  font-weight: 900;
-  letter-spacing: 0.1em;
-}
-
-.nav .active {
+.active {
   color: var(--white);
 }
 
-.nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: calc(var(--fluid-gap) / 4) var(--gap);
-  list-style-type: none;
-}
-
-.nav-list svg {
-  margin-right: calc(var(--half-gap) / 2);
+.hero,
+.favorites,
+.side-projects {
+  padding-top: var(--half-gap);
+  padding-bottom: var(--half-gap);
 }
 
 /**
@@ -60,14 +33,14 @@ a:hover {
 
 .hero {
   padding-top: var(--half-gap);
-  background-color: var(--orange);
-  background-image: url(../img/horror.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-bottom: var(--half-gap);
+  background-color: var(--black);
+  background-image: url(../img/oriental-tiles.png);
+  background-blend-mode: darken;
+  background-attachment: fixed;
   border-width: 1px 0;
-  border-color: var(--transparent-border);
+  border-color: rgba(110, 110, 110, 0.2);
   border-style: solid;
-  /* color: var(--brown); */
   color: white;
 }
 
@@ -75,17 +48,10 @@ a:hover {
   font-weight: 700;
 }
 
-.hero h2 {
-  font-weight: 900;
-}
-
-.hero a {
-  color: var(--oceangreen);
-}
-
-.hero a:hover {
-  color: white !important;
-  text-decoration-color: white;
+.subtitle span {
+  background-color: var(--orange);
+  padding: 4px 1px;
+  color: var(--black);
 }
 
 .photo-and-text {
@@ -101,7 +67,7 @@ a:hover {
 }
 
 .social-tag {
-  padding-top: 4rem;
+  padding-top: var(--double-gap);
   font-weight: bold;
 }
 
@@ -118,12 +84,12 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: var(--gap);
   grid-auto-rows: auto;
-  margin-bottom: 4rem;
+  margin-bottom: var(--double-gap);
   align-items: start;
 }
 
 .side-projects img {
-  filter: opacity(0.85);
+  filter: opacity(0.8);
 }
 
 h3::before {
@@ -133,22 +99,24 @@ h3::before {
 
 article p,
 article ul {
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin-left: var(--double-gap);
+  margin-right: var(--double-gap);
 }
 
-/* What I'm Enjoying*/
+/**
+ * FAVORITES
+ */
 
 .list-container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: var(--gap);
   border-width: 0 0 1px;
-  border-color: var(--border-color);
+  border-color: rgba(110, 110, 110, 0.4);
   border-style: solid;
   padding: var(--gap) 0;
   font-size: 0.95rem;
-  transition: all 250ms;
+  transition: all 200ms;
 }
 
 .list-container:hover {
@@ -157,7 +125,7 @@ article ul {
 }
 
 .list-container:hover span {
-  color: var(--neongreen);
+  color: var(--orange);
 }
 
 .list-container li {
@@ -172,6 +140,7 @@ article ul {
 
 .list-container:hover li {
   margin-bottom: 0.75rem;
+  color: white;
 }
 
 .list-container span {
@@ -189,25 +158,6 @@ article ul {
   content: '→';
   margin-right: 0.2rem;
   display: inline-block;
-}
-
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 2s;
-}
-
-.visible {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
 }
 
 /* Things I've Made */
