@@ -10,4 +10,7 @@ document.onreadystatechange = () => {
 };
 
 menu();
-search();
+
+if (document.body.classList.contains('theme-fire')) {
+  search();
+}

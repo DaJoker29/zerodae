@@ -8,6 +8,14 @@
   color: var(--black);
 }
 
+.theme-fire .nav {
+  background: linear-gradient(42deg, var(--red), var(--orange), var(--yellow));
+}
+
+.theme-fire .header__menu-icon:hover {
+  color: var(--orange);
+}
+
 .no-js .search-toggle,
 .no-js .header__menu-btn {
   display: none;
