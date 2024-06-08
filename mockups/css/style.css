@@ -255,7 +255,7 @@ ul {
   color: white;
   background-color: var(--black);
   border: none;
-  border-radius: 50%;
+  border-radius: 50% 25%;
   margin-left: auto;
   padding: var(--quarter-gap);
   position: absolute;

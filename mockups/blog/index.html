@@ -28,7 +28,7 @@
     />
     <script type="module" src="../js/index.js"></script>
   </head>
-  <body class="theme-fire">
+  <body class="theme-fire no-js">
     <div id="layout">
       <!-- NAVIGATION MENU -->
       <header id="header" class="header">
@@ -73,7 +73,7 @@
       <!-- Content -->
       <main id="content" class="content">
         <div class="masthead container">
-          <h1 class="site-title">ZeroDae Blog</h1>
+          <h1 class="site-title"><span>ZeroDae</span> Blog</h1>
           <p class="site-tagline">
             Explore stories, gain insights, and find expert advice on web design
             and business.
@@ -95,9 +95,40 @@
               <a href="" class="tags__link">Miscellaneous</a>
             </li>
           </ul>
-          <form action="">
-            <input type="text" name="search" />
-          </form>
+          <div class="search-toggle">
+            <button
+              id="search-toggle__btn"
+              class="search-toggle__btn"
+              data-btn="search"
+            >
+              Search <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="search-overlay" data-search-overlay>
+          <button
+            id="search-overlay__close"
+            class="search-overlay__close"
+            data-search-close
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="search-module container">
+            <div class="search-form">
+              <div class="search-form__icon">
+                <i class="fas fa-search"></i>
+              </div>
+              <input
+                type="text"
+                class="search-form__input"
+                placeholder="Search"
+                data-search-input
+              />
+            </div>
+            <div class="search-results">
+              <p>Start typing to see results</p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
