@@ -29,10 +29,6 @@ a:hover {
   color: var(--cream);
 }
 
-.active {
-  color: var(--white);
-}
-
 .hero,
 .favorites,
 .side-projects {
