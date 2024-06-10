@@ -500,3 +500,37 @@ a:hover {
   display: inline-block;
   margin-right: var(--quarter-gap);
 }
+
+/*
+           _____   _____ _    _ _______      ________
+     /\   |  __ \ / ____| |  | |_   _\ \    / /  ____|
+    /  \  | |__) | |    | |__| | | |  \ \  / /| |__
+   / /\ \ |  _  /| |    |  __  | | |   \ \/ / |  __|
+  / ____ \| | \ \| |____| |  | |_| |_   \  /  | |____
+ /_/    \_\_|  \_\\_____|_|  |_|_____|   \/   |______|
+
+
+*/
+
+.archive {
+  padding: var(--double-gap) 0;
+}
+
+.archive-list__link {
+  text-decoration-line: none;
+  font-size: 1rem;
+}
+
+.archive-list__link:hover {
+  text-decoration-line: underline;
+}
+
+.archive-list__date {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.archive-title > span,
+.archive-list__date {
+  color: #684a4a;
+}
