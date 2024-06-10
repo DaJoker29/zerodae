@@ -22,8 +22,8 @@
   --quarter-gap: calc(var(--gap) / 4);
   --eighth-gap: calc(var(--gap) / 8);
   --fluid-gap: clamp(var(--half-gap), 3vw, var(--gap));
-  --reading-width: clamp(45ch, 50%, 75ch);
-  --content-width: 1200px;
+  --reading-width: clamp(45ch, 70%, 75ch);
+  --content-width: min(90%, 1400px);
 
   --font-roboto: 'Roboto', sans-serif;
   --font-raleway: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri,
@@ -46,6 +46,7 @@ body {
   font-family: var(--font-raleway);
   font-size: 1.125rem;
   line-height: 1.75;
+  overflow-x: clip;
 }
 
 img,
