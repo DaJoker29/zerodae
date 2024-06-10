@@ -1,7 +1,13 @@
-/**
- * THEME
- */
+/*
+  ______          _____ _______ _    _   _______ _    _ ______ __  __ ______
+ |  ____|   /\   |  __ \__   __| |  | | |__   __| |  | |  ____|  \/  |  ____|
+ | |__     /  \  | |__) | | |  | |__| |    | |  | |__| | |__  | \  / | |__
+ |  __|   / /\ \ |  _  /  | |  |  __  |    | |  |  __  |  __| | |\/| |  __|
+ | |____ / ____ \| | \ \  | |  | |  | |    | |  | |  | | |____| |  | | |____
+ |______/_/    \_\_|  \_\ |_|  |_|  |_|    |_|  |_|  |_|______|_|  |_|______|
 
+
+*/
 .theme-earth {
   color-scheme: dark;
   background-color: var(--oceangreen);
@@ -21,6 +27,23 @@
   color: var(--neongreen);
 }
 
+.hero,
+.favorites,
+.side-projects {
+  padding-top: var(--half-gap);
+  padding-bottom: var(--half-gap);
+}
+
+/*
+  _      _____ _   _ _  __ _____
+ | |    |_   _| \ | | |/ // ____|
+ | |      | | |  \| | ' /| (___
+ | |      | | | . ` |  <  \___ \
+ | |____ _| |_| |\  | . \ ____) |
+ |______|_____|_| \_|_|\_\_____/
+
+
+*/
 a {
   color: var(--neongreen);
 }
@@ -29,16 +52,16 @@ a:hover {
   color: var(--cream);
 }
 
-.hero,
-.favorites,
-.side-projects {
-  padding-top: var(--half-gap);
-  padding-bottom: var(--half-gap);
-}
+/*
+  _    _ ______ _____   ____
+ | |  | |  ____|  __ \ / __ \
+ | |__| | |__  | |__) | |  | |
+ |  __  |  __| |  _  /| |  | |
+ | |  | | |____| | \ \| |__| |
+ |_|  |_|______|_|  \_\\____/
 
-/**
- * HERO
- */
+
+*/
 
 .hero {
   padding-top: var(--half-gap);
@@ -88,6 +111,17 @@ a:hover {
   flex-wrap: wrap;
 }
 
+/*
+  _____ _____ _____  ______   _____  _____   ____       _ ______ _____ _______ _____
+  / ____|_   _|  __ \|  ____| |  __ \|  __ \ / __ \     | |  ____/ ____|__   __/ ____|
+ | (___   | | | |  | | |__    | |__) | |__) | |  | |    | | |__ | |       | | | (___
+ \___ \  | | | |  | |  __|   |  ___/|  _  /| |  | |_   | |  __|| |       | |  \___ \
+ ____) |_| |_| |__| | |____  | |    | | \ \| |__| | |__| | |___| |____   | |  ____) |
+ |_____/|_____|_____/|______| |_|    |_|  \_\\____/ \____/|______\_____|  |_| |_____/
+ 
+ 
+ */
+
 .side-projects article {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -116,9 +150,24 @@ article ul {
   margin-right: var(--double-gap);
 }
 
-/**
- * FAVORITES
- */
+@media only screen and (max-width: 900px) {
+  /* TODO: Split this into two separate media queries. */
+  .photo-and-text,
+  .side-projects article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*
+______ __      ______  _____  _____ _______ ______  _____
+ |  ____/\ \    / / __ \|  __ \|_   _|__   __|  ____|/ ____|
+ | |__ /  \ \  / / |  | | |__) | | |    | |  | |__  | (___
+ |  __/ /\ \ \/ /| |  | |  _  /  | |    | |  |  __|  \___ \
+ | | / ____ \  / | |__| | | \ \ _| |_   | |  | |____ ____) |
+ |_|/_/    \_\/   \____/|_|  \_\_____|  |_|  |______|_____/
+
+
+*/
 
 .list-container {
   display: grid;
@@ -132,9 +181,11 @@ article ul {
   transition: all 200ms;
 }
 
-.list-container:hover {
-  /* font-size: 1.4rem; */
-  /* font-weight: bolder; */
+@media screen and (max-width: 400px) {
+  .list-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .list-container li {
@@ -169,26 +220,20 @@ article ul {
   display: inline-block;
 }
 
-/* Things I've Made */
+/*
+  _______ _    _ _____ _   _  _____  _____
+ |__   __| |  | |_   _| \ | |/ ____|/ ____|
+    | |  | |__| | | | |  \| | |  __| (___
+    | |  |  __  | | | | . ` | | |_ |\___ \
+    | |  | |  | |_| |_| |\  | |__| |____) |
+    |_|  |_|  |_|_____|_| \_|\_____|_____/
+
+
+*/
 
 .text {
   position: sticky;
   top: var(--gap);
-}
-
-@media screen and (max-width: 400px) {
-  .list-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .photo-and-text,
-  .side-projects article {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
