@@ -384,19 +384,19 @@ a:hover {
   width: 100%;
 }
 
-.post-title {
+.main-feed .post-title {
   margin: 0;
   padding: 0;
   line-height: 1.2;
 }
 
-.post-title > a {
+.main-feed .post-title > a {
   font-size: 1.5rem;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
 
-.post-title > a:hover {
+.main-feed .post-title > a:hover {
   letter-spacing: 0;
   text-decoration-thickness: 4px;
 }
@@ -449,4 +449,54 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
+}
+
+/*
+   _____ _____ _   _  _____ _      ______
+  / ____|_   _| \ | |/ ____| |    |  ____|
+ | (___   | | |  \| | |  __| |    | |__
+  \___ \  | | | . ` | | |_ | |    |  __|
+  ____) |_| |_| |\  | |__| | |____| |____
+ |_____/|_____|_| \_|\_____|______|______|
+
+
+*/
+
+.single {
+  padding-top: var(--gap);
+}
+
+.post-container {
+  width: clamp(45ch, 50%, 75ch);
+}
+
+.featured-img {
+  width: 100%;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+
+.single .post-title {
+  line-height: 1.3;
+}
+
+.byline {
+  font-size: 0.8rem;
+}
+
+.post-content {
+  padding-top: var(--double-gap);
+  padding-bottom: var(--double-gap);
+}
+
+.post-content p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.post-container .return a::before {
+  content: '←';
+  display: inline-block;
+  margin-right: var(--quarter-gap);
 }
