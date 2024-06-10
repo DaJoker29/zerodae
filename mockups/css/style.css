@@ -1,8 +1,6 @@
-:root {
-  /**
-   * PALETTE
-   */
+@import url('./utility.css');
 
+:root {
   --black: #1b1b1b;
   --light-gray: #b1b1b1;
   --red: #be0027;
@@ -17,22 +15,14 @@
   --neongreen: #5ecc62;
   --brown: #4d3c2d;
 
-  /**
-   * SIZE & SPACING
-   */
-
   --gap: 2rem;
   --half-gap: calc(var(--gap) / 2);
   --double-gap: calc(var(--gap) * 2);
   --quarter-gap: calc(var(--gap) / 4);
   --eighth-gap: calc(var(--gap) / 8);
   --fluid-gap: clamp(var(--half-gap), 3vw, var(--gap));
+  --reading-width: clamp(45ch, 50%, 75ch);
   --content-width: 1200px;
-  --content-perc: 90%;
-
-  /**
-   * TYPOGRAPHY
-   */
 
   --font-roboto: 'Roboto', sans-serif;
   --font-raleway: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri,
@@ -127,53 +117,6 @@ ol {
 
 ul {
   list-style: none;
-}
-
-/** 
- * UTILITY 
- */
-
-.content {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: var(--content-perc);
-  max-width: var(--content-width);
-  margin: 0 auto;
-}
-
-.expand:hover {
-  letter-spacing: 1px;
-}
-
-.hidden-left,
-.hidden-right {
-  opacity: 0;
-  filter: blur(var(--half-gap));
-  transition: filter 1200ms, opacity 1200ms, transform 1200ms;
-}
-
-.hidden-left {
-  transform: translateX(-100%);
-}
-
-.hidden-right {
-  transform: translateX(100%);
-}
-
-.visible {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-@media (prefers-reduced-motion) {
-  .hidden-left,
-  .hidden-right {
-    transition: none;
-  }
 }
 
 /**
