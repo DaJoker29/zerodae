@@ -1,6 +1,7 @@
 @import url('./utility.css');
 @import url('./navigation.css');
 @import url('./grid.css');
+@import url('./footer.css');
 
 :root {
   --black: #1b1b1b;
