@@ -5,6 +5,7 @@
 :root {
   --black: #1b1b1b;
   --light-gray: #b1b1b1;
+  --light-grey: #e1e1e1; /* Keep the British spelling */
   --red: #be0027;
   --orange: #fb8a2e;
   --yellow: yellow;
