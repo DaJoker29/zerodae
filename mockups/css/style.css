@@ -1,5 +1,6 @@
 @import url('./utility.css');
 @import url('./navigation.css');
+@import url('./grid.css');
 
 :root {
   --black: #1b1b1b;
@@ -9,7 +10,9 @@
   --yellow: yellow;
   --cream: #decba5;
   --shale: #abb8af;
+  --darkcyan: #38423b;
   --gold: #dbc65d;
+  --bronze: #4b4111;
   --darkblue: #00387b;
   --skyblue: #00c4cc;
   --oceangreen: #1f2e22;
@@ -19,6 +22,7 @@
   --gap: 2rem;
   --half-gap: calc(var(--gap) / 2);
   --double-gap: calc(var(--gap) * 2);
+  --quad-gap: calc(var(--gap) * 4);
   --quarter-gap: calc(var(--gap) / 4);
   --eighth-gap: calc(var(--gap) / 8);
   --fluid-gap: clamp(var(--half-gap), 3vw, var(--gap));
