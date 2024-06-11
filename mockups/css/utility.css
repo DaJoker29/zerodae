@@ -21,9 +21,3 @@
   filter: blur(0);
   transform: translateX(0) !important;
 }
-
-@media (prefers-reduced-motion) {
-  .hidden {
-    transition: none;
-  }
-}

@@ -28,8 +28,13 @@
   color: var(--gold);
 }
 
-h2 > span {
+.highlight {
   color: var(--shale);
+}
+
+section {
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
 }
 
 .new {
@@ -42,22 +47,25 @@ h2 > span {
   border-radius: var(--eighth-gap);
 }
 
-/*
-  _      _____ _   _ _  __ _____
- | |    |_   _| \ | | |/ // ____|
- | |      | | |  \| | ' /| (___
- | |      | | | . ` |  <  \___ \
- | |____ _| |_| |\  | . \ ____) |
- |______|_____|_| \_|_|\_\_____/
-
-
-*/
 a {
   color: var(--bronze);
 }
 
 a:hover {
   color: var(--gold);
+}
+
+button,
+.btn {
+  background: linear-gradient(42deg, var(--shale), var(--cream));
+  border-width: 0;
+  border-radius: 4px;
+  padding: var(--quarter-gap) var(--half-gap);
+  cursor: pointer;
+  color: var(--bronze);
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  transition: all 300ms;
 }
 
 /*
@@ -75,6 +83,7 @@ a:hover {
   background: linear-gradient(0deg, var(--darkcyan), var(--bronze));
   min-height: 100vh;
   color: white;
+  padding-top: 0;
 }
 
 .site-title {
@@ -118,18 +127,6 @@ a:hover {
 .hero-lead {
   margin-bottom: var(--gap);
   margin-left: var(--gap);
-}
-
-.hero-cta {
-  background: linear-gradient(42deg, var(--shale), var(--cream));
-  border-width: 0;
-  border-radius: 4px;
-  padding: var(--quarter-gap) var(--half-gap);
-  cursor: pointer;
-  color: var(--bronze);
-  font-family: var(--font-roboto);
-  font-weight: 600;
-  transition: all 300ms;
 }
 
 .hero-cta:hover {
@@ -434,4 +431,76 @@ a:hover {
   padding: var(--double-gap) 0;
   background-color: var(--black);
   color: white;
+}
+
+/*
+   _____ ____  _   _ _______       _____ _______
+  / ____/ __ \| \ | |__   __|/\   / ____|__   __|
+ | |   | |  | |  \| |  | |  /  \ | |       | |
+ | |   | |  | | . ` |  | | / /\ \| |       | |
+ | |___| |__| | |\  |  | |/ ____ \ |____   | |
+  \_____\____/|_| \_|  |_/_/    \_\_____|  |_|
+
+
+*/
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+  align-items: center;
+}
+
+.contact-form {
+  background-color: white;
+  border-top: var(--eighth-gap) solid var(--bronze);
+  border-radius: var(--eighth-gap);
+  filter: drop-shadow(0 0 0.25rem rgba(200, 200, 200, 0.4));
+}
+
+.contact-form > fieldset {
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--quarter-gap);
+}
+
+.contact-form > fieldset > input,
+.contact-form > fieldset > textarea,
+.contact-form > fieldset > option,
+.contact-form > fieldset > select {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: var(--quarter-gap);
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  border-radius: var(--eighth-gap);
+  resize: none;
+}
+
+.contact-form > fieldset > input:focus,
+.contact-form > fieldset > textarea:focus,
+.contact-form > fieldset > option:focus,
+.contact-form > fieldset > select:focus {
+  outline: 1px solid var(--gold);
+}
+
+.contact-group {
+  border-left: var(--eighth-gap) solid var(--shale);
+  padding-left: var(--half-gap);
+  margin-bottom: var(--gap);
+}
+
+.contact-group > p {
+  /* font-size: 1rem; */
+  line-height: 1.5;
+  margin: 0;
+}
+
+.contact-group > p:first-child {
+  font-weight: 900;
+}
+
+.contact-group > p:not(:first-child) {
+  font-family: var(--font-roboto);
 }
