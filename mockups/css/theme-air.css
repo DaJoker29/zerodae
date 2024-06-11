@@ -164,12 +164,13 @@ a:hover {
 }
 
 .services > p {
+  color: var(--bronze);
   font-weight: 600;
 }
 
 .services-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: dense;
   grid-auto-rows: auto;
   gap: var(--gap);
@@ -182,25 +183,23 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: var(--gap);
   grid-column: span 1;
   position: relative; /* keeps the link overlays within their container */
 }
 
-/* .services-list--item:nth-child(3n) {
-  grid-column: span 2 !important;
-} */
-
 .services-list--item header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: var(--half-gap);
+  min-height: 2.5rem;
 }
 
 .services-list--item header * {
   display: inline-block;
-  font-size: var(--1rem);
+  font-size: 1.4rem;
   line-height: 1;
   padding: 0;
   margin: 0;
@@ -230,14 +229,15 @@ a:hover {
 .services-list--item__title {
   display: flex !important;
   flex-direction: row;
+  align-items: center;
   gap: var(--half-gap);
 }
 
 .services-list--item__paragraph {
-  margin-bottom: 0;
-  margin-top: var(--half-gap);
+  margin: 0;
+  padding: 0;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   font-family: var(--font-roboto);
 }
 
