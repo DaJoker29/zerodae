@@ -86,7 +86,7 @@ a:hover {
 }
 
 .hero-img {
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: var(--gap);
   filter: drop-shadow(0 0 0.25rem var(--gold)) blur(5px);
   transition: all 400ms;
@@ -190,10 +190,11 @@ a:hover {
   padding: var(--gap);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: var(--gap);
   grid-column: span 1;
   position: relative; /* keeps the link overlays within their container */
+  border-bottom: var(--quarter-gap) solid var(--gold);
 }
 
 .services-list--item:nth-child(1) {
@@ -231,8 +232,9 @@ a:hover {
 
 .services-list--item header * {
   display: inline-block;
-  font-size: 1.4rem;
-  line-height: 1;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.1;
   padding: 0;
   margin: 0;
 }
@@ -241,7 +243,7 @@ a:hover {
   opacity: 0;
   font-size: 2rem;
   transition: opacity 300ms;
-  color: var(--gold);
+  color: var(--shale);
 }
 
 .services-list--item:hover .services-list--item__btn-icon {
@@ -251,11 +253,11 @@ a:hover {
 .services-list--item:hover {
   filter: drop-shadow(0 0 0.5rem var(--shale));
   transition: all 300ms;
-  border-top: var(--quarter-gap) solid var(--shale);
+  border-color: var(--shale);
 }
 
 .services-list--item:hover .services-list--item__title {
-  color: var(--gold);
+  color: var(--shale);
   transition: all 300ms;
 }
 
@@ -304,7 +306,6 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--gap);
-  margin: var(--double-gap) 0;
 }
 
 .portfolio-item {
@@ -369,6 +370,10 @@ a:hover {
 
 */
 
+.about {
+  padding-bottom: var(--double-gap);
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -402,4 +407,19 @@ a:hover {
   letter-spacing: 2px;
 }
 
+/*
+  _____  _____  _____ _____ _____ _   _  _____
+ |  __ \|  __ \|_   _/ ____|_   _| \ | |/ ____|
+ | |__) | |__) | | || |      | | |  \| | |  __
+ |  ___/|  _  /  | || |      | | | . ` | | |_ |
+ | |    | | \ \ _| || |____ _| |_| |\  | |__| |
+ |_|    |_|  \_\_____\_____|_____|_| \_|\_____|
 
+
+*/
+
+.pricing {
+  padding: var(--double-gap) 0;
+  background-color: var(--black);
+  color: white;
+}
