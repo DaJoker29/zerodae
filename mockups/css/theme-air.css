@@ -28,6 +28,10 @@
   color: var(--gold);
 }
 
+h2 > span {
+  color: var(--shale);
+}
+
 /*
   _      _____ _   _ _  __ _____
  | |    |_   _| \ | | |/ // ____|
@@ -353,3 +357,49 @@ a:hover {
   color: var(--black);
   filter: drop-shadow(0 0 0.25rem var(--gold));
 }
+
+/*
+           ____   ____  _    _ _______
+     /\   |  _ \ / __ \| |  | |__   __|
+    /  \  | |_) | |  | | |  | |  | |
+   / /\ \ |  _ <| |  | | |  | |  | |
+  / ____ \| |_) | |__| | |__| |  | |
+ /_/    \_\____/ \____/ \____/   |_|
+
+
+*/
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 16rem;
+  margin: 0 auto;
+}
+
+.about-container > h3,
+.about-container > h4 {
+  text-align: center;
+  margin: 0;
+  font-family: var(--font-roboto);
+}
+
+.about-container > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: var(--half-gap);
+}
+
+.about-container > h4 {
+  color: var(--bronze);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+
