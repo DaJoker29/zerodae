@@ -29,7 +29,14 @@
     <script defer src="js/app.js"></script>
     <script defer type="module" src="js/index.js"></script>
   </head>
-  <body class="theme-air no-js">
+  <body class="theme-air no-js is-loading">
+    <div id="loading">
+      <p>
+        If this page doesn't load, ensure JavaScript is enabled in your browser.
+        This page requires it.
+      </p>
+      <div class="lds-heart"><div></div></div>
+    </div>
     <div id="layout">
       <!-- NAVIGATION MENU -->
       <header id="header" class="header">
@@ -74,7 +81,7 @@
       <!-- Start of Content -->
       <main id="content">
         <!-- Hero -->
-        <section class="hero full-width content-grid">
+        <section class="hero content-grid">
           <h1 class="site-title full-width">Zero Daedalus</h1>
           <div class="hero-container breakout">
             <div class="hero-copy hidden">
@@ -211,7 +218,7 @@
         </section>
         <!-- PORTFOLIO -->
         <section id="portfolio" class="portfolio content-grid">
-          <h2 class="breakout"><span>OUR</span> PORTFOLIO</h2>
+          <h2 class="breakout"><span class="highlight">OUR</span> PORTFOLIO</h2>
           <div class="portfolio-container">
             <article class="portfolio-item">
               <img
@@ -228,7 +235,7 @@
                 multimedia production company. We've hosted their website since
                 2017.
               </p>
-              <a href="/" class="portfolio-btn">Visit Neologic</a>
+              <a href="/" class="portfolio-btn btn">Visit Neologic</a>
             </article>
             <article class="portfolio-item">
               <img
@@ -245,7 +252,7 @@
                 multimedia production company. We've hosted their website since
                 2017.
               </p>
-              <a href="/" class="portfolio-btn">Visit Neologic</a>
+              <a href="/" class="portfolio-btn btn">Visit Neologic</a>
             </article>
             <article class="portfolio-item">
               <img
@@ -262,21 +269,21 @@
                 multimedia production company. We've hosted their website since
                 2017.
               </p>
-              <a href="/" class="portfolio-btn">Visit Neologic</a>
+              <a href="/" class="portfolio-btn btn">Visit Neologic</a>
             </article>
           </div>
         </section>
         <section id="about" class="about content-grid">
-          <h2 class="breakout"><span>WHO</span> ARE WE</h2>
+          <h2 class="breakout"><span class="highlight">WHO</span> WE ARE</h2>
           <div class="about-container">
             <p>
-              My name is Dewitt, the caffeine-fueled code wizard behind this
-              operation. I've been tinkering with websites since the days of
-              dial-up (seriously). But more than just a web geek, I'm a
-              passionate advocate for small business and freelancers. I've seen
-              what a killer website can do to elevate a brand and boost
-              business, and I've decided to devote my skills and expertise in
-              helping others reach those big dreams.
+              <strong>My name is Dewitt</strong>, the nerdy code wizard behind
+              this operation. I've been tinkering with websites since the days
+              of dial-up (seriously). More than just a web geek, I'm also an
+              advocate for small business and freelancers. I've seen what a
+              killer website can do to elevate a brand and boost business, and
+              so I decided to devote my skills and expertise towards helping
+              others reach those big dreams.
             </p>
             <img
               src="https://cdn.zerodaedal.us/2024.03.17%20-%20Profile%20Picture.png"
@@ -293,17 +300,63 @@
             &bull; 12-Month Commitment
           </h3>
           <p>
-            Get a standard 5-page small business website for $0 down and $150
-            per month. For larger projects or ecommerce websites, custom pricing
-            is available based on the scope and time required.
+            You can have a standard 5-page website built, and get the full suite
+            of ongoing services needed to make your website successful, all for
+            a single monthly rate. After the first year, cancel anytime with no
+            fees or hassle.
           </p>
-          <p>You own your content with hassle-free cancellation.</p>
+          <p>
+            Larger projects and ecommerce websites will be custom priced based
+            on the scope and time required.
+          </p>
+
+          <ul class="included-services">
+            <li>
+              <h3>Hosting</h3>
+              <p>Hosting fees are baked right into the plan.</p>
+            </li>
+            <li>
+              <h3>Unlimited Edits</h3>
+              <p>
+                Anything you want changed, just let me know and I'll make it
+                happen.
+              </p>
+            </li>
+            <li>
+              <h3>Round-the-Clock Customer Service</h3>
+              <p>
+                Call direct anytime day or night, no support queues or support
+                tickets.
+              </p>
+            </li>
+            <li>
+              <h3>Web Design &amp; Development</h3>
+              <p>
+                Each site recieves dozens of hours of design, development, and
+                testing.
+              </p>
+            </li>
+            <li>
+              <h3>High-Performing Page Speed</h3>
+              <p>
+                Boost your search ranking by ensuring top Page Speed scores in
+                Google and other engines.
+              </p>
+            </li>
+            <li>
+              <h3>Professional Analytics</h3>
+              <p>
+                I'll personally monitor your Analytics and SEMRush data to
+                ensure you're getting the best traffic to your site.
+              </p>
+            </li>
+          </ul>
         </section>
         <section id="contact" class="contact content-grid">
           <div class="contact-container">
             <form action="" id="contact-form" class="contact-form">
               <fieldset>
-                <h2><span>GET</span> IN TOUCH</h2>
+                <h2><span class="highlight">GET</span> IN TOUCH</h2>
                 <input type="text" placeholder="Name" />
                 <input type="text" placeholder="Business" />
                 <input type="text" placeholder="Email" />
@@ -345,8 +398,9 @@
       </main>
       <footer id="site-footer" class="site-footer content-grid">
         <div class="copyright">
-          &copy; 2024 Dewitt Buckingham &bull; <a href="">LinkedIn</a> &bull;
-          <a href="">Instagram</a> &bull; <a href="">GitHub</a> &bull;
+          Copyright &copy; 2024 &bull; Zero Daedalus &bull;
+          <a href="">LinkedIn</a> &bull; <a href="">Instagram</a> &bull;
+          <a href="">GitHub</a> &bull;
           <a href="">Email</a>
         </div>
       </footer>

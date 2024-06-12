@@ -8,6 +8,11 @@ document.body.classList.remove('no-js');
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
     document.body.classList.add('is-complete');
+    document.body.classList.remove('is-loading');
+    const loadScreen = document.querySelector('#loading');
+    loadScreen.style.opacity = 0;
+    loadScreen.style.visibility = 'hidden';
+    loadScreen.addEventListener('transitionend', () => loadScreen.remove());
   }
 };
 

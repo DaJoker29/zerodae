@@ -1,0 +1,8 @@
+@keyframes air-neon {
+  from {
+    filter: drop-shadow(0 0 0.75rem var(--gold));
+  }
+  to {
+    filter: drop-shadow(0 0 0.5rem var(--gold));
+  }
+}
