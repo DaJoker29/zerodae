@@ -85,9 +85,23 @@ input[type='reset']:hover {
 
 .hero {
   background: linear-gradient(0deg, var(--darkcyan), var(--bronze));
-  min-height: 100ssvh;
+  min-height: 100svh;
   color: white;
   padding-top: 0;
+}
+
+.banner {
+  min-height: max(16rem, 20vh);
+  background-color: var(--cream);
+  background-image: url(../img/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  margin-bottom: var(--double-gap);
+}
+
+.service-heading > a {
+  text-decoration: none;
 }
 
 .site-title {
