@@ -433,6 +433,12 @@ input[type='reset']:hover {
   color: white;
 }
 
+.pricing > h3 {
+  font-size: 1.6rem;
+}
+.pricing > p {
+}
+
 .included-services {
   margin-top: var(--double-gap);
   display: grid;
