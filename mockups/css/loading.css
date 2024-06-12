@@ -13,8 +13,12 @@
   min-height: 100svh;
   padding: var(--gap);
   opacity: 1;
-  transition: opacity 500ms, visibility 500ms;
+  transition: all 400ms;
   z-index: 10000;
+}
+
+#loading p {
+  color: var(--gold);
 }
 
 .lds-heart,

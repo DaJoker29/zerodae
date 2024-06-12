@@ -10,9 +10,11 @@ document.onreadystatechange = () => {
     document.body.classList.add('is-complete');
     document.body.classList.remove('is-loading');
     const loadScreen = document.querySelector('#loading');
-    loadScreen.style.opacity = 0;
-    loadScreen.style.visibility = 'hidden';
-    loadScreen.addEventListener('transitionend', () => loadScreen.remove());
+    setTimeout(() => {
+      loadScreen.style.opacity = 0;
+      loadScreen.style.visibility = 'hidden';
+      loadScreen.addEventListener('transitionend', () => loadScreen.remove());
+    }, 800);
   }
 };
 

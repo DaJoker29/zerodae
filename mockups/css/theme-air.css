@@ -15,6 +15,11 @@
   color: var(--black);
 }
 
+.theme-air #loading {
+  background: linear-gradient(0deg, var(--darkcyan), var(--bronze));
+  color: white;
+}
+
 .highlight {
   color: var(--gold);
 }
@@ -86,13 +91,16 @@ input[type='reset']:hover {
 }
 
 .site-title {
+  opacity: 0;
+  scale: 0.8;
+  animation: fade-in 1800ms ease forwards;
   font-size: 12rem;
   margin: 0;
   margin-left: var(--gap);
   text-transform: uppercase;
   line-height: 0.9;
   text-wrap: nowrap;
-  animation: air-neon 1s linear alternate infinite;
+  animation: air-neon 1s linear alternate infinite, fade-in 1800ms ease forwards;
 }
 
 .hero-container {
@@ -101,6 +109,12 @@ input[type='reset']:hover {
   grid-template-columns: 1fr 1fr;
   gap: var(--quad-gap);
   align-items: center;
+  opacity: 0;
+  scale: 0.8;
+  animation: fade-in 1800ms ease forwards;
+}
+
+.hero-copy {
 }
 
 .hero-img {
