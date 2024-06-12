@@ -1,8 +1,8 @@
 .site-footer {
-  padding-top: var(--gap);
-  padding-bottom: var(--gap);
-}
-
-.copyright {
+  position: sticky;
+  top: 100svh;
+  margin-top: var(--gap);
+  padding-inline: var(--gap);
+  padding-block-end: var(--gap);
   font-size: 1rem;
 }

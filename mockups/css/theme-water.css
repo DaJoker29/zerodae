@@ -110,3 +110,60 @@ input[type='reset']:hover {
 .project img:hover {
   filter: none;
 }
+
+/*
+  _____  _____   ____       _ ______ _____ _______
+ |  __ \|  __ \ / __ \     | |  ____/ ____|__   __|
+ | |__) | |__) | |  | |    | | |__ | |       | |
+ |  ___/|  _  /| |  | |_   | |  __|| |       | |
+ | |    | | \ \| |__| | |__| | |___| |____   | |
+ |_|    |_|  \_\\____/ \____/|______\_____|  |_|
+
+
+*/
+
+.project-container {
+  padding-top: var(--gap);
+  display: grid;
+  grid-template-columns: 200px [detail-start] 1fr [detail-end];
+  grid-auto-rows: auto;
+  gap: var(--gap);
+}
+
+.project-container > header > h2 {
+  margin: 0;
+  line-height: 0.8;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--quarter-gap);
+  align-items: start;
+  justify-content: start;
+}
+
+.project-tag {
+  font-size: 0.75rem;
+  color: var(--darkblue);
+  background-color: var(--shale);
+  border-radius: var(--eighth-gap);
+  padding: var(--eighth-gap) var(--quarter-gap);
+  font-weight: 900;
+  line-height: 1.5;
+  flex: 0 auto;
+  min-width: fit-content;
+  text-align: center;
+}
+
+.project-container > header > button {
+  margin-top: var(--half-gap);
+}
+
+.project-description {
+  grid-area: detail;
+}
+
+.project-description > p {
+  margin-top: var(--gap);
+}
