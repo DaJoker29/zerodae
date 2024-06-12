@@ -1,6 +1,6 @@
+import intersect from './intersect.js';
 import masthead from './masthead.js';
 import menu from './menu.js';
-import scroll from './scroll.js';
 import search from './search.js';
 
 document.body.classList.remove('no-js');
@@ -17,12 +17,9 @@ document.onreadystatechange = () => {
 };
 
 menu();
+intersect();
 
 if (document.body.classList.contains('theme-fire')) {
   masthead();
   search();
-}
-
-if (document.body.classList.contains('theme-air')) {
-  scroll();
 }

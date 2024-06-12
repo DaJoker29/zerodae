@@ -221,7 +221,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background-color: rgba(15, 16, 17, 0.95);
   z-index: 250;
   opacity: 0;

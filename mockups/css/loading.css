@@ -10,7 +10,7 @@
   gap: var(--gap);
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100svh;
   padding: var(--gap);
   opacity: 1;
   transition: opacity 500ms, visibility 500ms;

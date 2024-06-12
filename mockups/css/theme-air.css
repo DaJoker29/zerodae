@@ -80,7 +80,7 @@ input[type='reset']:hover {
 
 .hero {
   background: linear-gradient(0deg, var(--darkcyan), var(--bronze));
-  min-height: 100vh;
+  min-height: 100ssvh;
   color: white;
   padding-top: 0;
 }
@@ -450,6 +450,11 @@ input[type='reset']:hover {
   display: flex;
   flex-direction: column;
   gap: var(--quarter-gap);
+  scale: 0.8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .included-services > li > h3 {

@@ -1,0 +1,112 @@
+/*
+  _______ _    _ ______ __  __ ______
+ |__   __| |  | |  ____|  \/  |  ____|
+    | |  | |__| | |__  | \  / | |__
+    | |  |  __  |  __| | |\/| |  __|
+    | |  | |  | | |____| |  | | |____
+    |_|  |_|  |_|______|_|  |_|______|
+
+
+*/
+
+.theme-water {
+  color-scheme: dark;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.highlight {
+  color: var(--skyblue);
+}
+
+.pill {
+  text-decoration: none;
+  margin-right: var(--quarter-gap);
+  font-size: 1rem;
+  line-height: inherit;
+  background: linear-gradient(42deg, var(--shale), var(--skyblue));
+  color: var(--black);
+  padding: var(--eighth-gap);
+  border-radius: var(--eighth-gap);
+}
+
+section {
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+}
+a {
+  color: var(--skyblue);
+}
+
+a:hover {
+  color: var(--white);
+}
+
+.btn,
+button,
+input[type='submit'],
+input[type='button'],
+input[type='reset'] {
+  text-decoration: none;
+  background: linear-gradient(42deg, var(--skyblue), var(--shale));
+  border-width: 0;
+  border-radius: 4px;
+  padding: var(--quarter-gap) var(--half-gap);
+  cursor: pointer;
+  color: var(--darkblue);
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  transition: all 300ms;
+}
+
+.btn:hover,
+button:hover,
+input[type='submit']:hover,
+input[type='button']:hover,
+input[type='reset']:hover {
+  background: linear-gradient(42deg, var(--cream), var(--skyblue));
+  color: var(--black);
+  filter: drop-shadow(0 0 0.25rem var(--gold));
+}
+
+/*
+  _    _ ______ _____   ____
+ | |  | |  ____|  __ \ / __ \
+ | |__| | |__  | |__) | |  | |
+ |  __  |  __| |  _  /| |  | |
+ | |  | | |____| | \ \| |__| |
+ |_|  |_|______|_|  \_\\____/
+
+
+*/
+
+.site-title {
+  font-size: 8rem;
+  line-height: 0.9;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.project-filter {
+  margin-top: var(--gap);
+  margin-bottom: var(--gap);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--eighth-gap);
+}
+
+.project-catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--half-gap);
+}
+
+.project img {
+  transition: filter 200ms;
+  filter: grayscale(100%) sepia(0.2) opacity(0.75);
+}
+
+.project img:hover {
+  filter: none;
+}
