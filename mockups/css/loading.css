@@ -4,7 +4,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--light-grey);
   display: flex;
   flex-direction: column;
   gap: var(--gap);
@@ -15,10 +14,18 @@
   opacity: 1;
   transition: all 400ms;
   z-index: 10000;
+  background-color: var(--light-grey);
+  color: var(--black);
 }
 
-#loading p {
+.theme-air #loading {
+  background-color: var(--bronze);
   color: var(--gold);
+}
+
+.theme-water #loading {
+  background-color: var(--light-grey);
+  color: var(--darkblue);
 }
 
 .lds-heart,
