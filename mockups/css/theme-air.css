@@ -33,6 +33,26 @@ body.light-theme {
   --__card-border-clr-2: var(--bronze);
   --__card-border-hover-clr-1: var(--shale);
   --__card-border-hover-clr-2: var(--darkcyan);
+
+  --__portfolio-bg-clr: var(--light-grey);
+  --__portfolio-card-bg-clr: var(--white);
+  --__portfolio-card-border-clr: var(--shale);
+  --__portfolio-card-secondary-text-clr: var(--shale);
+
+  --__about-shadow-clr: var(--shale);
+  --__about-job-title-clr: var(--bronze);
+
+  --__pricing-bg-clr: var(--shale);
+  --__pricing-text-clr: var(--black);
+  --__pricing-hr-clr: var(--shale);
+
+  --__contact-form-bg-clr: var(--white);
+  --__contact-form-border-clr: var(--bronze);
+  --__contact-form-input-outline-clr: var(--gold);
+  --__contact-group-border-clr: var(--shale);
+
+  --__banner-bg-clr: var(--cream);
+  --__banner-blend-mode: multiply;
 }
 
 body.dark-theme {
@@ -374,7 +394,7 @@ input[type='reset']:hover {
 
 .portfolio {
   padding: var(--double-gap) 0;
-  background-color: var(--light-grey);
+  background-color: var(--__portfolio-bg-clr);
 }
 
 .portfolio-container {
@@ -384,10 +404,10 @@ input[type='reset']:hover {
 }
 
 .portfolio-item {
-  background-color: var(--white);
+  background-color: var(--__portfolio-card-bg-clr);
   filter: drop-shadow(0 0 0.125rem var(--shadow));
   padding: var(--half-gap);
-  border-bottom: var(--eighth-gap) solid var(--shale);
+  border-bottom: var(--eighth-gap) solid var(--__portfolio-card-border-clr);
   border-radius: var(--eighth-gap);
   display: flex;
   flex-direction: column;
@@ -412,7 +432,7 @@ input[type='reset']:hover {
 .project-location {
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--shale);
+  color: var(--__portfolio-card-secondary-text-clr);
 }
 
 .portfolio-text {
@@ -448,7 +468,7 @@ input[type='reset']:hover {
   max-width: 16rem;
   margin: 0 auto;
   border-radius: 70% 10%;
-  filter: drop-shadow(4px 4px 0.5rem var(--shale));
+  filter: drop-shadow(4px 4px 0.5rem var(--__about-shadow-clr));
 }
 
 .about-container > h3,
@@ -465,7 +485,7 @@ input[type='reset']:hover {
 }
 
 .about-container > h4 {
-  color: var(--bronze);
+  color: var(--__about-job-title-clr);
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -484,21 +504,30 @@ input[type='reset']:hover {
 
 .pricing {
   padding: var(--double-gap) 0;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--__pricing-bg-clr);
+  color: var(--__pricing-text-clr);
 }
 
 .pricing > h3 {
   font-size: 1.6rem;
 }
-.pricing > p {
+
+.pricing hr {
+  width: 100%;
+  height: 2px;
+  background-color: var(--__pricing-hr-clr);
+  opacity: 0.3;
+}
+
+.pricing > p:last-of-type {
+  margin-bottom: var(--gap);
 }
 
 .included-services {
-  margin-top: var(--double-gap);
+  margin-top: var(--gap);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--double-gap);
+  gap: var(--gap);
 }
 
 .included-services > li {
@@ -550,8 +579,8 @@ input[type='reset']:hover {
 }
 
 .contact-form {
-  background-color: var(--white);
-  border-top: var(--eighth-gap) solid var(--bronze);
+  background-color: var(--__contact-form-bg-clr);
+  border-top: var(--eighth-gap) solid var(--__contact-form-border-clr);
   border-radius: var(--eighth-gap);
   filter: drop-shadow(0 0 0.25rem rgba(200, 200, 200, 0.4));
 }
@@ -580,17 +609,16 @@ input[type='reset']:hover {
 .contact-form > fieldset > textarea:focus,
 .contact-form > fieldset > option:focus,
 .contact-form > fieldset > select:focus {
-  outline: 1px solid var(--gold);
+  outline: 1px solid var(--__contact-form-input-outline-clr);
 }
 
 .contact-group {
-  border-left: var(--eighth-gap) solid var(--shale);
+  border-left: var(--eighth-gap) solid var(--__contact-group-border-clr);
   padding-left: var(--half-gap);
   margin-bottom: var(--gap);
 }
 
 .contact-group > p {
-  /* font-size: 1rem; */
   line-height: 1.5;
   margin: 0;
 }
@@ -605,11 +633,11 @@ input[type='reset']:hover {
 
 .banner {
   min-height: max(16rem, 20vh);
-  background-color: var(--cream);
+  background-color: var(--__banner-bg-clr);
   background-image: url(../img/sky.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  background-blend-mode: var(--__banner-blend-mode);
   margin-bottom: var(--double-gap);
 }
 
