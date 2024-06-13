@@ -4,12 +4,12 @@ const currentTheme = localStorage.getItem('theme') || 'light';
 const setTheme = () => {
   if (toggle.checked) {
     localStorage.setItem('theme', 'dark');
-    document.body.classList.add('dark-theme');
     document.body.classList.remove('light-theme');
+    document.body.classList.add('dark-theme');
   } else {
     localStorage.setItem('theme', 'light');
-    document.body.classList.add('light-theme');
     document.body.classList.remove('dark-theme');
+    document.body.classList.add('light-theme');
   }
 };
 
