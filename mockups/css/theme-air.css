@@ -6,7 +6,7 @@ body.light-theme {
   --__text-clr: var(--black);
 
   --__link-clr: var(--gold);
-  --__link-alt-clr: var(--shale);
+  --__link-hover-clr: var(--shale);
 
   --__highlight-clr: var(--gold);
 
@@ -111,7 +111,7 @@ a {
 }
 
 a:hover {
-  color: var(--__link-alt-clr);
+  color: var(--__link-hover-clr);
 }
 
 .btn,
