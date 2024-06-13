@@ -1,5 +1,8 @@
 const toggle = document.querySelector('#theme-toggle__checkbox');
-const currentTheme = localStorage.getItem('theme') || 'light';
+const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+  ? 'dark'
+  : 'light';
+const currentTheme = localStorage.getItem('theme') || prefersDarkMode;
 
 const setTheme = () => {
   if (toggle.checked) {
@@ -25,13 +28,7 @@ const lightDark = () => {
   getTheme();
   setTheme();
 
-  toggle.addEventListener(
-    'change',
-    () => {
-      setTheme();
-    },
-    false
-  );
+  toggle.addEventListener('change', setTheme);
 };
 
 export default lightDark;
