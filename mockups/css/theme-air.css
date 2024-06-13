@@ -27,19 +27,19 @@ body.light-theme {
   --__services-text-clr: var(--black);
   --__services-highlight-clr: var(--darkcyan);
 
-  --__card-bg-clr: var(--__bg-clr);
-  --__card-text-clr: var(--__text-clr);
-  --__card-border-clr-1: var(--gold);
-  --__card-border-clr-2: var(--bronze);
-  --__card-border-hover-clr-1: var(--shale);
-  --__card-border-hover-clr-2: var(--darkcyan);
+  --__service-card-bg-clr: var(--__bg-clr);
+  --__service-card-text-clr: var(--__text-clr);
+  --__service-card-border-clr-1: var(--gold);
+  --__service-card-border-clr-2: var(--bronze);
+  --__service-card-border-hover-clr-1: var(--shale);
+  --__service-card-border-hover-clr-2: var(--darkcyan);
 
   --__portfolio-bg-clr: var(--light-grey);
   --__portfolio-card-bg-clr: var(--white);
   --__portfolio-card-border-clr: var(--shale);
   --__portfolio-card-secondary-text-clr: var(--shale);
 
-  --__about-shadow-clr: var(--shale);
+  --__about-img-shadow-clr: var(--shale);
   --__about-job-title-clr: var(--bronze);
 
   --__pricing-bg-clr: var(--shale);
@@ -189,7 +189,7 @@ input[type='reset']:hover {
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: var(--gap);
   filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr)) blur(5px);
-  transition: all 400ms;
+  transition: all 400ms ease-in-out;
 }
 
 .hero-container:hover .hero-img {
@@ -282,7 +282,7 @@ input[type='reset']:hover {
 }
 
 .services-list--item {
-  background-color: var(--__card-bg-clr);
+  background-color: var(--__service-card-bg-clr);
   padding: var(--gap);
   display: flex;
   flex-direction: column;
@@ -290,17 +290,17 @@ input[type='reset']:hover {
   gap: var(--gap);
   grid-column: span 1;
   position: relative; /* keeps the link overlays within their container */
-  border-bottom: var(--quarter-gap) solid var(--__card-border-clr-1);
-  border-right: var(--quarter-gap) solid var(--__card-border-clr-2);
+  border-bottom: var(--quarter-gap) solid var(--__service-card-border-clr-1);
+  border-right: var(--quarter-gap) solid var(--__service-card-border-clr-2);
   filter: drop-shadow(0 0 0.5rem transparent);
   transition-property: filter, border-color;
   transition-duration: 200ms;
 }
 
 .services-list--item:hover {
-  filter: drop-shadow(0 0 0.5rem var(--__card-text-clr));
-  border-bottom-color: var(--__card-border-hover-clr-1);
-  border-right-color: var(--__card-border-hover-clr-2);
+  filter: drop-shadow(0 0 0.5rem var(--__service-card-text-clr));
+  border-bottom-color: var(--__service-card-border-hover-clr-1);
+  border-right-color: var(--__service-card-border-hover-clr-2);
 }
 
 .services-list--item:nth-child(1) {
@@ -348,7 +348,7 @@ input[type='reset']:hover {
   opacity: 0;
   font-size: 2rem;
   transition: opacity 300ms;
-  color: var(--__card-text-clr);
+  color: var(--__service-card-text-clr);
 }
 
 .services-list--item:hover .services-list--item__btn-icon {
@@ -469,7 +469,7 @@ input[type='reset']:hover {
   max-width: 16rem;
   margin: 0 auto;
   border-radius: 70% 10%;
-  filter: drop-shadow(4px 4px 0.5rem var(--__about-shadow-clr));
+  filter: drop-shadow(4px 4px 0.5rem var(--__about-img-shadow-clr));
 }
 
 .about-container > h3,
