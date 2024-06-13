@@ -11,7 +11,7 @@
 .theme-earth {
   color-scheme: dark;
   background-color: var(--darkcyan);
-  color: white;
+  color: var(--white);
 }
 
 .theme-earth .nav {
@@ -73,7 +73,7 @@ a:hover {
   border-width: 1px 0;
   border-color: rgba(110, 110, 110, 0.2);
   border-style: solid;
-  color: white;
+  color: var(--white);
 }
 
 .hero p {
@@ -195,12 +195,12 @@ ______ __      ______  _____  _____ _______ ______  _____
 
 .list-container li em {
   font-weight: bold;
-  color: var(--white);
+  color: var(--var(--white));
 }
 
 .list-container:hover li {
   margin-bottom: 0.75rem;
-  color: white;
+  color: var(--white);
 }
 
 .list-container span {

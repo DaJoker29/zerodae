@@ -12,7 +12,7 @@
 .theme-water {
   color-scheme: dark;
   background-color: var(--darkblue);
-  color: white;
+  color: var(--white);
 }
 
 .highlight {
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  color: var(--white);
+  color: var(--var(--white));
 }
 
 .btn,

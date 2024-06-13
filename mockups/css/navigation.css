@@ -48,7 +48,7 @@
   display: flex;
   font-size: min(5vw, 3rem);
   font-weight: 900;
-  color: white;
+  color: var(--white);
   text-decoration: underline rgba(0, 0, 0, 0);
   align-items: center;
   height: 100%;
@@ -59,11 +59,11 @@
 }
 
 .nav__link:hover {
-  color: white;
+  color: var(--white);
 }
 
 .nav__link:hover {
-  text-decoration-color: white;
+  text-decoration-color: var(--white);
   letter-spacing: 4px;
 }
 
@@ -86,7 +86,7 @@
   appearance: none;
   z-index: 200;
   cursor: pointer;
-  color: white;
+  color: var(--white);
   background-color: var(--black);
   border: none;
   border-radius: 50% 25%;
@@ -137,7 +137,7 @@
 }
 
 .theme-water .header__menu-icon {
-  color: white;
+  color: var(--white);
 }
 
 .theme-water .header__menu-icon:hover {

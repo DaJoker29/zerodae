@@ -18,15 +18,24 @@
   color: var(--black);
 }
 
-.theme-air #loading {
+/* Theme Overrides */
+
+body.theme-air #loading {
   background-color: var(--bronze);
   color: var(--gold);
 }
 
-.theme-water #loading {
+body.theme-water #loading {
   background-color: var(--light-grey);
   color: var(--darkblue);
 }
+
+body.theme-air #loading {
+  background: linear-gradient(0deg, var(--darkcyan), var(--bronze));
+  color: var(--white);
+}
+
+/* Heart Animation */
 
 .lds-heart,
 .lds-heart div,

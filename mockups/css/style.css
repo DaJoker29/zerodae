@@ -7,6 +7,7 @@
 @import url('./light-dark.css');
 
 :root {
+  --white: #efe;
   --black: #1b1b1b;
   --light-gray: #b1b1b1;
   --light-grey: #e1e1e1; /* Keep the British spelling */
