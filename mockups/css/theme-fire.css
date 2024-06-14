@@ -193,7 +193,6 @@ a:hover {
   background: none;
   border: none;
   padding: 0;
-  text-transform: uppercase;
   color: inherit;
   font: inherit;
   outline: inherit;
@@ -305,7 +304,6 @@ a:hover {
   font-weight: 900;
   text-decoration: underline 2px;
   text-underline-offset: 2px;
-  text-transform: uppercase;
 }
 
 .bio-snippet {

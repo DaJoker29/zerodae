@@ -67,7 +67,7 @@
   letter-spacing: 4px;
 }
 
-.nav__link.active {
+.nav__link[aria-current='page'] {
   color: var(--shadow);
 }
 

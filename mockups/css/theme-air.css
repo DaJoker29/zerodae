@@ -10,13 +10,15 @@ body.light-theme {
 
   --__highlight-clr: var(--gold);
 
-  --__btn-bg: linear-gradient(42deg, var(--cream), var(--gold));
-  --__btn-text: var(--darkcyan);
-  --__btn-hover-bg: var(--darkcyan);
-  --__btn-hover-text: var(--gold);
+  --__btn-bg: linear-gradient(42deg, var(--darkcyan), var(--black));
+  --__btn-text: var(--white);
+  --__btn-hover-bg: linear-gradient(42deg, var(--black), var(--darkcyan));
+  --__btn-hover-text: var(--cream);
 
   --__hero-highlight-text: var(--gold);
-  --__hero-text: var(--white);
+  --__hero-text-clr: var(--white);
+  --__hero-title-clr: var(--__hero-text-clr);
+  --__hero-title-glow-clr: var(--gold);
   --__hero-scroll-clr: var(--darkcyan);
   --__hero-scroll-hover-clr: var(--white);
   --__hero-gradient-clr-1: var(--cream);
@@ -25,7 +27,9 @@ body.light-theme {
 
   --__services-bg-clr: var(--cream);
   --__services-text-clr: var(--black);
-  --__services-highlight-clr: var(--darkcyan);
+  --__services-link-clr: var(--bronze);
+  --__services-link-hover-clr: var(--darkcyan);
+  --__services-highlight-clr: var(--bronze);
 
   --__service-card-bg-clr: var(--__bg-clr);
   --__service-card-text-clr: var(--__text-clr);
@@ -60,10 +64,58 @@ body.dark-theme {
   --__bg-clr: var(--darkcyan);
   --__text-clr: var(--white);
 
+  --__link-clr: var(--gold);
+  --__link-hover-clr: var(--shale);
+
   --__highlight-clr: var(--cream);
 
-  --__gradient-clr-1: var(--darkcyan);
-  --__gradient-clr-2: var(--bronze);
+  --__btn-bg: linear-gradient(42deg, var(--cream), var(--gold));
+  --__btn-text: var(--darkcyan);
+  --__btn-hover-bg: linear-gradient(42deg, var(--gold), var(--cream));
+  --__btn-hover-text: var(--black);
+
+  --__hero-highlight-text: var(--cream);
+  --__hero-text-clr: var(--white);
+  --__hero-title-clr: var(--gold);
+  --__hero-title-glow-clr: var(--gold);
+  --__hero-scroll-clr: var(--gold);
+  --__hero-scroll-hover-clr: var(--white);
+  --__hero-gradient-clr-1: var(--darkcyan);
+  --__hero-gradient-clr-2: var(--black);
+  --__hero-img-shadow-clr: var(--gold);
+
+  --__services-bg-clr: var(--darkcyan);
+  --__services-text-clr: var(--white);
+  --__services-link-clr: var(--gold);
+  --__services-link-hover-clr: var(--shale);
+  --__services-highlight-clr: var(--gold);
+
+  --__service-card-bg-clr: var(--bronze);
+  --__service-card-text-clr: var(--__text-clr);
+  --__service-card-border-clr-1: var(--shale);
+  --__service-card-border-clr-2: var(--black);
+  --__service-card-border-hover-clr-1: var(--shale);
+  --__service-card-border-hover-clr-2: var(--darkcyan);
+
+  --__portfolio-bg-clr: var(--light-grey);
+  --__portfolio-card-bg-clr: var(--white);
+  --__portfolio-card-border-clr: var(--shale);
+  --__portfolio-card-secondary-text-clr: var(--shale);
+
+  --__about-img-shadow-clr: var(--shale);
+  --__about-job-title-clr: var(--bronze);
+
+  --__pricing-bg-clr: var(--shale);
+  --__pricing-text-clr: var(--black);
+  --__pricing-hr-clr: var(--shale);
+
+  --__contact-form-bg-clr: var(--white);
+  --__contact-form-border-clr: var(--bronze);
+  --__contact-form-input-outline-clr: var(--gold);
+  --__contact-group-border-clr: var(--shale);
+
+  --__banner-bg-clr: var(--cream);
+  --__banner-blend-mode: multiply;
 }
 
 /*
@@ -119,6 +171,7 @@ button,
 input[type='submit'],
 input[type='button'],
 input[type='reset'] {
+  appearance: none;
   text-decoration: none;
   background: var(--__btn-bg);
   color: var(--__btn-text);
@@ -128,7 +181,8 @@ input[type='reset'] {
   cursor: pointer;
   font-family: var(--font-roboto);
   font-weight: 600;
-  transition: all 200ms;
+  transition-property: color, background-image;
+  transition-duration: 200ms;
 }
 
 .btn:hover,
@@ -157,21 +211,30 @@ input[type='reset']:hover {
     var(--__hero-gradient-clr-2)
   ) !important;
   min-height: 100svh;
-  color: var(--__hero-text);
+  color: var(--__hero-text-clr);
   padding-top: 0;
 }
 
-.site-title {
+.hero-title {
   opacity: 0;
   scale: 0.8;
   animation: fade-in 1800ms ease forwards;
   font-size: 12rem;
   margin: 0;
   margin-left: var(--gap);
-  text-transform: uppercase;
   line-height: 0.9;
   text-wrap: nowrap;
+  color: var(--__hero-title-clr);
   animation: air-neon 1s linear alternate infinite, fade-in 1800ms ease forwards;
+}
+
+@keyframes air-neon {
+  from {
+    filter: drop-shadow(0 0 0.75rem var(--__hero-title-glow-clr));
+  }
+  to {
+    filter: drop-shadow(0 0 0.5rem var(--__hero-title-glow-clr));
+  }
 }
 
 .hero-container {
@@ -264,11 +327,11 @@ input[type='reset']:hover {
 }
 
 .services > p > a {
-  color: var(--__services-highlight-clr);
+  color: var(--__services-link-clr);
 }
 
 .services > p > a:hover {
-  color: var(--__services-text-clr);
+  color: var(--__services-link-hover-clr);
 }
 
 .services-list {
