@@ -1,12 +1,4 @@
 .content-grid {
-  --padding-inline: var(--double-gap);
-  --content-max-width: 75ch;
-  --breakout-max-width: 90ch;
-
-  --breakout-size: calc(
-    (var(--breakout-max-width) - var(--content-max-width)) / 2
-  );
-
   display: grid;
   grid-template-columns:
     [full-width-start] minmax(var(--padding-inline), 1fr)
