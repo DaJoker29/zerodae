@@ -16,11 +16,11 @@
   --cream-600: hsl(40, 51%, 30%);
   --cream-700: hsl(40, 56%, 15%);
 
-  --shale-300: hsl(138, 8%, 85%);
-  --shale-400: hsl(138, 8%, 70%);
-  --shale-500: hsl(138, 8%, 50%);
-  --shale-600: hsl(138, 13%, 30%);
-  --shale-700: hsl(138, 18%, 15%);
+  --shale-300: hsl(186, 8%, 85%);
+  --shale-400: hsl(186, 8%, 70%);
+  --shale-500: hsl(186, 8%, 50%);
+  --shale-600: hsl(186, 12%, 30%);
+  --shale-700: hsl(186, 18%, 15%);
 
   /* These colors need to be replaced */
   --light-gray: #b1b1b1;

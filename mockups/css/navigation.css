@@ -110,9 +110,9 @@
 .theme-air .nav {
   background: linear-gradient(
     28deg,
-    var(--shale) 20%,
-    var(--cream),
-    var(--gold)
+    var(--shale-300) 20%,
+    var(--cream-400),
+    var(--cream-500)
   );
 }
 
