@@ -22,19 +22,7 @@
   --shale-600: hsl(186, 12%, 30%);
   --shale-700: hsl(186, 18%, 15%);
 
-  --font-roboto: 'Roboto', sans-serif;
-  --font-raleway: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri,
-    'Trebuchet MS', sans-serif;
-
   --shadow: rgba(29, 29, 29, 0.3);
-
-  --padding-inline: var(--double-gap);
-  --content-max-width: 75ch;
-  --breakout-max-width: 90ch;
-
-  --breakout-size: calc(
-    (var(--breakout-max-width) - var(--content-max-width)) / 2
-  );
 
   --gap: 2rem;
   --half-gap: calc(var(--gap) / 2);
@@ -42,7 +30,7 @@
   --quad-gap: calc(var(--gap) * 4);
   --quarter-gap: calc(var(--gap) / 4);
   --eighth-gap: calc(var(--gap) / 8);
-  --fluid-gap: clamp(var(--half-gap), 3vw, var(--gap));
+  --fluid-gap: clamp(0.75rem, 3vw, 1.5rem);
 
   /* Keep above properties. Replace the ones below. */
   --light-gray: #b1b1b1;
@@ -65,6 +53,33 @@
   --content-width: max(90%, 1400px);
 }
 
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/raleway-v34-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/raleway-v34-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 *,
 *::before,
 *::after {
@@ -78,11 +93,11 @@
 
 html,
 body {
-  font-family: var(--font-raleway);
-  font-size: 1.125rem;
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
   line-height: 1.75;
   overflow-x: clip;
-  min-height: 100%;
   min-height: 100svh;
 }
 
@@ -137,7 +152,27 @@ h2,
 h3,
 h4 {
   margin-bottom: var(--gap);
+  font-family: 'Raleway', system-ui, sans-serif;
   font-weight: 900;
+}
+
+h1 {
+  font-size: clamp(2.5rem, calc(2.2rem + 1.5vw), 4rem);
+}
+h2 {
+  font-size: clamp(2rem, calc(1.7rem + 1.5vw), 3.5rem);
+}
+h3 {
+  font-size: clamp(2rem, calc(1.8rem + 1vw), 3rem);
+}
+h4 {
+  font-size: clamp(1.5rem, calc(1.3rem + 1vw), 2.5rem);
+}
+h5 {
+  font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem);
+}
+h6 {
+  font-size: 1rem;
 }
 
 a {
