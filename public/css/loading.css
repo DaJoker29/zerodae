@@ -18,6 +18,10 @@
   color: var(--black);
 }
 
+#loading > h2 {
+  text-align: center;
+}
+
 /* Theme Overrides */
 
 body.theme-air #loading {
