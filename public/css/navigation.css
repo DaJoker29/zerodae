@@ -46,7 +46,7 @@
 
 .nav__link {
   display: flex;
-  font-size: min(5vw, 3rem);
+  font-size: clamp(2rem, 3vw + 1rem, 4.5rem);
   font-weight: 900;
   color: var(--white);
   text-decoration: underline rgba(0, 0, 0, 0);

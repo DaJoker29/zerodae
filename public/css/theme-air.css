@@ -209,26 +209,19 @@ input[type='reset']:hover {
   padding: 0;
 }
 
-.hero__title {
+.hero > h1 {
   opacity: 0;
   scale: 0.8;
   animation: fade-in 1800ms ease forwards;
-  font-size: 12rem;
-  margin: 0;
-  margin-left: var(--gap);
-  line-height: 0.9;
-  text-wrap: nowrap;
+  font-size: clamp(2.5rem, 5vw + 1rem, 6.5rem);
+  margin-top: var(--fluid-gap);
+  margin-bottom: var(--fluid-gap);
   color: var(--__hero-title-clr);
   animation: air-neon 1s linear alternate infinite, fade-in 1800ms ease forwards;
 }
 
-@keyframes air-neon {
-  from {
-    filter: drop-shadow(0 0 0.75rem var(--__hero-title-glow-clr));
-  }
-  to {
-    filter: drop-shadow(0 0 0.5rem var(--__hero-title-glow-clr));
-  }
+.hero > h1 > span {
+  display: inline-block;
 }
 
 .hero-container {
@@ -248,17 +241,8 @@ input[type='reset']:hover {
   transition: all 400ms ease-in-out;
   filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr));
 }
-@media (pointer: fine) {
-  .hero__img {
-    filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr)) blur(5px);
-  }
 
-  .hero-container:hover .hero__img {
-    filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr)) blur(0);
-  }
-}
-
-.hero__heading {
+.hero__copy > h2 {
   font-size: 2rem;
   line-height: 1.8;
   color: var(--__hero-highlight-text);
@@ -296,13 +280,38 @@ input[type='reset']:hover {
   margin-right: var(--quarter-gap);
 }
 
+@keyframes air-neon {
+  from {
+    filter: drop-shadow(0 0 0.75rem var(--__hero-title-glow-clr));
+  }
+  to {
+    filter: drop-shadow(0 0 0.5rem var(--__hero-title-glow-clr));
+  }
+}
+
+@media (pointer: fine) {
+  .hero__img {
+    filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr)) blur(5px);
+  }
+
+  .hero-container:hover .hero__img {
+    filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr)) blur(0);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero > h1 > span {
+    display: block;
+  }
+}
+
 /*
-   _____ ______ _______      _______ _____ ______  _____
-  / ____|  ____|  __ \ \    / /_   _/ ____|  ____|/ ____|
- | (___ | |__  | |__) \ \  / /  | || |    | |__  | (___
-  \___ \|  __| |  _  / \ \/ /   | || |    |  __|  \___ \
-  ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
- |_____/|______|_|  \_\  \/   |_____\_____|______|_____/
+_____ ______ _______      _______ _____ ______  _____
+/ ____|  ____|  __ \ \    / /_   _/ ____|  ____|/ ____|
+| (___ | |__  | |__) \ \  / /  | || |    | |__  | (___
+\___ \|  __| |  _  / \ \/ /   | || |    |  __|  \___ \
+____) | |____| | \ \  \  /   _| || |____| |____ ____) |
+|_____/|______|_|  \_\  \/   |_____\_____|______|_____/
 
 
 */
@@ -572,7 +581,7 @@ input[type='reset']:hover {
   font-weight: 500;
 }
 
-.pricing > h4 > span {
+.pricing > h5 > span {
   margin-right: var(--quarter-gap);
   font-size: 0.5em;
   line-height: 1;
@@ -609,18 +618,13 @@ input[type='reset']:hover {
   display: flex;
   flex-direction: column;
   gap: 0 var(--quarter-gap);
-  scale: 0.8;
-  opacity: 0;
-  animation: fade-in 2500ms linear forwards;
 }
 
-.included-services > li > h6 {
-  margin: 0;
-  line-height: 0.9;
+.included-services > li > strong {
   position: relative;
 }
 
-.included-services > li > h6::before {
+.included-services > li > strong::before {
   content: '\2713';
   display: inline-block;
   background-color: inherit;
@@ -634,7 +638,7 @@ input[type='reset']:hover {
 }
 
 @media screen and (max-width: 960px) {
-  .included-services > li > h6::before {
+  .included-services > li > strong::before {
     display: none;
   }
 }
