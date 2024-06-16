@@ -84,11 +84,11 @@ body.dark-theme {
   --__hero-title-glow-clr: var(--cream-500);
   --__hero-scroll-clr: var(--cream-400);
   --__hero-scroll-hover-clr: var(--white);
-  --__hero-gradient-clr-1: var(--shale-600);
+  --__hero-gradient-clr-1: var(--shale-700);
   --__hero-gradient-clr-2: var(--black);
   --__hero-img-shadow-clr: var(--cream-500);
 
-  --__services-bg-clr: var(--shale-600);
+  --__services-bg-clr: var(--shale-700);
   --__services-text-clr: var(--white);
   --__services-link-clr: var(--cream-400);
   --__services-link-hover-clr: var(--shale-400);
@@ -173,7 +173,6 @@ input[type='reset'] {
   border-radius: 4px;
   padding: var(--quarter-gap) var(--half-gap);
   cursor: pointer;
-  font-family: var(--font-roboto);
   font-weight: 600;
   transition-property: color, background-image;
   transition-duration: 200ms;
@@ -240,6 +239,7 @@ input[type='reset']:hover {
   border-radius: var(--gap);
   transition: all 400ms ease-in-out;
   filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr));
+  background: url('../img/spaceship2-lowrez.jpg');
 }
 
 .hero__copy > h2 {
@@ -364,6 +364,10 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   transition: filter 200ms;
 }
 
+.service-card > h3 {
+  font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem);
+}
+
 .service-card:hover {
   filter: drop-shadow(0 0 0.5rem var(--__service-card-shadow-hover-clr));
 }
@@ -408,7 +412,6 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   margin: 0 var(--gap) var(--gap);
   font-size: 1rem;
   line-height: 1.5;
-  font-family: var(--font-roboto);
 }
 
 .service-card__link {
@@ -479,7 +482,6 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
 }
 
 .portfolio-item__copy {
-  font-family: var(--font-roboto);
   font-size: 1rem;
   line-height: 1.6;
   flex: 1;
@@ -529,7 +531,6 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-roboto);
 }
 
 .about-img {
@@ -544,7 +545,6 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
 .about-body > h4 {
   text-align: center;
   margin: 0;
-  font-family: var(--font-roboto);
 }
 
 .about-body > h3 {
@@ -711,7 +711,6 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
 }
 
 .contact-group > p:not(:first-child) {
-  font-family: var(--font-roboto);
 }
 
 /* Styles for Interior Pages based on the Air Theme */

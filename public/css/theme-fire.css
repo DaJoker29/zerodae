@@ -299,7 +299,7 @@ a:hover {
 .aside-label {
   padding: 0;
   margin-bottom: var(--quarter-gap);
-  font-family: var(--font-roboto);
+
   font-size: 0.8rem;
   font-weight: 900;
   text-decoration: underline 2px;
@@ -410,7 +410,7 @@ a:hover {
   margin: var(--quarter-gap) 0 var(--gap);
   font-size: 0.8rem;
   line-height: 1.2;
-  font-family: var(--font-roboto);
+
   font-weight: 500;
 }
 

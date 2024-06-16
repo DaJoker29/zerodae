@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zero Daedalus is a web consulting and development agency helping small businesses build and maintain websites."
+    />
     <title>Zero Daedalus &bull; Web Designer &amp; Consultant</title>
     <link
       rel="stylesheet"
@@ -20,7 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script defer type="module" src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
   </head>
   <body class="theme-air light-theme no-js is-loading">
     <!-- Loading Screen -->
@@ -30,8 +34,13 @@
     </div>
     <!-- Theme Toggle -->
     <div id="theme-toggle" class="theme-toggle">
-      <input type="checkbox" name="theme-toggle" id="theme-toggle__checkbox" />
-      <label for="theme-toggle__checkbox">
+      <label>
+        <input
+          type="checkbox"
+          name="theme-toggle"
+          id="theme-toggle__checkbox"
+          aria-label="Toggle theme"
+        />
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
       </label>
@@ -99,7 +108,13 @@
                 <a href="#services">Scroll down to learn more</a>
               </p>
             </div>
-            <img src="img/spaceship2.png" alt="" class="hero__img" />
+            <img
+              src="img/spaceship2.png"
+              alt="a spaceship blasting off into the stars."
+              height="600"
+              width="480"
+              class="hero__img"
+            />
           </div>
         </section>
         <section id="services" class="services content-grid">
@@ -120,55 +135,75 @@
             <div class="services-list">
               <article class="service-card hidden">
                 <i class="service-card__icon fas fa-code"></i>
-                <h5 class="service-card__title">
+                <h3 class="service-card__title">
                   Web Design &amp; Development
-                </h5>
+                </h3>
                 <p class="service-card__arrow">&#x2197;</p>
                 <p class="service-card__body">
                   We build websites that are as slick as they are functional.
                   Whether you’re starting from scratch or need a serious
                   upgrade, count on us to bring your digital vision to life.
                 </p>
-                <a href="service.html" class="service-card__link"> </a>
+                <a
+                  href="service.html"
+                  class="service-card__link"
+                  aria-label="Learn more about our design service"
+                >
+                </a>
               </article>
               <article class="service-card hidden">
                 <i class="service-card__icon fas fa-search"></i>
-                <h5 class="service-card__title">
+                <h3 class="service-card__title">
                   Search Engine Optimization (SEO)
-                </h5>
+                </h3>
                 <p class="service-card__arrow">&#x2197;</p>
                 <p class="service-card__body">
                   Get ready to climb the Google ladder. Using SEO wizardry, we
                   will sprinkle magic keywords and strategic tactics to get your
                   site noticed by all the right people.
                 </p>
-                <a href="service.html" class="service-card__link"> </a>
+                <a
+                  href="service.html"
+                  class="service-card__link"
+                  aria-label="Learn more about our SEO service"
+                >
+                </a>
               </article>
               <article class="service-card hidden">
                 <i class="service-card__icon fas fa-shopping-cart"></i>
-                <h5 class="service-card__title">Ecommerce</h5>
+                <h3 class="service-card__title">Ecommerce</h3>
                 <p class="service-card__arrow">&#x2197;</p>
                 <p class="service-card__body">
                   Turn window shoppers into loyal customers with our e-commerce
                   expertise. We can whip up a digital storefront that’s not just
                   pretty but also a selling machine.
                 </p>
-                <a href="service.html" class="service-card__link"> </a>
+                <a
+                  href="service.html"
+                  class="service-card__link"
+                  aria-label="Learn more about our ecommerce service"
+                >
+                </a>
               </article>
               <article class="service-card hidden">
                 <i class="service-card__icon fas fa-bookmark"></i>
-                <h5 class="service-card__title">Content Marketing</h5>
+                <h3 class="service-card__title">Content Marketing</h3>
                 <p class="service-card__arrow">&#x2197;</p>
                 <p class="service-card__body">
                   We’re not just about pretty pixels – we keep wordsmiths on
                   retainer. Let us weave captivating stories and craft killer
                   content to keep your audience hooked and coming back for more.
                 </p>
-                <a href="service.html" class="service-card__link"> </a>
+                <a
+                  href="service.html"
+                  class="service-card__link"
+                  aria-label="Learn more about our content marketing service."
+                >
+                </a>
               </article>
               <article class="service-card hidden">
                 <i class="service-card__icon fas fa-lightbulb"></i>
-                <h5 class="service-card__title">Digital Strategy</h5>
+                <h3 class="service-card__title">Digital Strategy</h3>
                 <p class="service-card__arrow">&#x2197;</p>
                 <p class="service-card__body">
                   Think of us as your digital sherpa, guiding you through the
@@ -176,11 +211,16 @@
                   smart as it is effective, so you can conquer the online world
                   with confidence.
                 </p>
-                <a href="service.html" class="service-card__link"> </a>
+                <a
+                  href="service.html"
+                  class="service-card__link"
+                  aria-label="Learn more about our digital strategy service."
+                >
+                </a>
               </article>
               <article class="service-card hidden">
                 <i class="service-card__icon fas fa-wrench"></i>
-                <h5 class="service-card__title">Maintenance &amp; Support</h5>
+                <h3 class="service-card__title">Maintenance &amp; Support</h3>
                 <p class="service-card__arrow">&#x2197;</p>
                 <p class="service-card__body">
                   We’ve got your back, even after the confetti has settled. From
@@ -188,7 +228,12 @@
                   running smoother than a well-oiled machine. So you can focus
                   on what you do best – while we handle the tech stuff.
                 </p>
-                <a href="service.html" class="service-card__link"> </a>
+                <a
+                  href="service.html"
+                  class="service-card__link"
+                  aria-label="Learn more about our maintenance and support service."
+                >
+                </a>
               </article>
             </div>
           </div>
@@ -199,6 +244,9 @@
           <div class="portfolio-container">
             <article class="portfolio-item">
               <img
+                defer
+                width="400"
+                height="250"
                 src="img/portfolio_neologic.png"
                 alt=""
                 class="portfolio-item__thumbnail"
@@ -215,11 +263,9 @@
               <a href="/" class="btn">Visit Neologic</a>
             </article>
             <article class="portfolio-item">
-              <img
-                src="img/portfolio_hisraft.png"
-                alt=""
-                class="portfolio-item__thumbnail"
-              />
+              <img defer width="400" height="250" width:
+              src="img/portfolio_hisraft.png" alt=""
+              class="portfolio-item__thumbnail" />
               <header>
                 <p class="portfolio-item__title">His RAFT</p>
                 <p class="portfolio-item__location">Stockton, California</p>
@@ -234,6 +280,9 @@
 
             <article class="portfolio-item">
               <img
+                defer
+                width="400"
+                height="250"
                 src="img/portfolio_myq.png"
                 alt=""
                 class="portfolio-item__thumbnail"
@@ -264,8 +313,11 @@
               others reach those big dreams.
             </p>
             <img
-              src="https://cdn.zerodaedal.us/2024.03.17%20-%20Profile%20Picture.png"
-              alt=""
+              defer
+              src="img/profile_pic.png"
+              alt="Profile image of Dewitt Buckingham"
+              height="256"
+              width="256"
               class="about-img"
             />
             <h3>Dewitt B.</h3>
@@ -343,7 +395,11 @@
                 <input type="text" placeholder="Business" />
                 <input type="text" placeholder="Email" />
                 <input type="tel" placeholder="Phone Number" />
-                <select name="interest" id="contact-interest">
+                <select
+                  name="interest"
+                  id="contact-interest"
+                  aria-label="Select your interest."
+                >
                   <option value selected disabled>Select</option>
                   <option value="Website">Website</option>
                   <option value="Search Engine Optimization">
@@ -393,5 +449,6 @@
     integrity="sha512-LW9+kKj/cBGHqnI4ok24dUWNR/e8sUD8RLzak1mNw5Ja2JYCmTXJTF5VpgFSw+VoBfpMvPScCo2DnKTIUjrzYw=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
+    async
   ></script>
 </html>
