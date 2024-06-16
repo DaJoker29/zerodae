@@ -491,9 +491,6 @@ input[type='reset']:hover {
   .portfolio-item:nth-child(2) {
     transform: scale(1);
   }
-
-  .portfolio-item__thumbnail {
-  }
 }
 
 @media screen and (max-width: 414px) {
