@@ -186,6 +186,7 @@ input[type='reset']:hover {
   background: var(--__btn-hover-bg);
   color: var(--__btn-hover-text);
 }
+
 /*
   _    _ ______ _____   ____
  | |  | |  ____|  __ \ / __ \
@@ -708,9 +709,6 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
 
 .contact-group > p:first-child {
   font-weight: 900;
-}
-
-.contact-group > p:not(:first-child) {
 }
 
 /* Styles for Interior Pages based on the Air Theme */

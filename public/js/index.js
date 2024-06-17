@@ -5,6 +5,7 @@ import menu from './menu.js';
 import search from './search.js';
 
 document.body.classList.remove('no-js');
+document.body.classList.add('js');
 
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
