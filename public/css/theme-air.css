@@ -94,7 +94,7 @@ body.dark-theme {
   --__services-link-hover-clr: var(--shale-400);
   --__services-highlight-clr: var(--cream-400);
 
-  --__service-card-bg-clr: var(--shale-700);
+  --__service-card-bg-clr: var(--black);
   --__service-card-text-clr: var(--shale-300);
   --__service-card-heading-clr: var(--cream-300);
   --__service-card-heading-hover-clr: var(--cream-400);

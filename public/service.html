@@ -23,15 +23,15 @@
     <script defer type="module" src="js/index.js"></script>
   </head>
   <body class="theme-air light-theme no-js is-loading">
-    <!-- Loading Screen -->
-    <div id="loading">
-      <div class="lds-heart"><div></div></div>
-      <h2>Buckle your seatbelts!</h2>
-    </div>
     <!-- Theme Toggle -->
     <div id="theme-toggle" class="theme-toggle">
-      <input type="checkbox" name="theme-toggle" id="theme-toggle__checkbox" />
-      <label for="theme-toggle__checkbox">
+      <label>
+        <input
+          type="checkbox"
+          name="theme-toggle"
+          id="theme-toggle__checkbox"
+          aria-label="Toggle theme"
+        />
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
       </label>

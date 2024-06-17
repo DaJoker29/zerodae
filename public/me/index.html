@@ -23,10 +23,19 @@
     />
     <script defer type="module" src="../js/index.js"></script>
   </head>
-  <body class="theme-earth no-js">
-    <div id="loading">
-      <div class="lds-heart"><div></div></div>
-      <h2>Bucket your seatbelts!</h2>
+  <body class="theme-earth is-loading light-theme no-js">
+    <!-- Theme Toggle -->
+    <div id="theme-toggle" class="theme-toggle">
+      <label>
+        <input
+          type="checkbox"
+          name="theme-toggle"
+          id="theme-toggle__checkbox"
+          aria-label="Toggle theme"
+        />
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </label>
     </div>
     <div id="layout">
       <!-- NAVIGATION MENU -->
