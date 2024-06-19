@@ -124,3 +124,12 @@
     var(--darkblue)
   );
 }
+
+.theme-fire .nav {
+  background: linear-gradient(
+    42deg,
+    var(--red-500),
+    var(--orange-500),
+    var(--yellow-400)
+  );
+}

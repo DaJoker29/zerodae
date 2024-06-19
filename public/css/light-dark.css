@@ -10,6 +10,7 @@
   cursor: pointer;
   transition: all 300ms;
   border-top-right-radius: var(--__toggle-spacing);
+  z-index: 1000;
 }
 
 .theme-toggle > label > input {

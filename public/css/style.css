@@ -22,6 +22,24 @@
   --shale-600: hsl(186, 12%, 30%);
   --shale-700: hsl(186, 18%, 15%);
 
+  --red-300: hsl(348, 69%, 85%);
+  --red-400: hsl(348, 69%, 70%);
+  --red-500: hsl(348, 69%, 50%);
+  --red-600: hsl(348, 79%, 30%);
+  --red-700: hsl(348, 89%, 15%);
+
+  --orange-300: hsl(27, 69%, 85%);
+  --orange-400: hsl(27, 69%, 70%);
+  --orange-500: hsl(27, 69%, 50%);
+  --orange-600: hsl(27, 79%, 30%);
+  --orange-700: hsl(27, 89%, 15%);
+
+  --yellow-300: hsl(60, 69%, 85%);
+  --yellow-400: hsl(60, 69%, 70%);
+  --yellow-500: hsl(60, 69%, 50%);
+  --yellow-600: hsl(60, 79%, 30%);
+  --yellow-700: hsl(60, 89%, 15%);
+
   --shadow: rgba(29, 29, 29, 0.3);
 
   --gap: 2rem;
@@ -37,7 +55,7 @@
   --light-grey: #e1e1e1; /* Keep the British spelling */
   --red: #be0027;
   --orange: #fb8a2e;
-  --yellow: yellow;
+  --yellow: hsl(60, 100%, 50%);
   --cream: #decba5;
   --shale: #abb8af;
   --darkcyan: #38423b;

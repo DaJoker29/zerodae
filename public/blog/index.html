@@ -98,14 +98,8 @@
       </header>
       <!-- Content -->
       <main id="content" class="content">
-        <div id="masthead" class="masthead">
-          <h1 class="site-title"><span>ZeroDae</span> Blog</h1>
-          <p class="site-tagline">
-            Explore stories, gain insights, and find expert advice on web design
-            and business.
-          </p>
-        </div>
-        <div class="search-overlay" data-search-overlay>
+        <!-- Search Overlay -->
+        <section class="search-overlay" data-search-overlay>
           <button
             id="search-overlay__close"
             class="search-overlay__close"
@@ -113,7 +107,7 @@
           >
             <i class="fas fa-times"></i>
           </button>
-          <div class="search-module container">
+          <div class="search-module content-grid">
             <div class="search-form">
               <div class="search-form__icon">
                 <i class="fas fa-search"></i>
@@ -129,164 +123,74 @@
               <p>Start typing to see results</p>
             </div>
           </div>
-        </div>
-        <div class="main-content">
-          <aside class="aside">
+        </section>
+        <!-- Hero -->
+        <section id="hero" class="hero"></section>
+        <section id="masthead" class="masthead content-grid">
+          <div class="breakout">
+            <h1>ZeroDae Blog</h1>
+            <em>
+              Explore stories, gain insights, and find expert advice on web
+              design and business.
+            </em>
+          </div>
+        </section>
+        <!-- Toolbar -->
+        <section class="toolbar content-grid">
+          <div class="toolbar-container breakout">
+            <ul class="tags">
+              <li>
+                <a href="archive.html">Design</a>
+              </li>
+              <li>
+                <a href="">Development</a>
+              </li>
+              <li>
+                <a href="">Writing</a>
+              </li>
+              <li>
+                <a href="">Games</a>
+              </li>
+              <li>
+                <a href="">Miscellaneous</a>
+              </li>
+            </ul>
             <div class="search-toggle">
-              <button
-                id="search-toggle__btn"
-                class="search-toggle__btn"
-                data-btn="search"
+              <a data-btn="search"> SEARCH <i class="fas fa-search"></i> </a>
+            </div>
+          </div>
+        </section>
+        <section class="main-content content-grid">
+          <div class="main-feed breakout">
+            <article>
+              <strong
+                ><span>Latest</span>DESIGNER x DEVELOPER x CONSULTANT: Which to
+                Use? <span>&#x2197;</span></strong
               >
-                SEARCH <i class="fas fa-search"></i>
-              </button>
-            </div>
-            <div class="popular-posts">
-              <p class="aside-label">POPULAR</p>
-              <ul>
-                <li><a href="">Super long Title for this blog Post</a></li>
-                <li><a href="">Super long Title for this blog Post</a></li>
-                <li><a href="">Super long Title for this blog Post</a></li>
-                <li><a href="">Super long Title for this blog Post</a></li>
-                <li><a href="">Super long Title for this blog Post</a></li>
-              </ul>
-            </div>
-            <div class="tags">
-              <div class="aside-label">TAGS</div>
 
-              <ul class="tags__list">
-                <li class="tags__item">
-                  <a href="archive.html" class="tags__link">Design</a>
-                </li>
-                <li class="tags__item">
-                  <a href="" class="tags__link">Development</a>
-                </li>
-                <li class="tags__item">
-                  <a href="" class="tags__link">Writing</a>
-                </li>
-                <li class="tags__item">
-                  <a href="" class="tags__link">Games</a>
-                </li>
-                <li class="tags__item">
-                  <a href="" class="tags__link">Miscellaneous</a>
-                </li>
-              </ul>
-            </div>
-            <div class="bio-snippet">
-              <div class="aside-label">ABOUT THE AUTHOR</div>
-              <img src="https://placehold.co/250x250" alt="" />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Soluta, eaque consequuntur,
-                <a>sapiente debitis eligendi</a> facilis non recusandae, quasi
-                eos cupiditate quisquam quo odit nam eveniet quos nemo
-                blanditiis commodi ad!
-              </p>
-            </div>
-          </aside>
-          <div class="main-feed">
-            <article>
-              <a href=""><img src="https://placehold.co/500x250" alt="" /></a>
-              <div class="article-info">
-                <h2 class="post-title">
-                  <a href="posts.html">Super long Title for this blog Post</a>
-                </h2>
-                <p class="post-date">June 7th, 2024</p>
-                <p class="post-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem tempore harum eius magni tenetur ea tempora eum
-                  fugiat, labore, dicta alias exercitationem, ipsa rerum iure
-                  nesciunt itaque excepturi ipsum dolor!
-                  <a href="" class="read-more">Read More</a>
-                </p>
-                <ul class="post-tags">
-                  <li><a href="" class="post-tag">Design</a></li>
-                  <li><a href="" class="post-tag">Development</a></li>
-                </ul>
-              </div>
+              <date>Jun 9, 2024</date>
+              <a href=""></a>
             </article>
             <article>
-              <a href=""><img src="https://placehold.co/500x250" alt="" /></a>
-              <div class="article-info">
-                <h2 class="post-title">
-                  <a href="">Super long Title for this blog Post</a>
-                </h2>
-                <p class="post-date">June 7th, 2024</p>
-                <p class="post-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem tempore harum eius magni tenetur ea tempora eum
-                  fugiat, labore, dicta alias exercitationem, ipsa rerum iure
-                  nesciunt itaque excepturi ipsum dolor!
-                  <a href="" class="read-more">Read More</a>
-                </p>
-                <ul class="post-tags">
-                  <li><a href="" class="post-tag">Design</a></li>
-                  <li><a href="" class="post-tag">Development</a></li>
-                </ul>
-              </div>
+              <strong
+                >What I Use to Build Websites (2024): IDEs<span
+                  >&#x2197;</span
+                ></strong
+              >
+              <date>Jun 1, 2024</date>
+              <a href=""></a>
             </article>
             <article>
-              <a href=""><img src="https://placehold.co/500x250" alt="" /></a>
-              <div class="article-info">
-                <h2 class="post-title">
-                  <a href="">Super long Title for this blog Post</a>
-                </h2>
-                <p class="post-date">June 7th, 2024</p>
-                <p class="post-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem tempore harum eius magni tenetur ea tempora eum
-                  fugiat, labore, dicta alias exercitationem, ipsa rerum iure
-                  nesciunt itaque excepturi ipsum dolor!
-                  <a href="" class="read-more">Read More</a>
-                </p>
-                <ul class="post-tags">
-                  <li><a href="" class="post-tag">Design</a></li>
-                  <li><a href="" class="post-tag">Development</a></li>
-                </ul>
-              </div>
-            </article>
-            <article>
-              <a href=""><img src="https://placehold.co/500x250" alt="" /></a>
-              <div class="article-info">
-                <h2 class="post-title">
-                  <a href="">Super long Title for this blog Post</a>
-                </h2>
-                <p class="post-date">June 7th, 2024</p>
-                <p class="post-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem tempore harum eius magni tenetur ea tempora eum
-                  fugiat, labore, dicta alias exercitationem, ipsa rerum iure
-                  nesciunt itaque excepturi ipsum dolor!
-                  <a href="" class="read-more">Read More</a>
-                </p>
-                <ul class="post-tags">
-                  <li><a href="" class="post-tag">Design</a></li>
-                  <li><a href="" class="post-tag">Development</a></li>
-                </ul>
-              </div>
-            </article>
-            <article>
-              <a href=""><img src="https://placehold.co/500x250" alt="" /></a>
-              <div class="article-info">
-                <h2 class="post-title">
-                  <a href="">Super long Title for this blog Post</a>
-                </h2>
-                <p class="post-date">June 7th, 2024</p>
-                <p class="post-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatem tempore harum eius magni tenetur ea tempora eum
-                  fugiat, labore, dicta alias exercitationem, ipsa rerum iure
-                  nesciunt itaque excepturi ipsum dolor!
-                  <a href="" class="read-more">Read More</a>
-                </p>
-                <ul class="post-tags">
-                  <li><a href="" class="post-tag">Design</a></li>
-                  <li><a href="" class="post-tag">Development</a></li>
-                </ul>
-              </div>
+              <strong
+                >What I Use to Build Websites (2024): Hosting<span
+                  >&#x2197;</span
+                ></strong
+              >
+              <date>May 29, 2024</date>
+              <a href=""></a>
             </article>
           </div>
-        </div>
+        </section>
       </main>
       <footer id="site-footer" class="site-footer content-grid">
         <div class="copyright">

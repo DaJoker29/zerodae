@@ -19,6 +19,8 @@ h2 {
   align-items: center;
 }
 
+/* Neutral Styles */
+
 .neutral > .color-box:nth-child(1) {
   background-color: var(--white);
   color: var(--black);
@@ -28,6 +30,8 @@ h2 {
   background-color: var(--black);
   color: var(--white);
 }
+
+/* Air Theme */
 
 .air-primary > .color-box:nth-child(1) {
   background-color: var(--cream-300);
@@ -70,5 +74,73 @@ h2 {
 
 .air-secondary > .color-box:nth-child(5) {
   background-color: var(--shale-700);
+  color: var(--white);
+}
+
+/* Fire Theme */
+
+.fire-primary > .color-box:nth-child(1) {
+  background-color: var(--red-300);
+}
+
+.fire-primary > .color-box:nth-child(2) {
+  background-color: var(--red-400);
+}
+
+.fire-primary > .color-box:nth-child(3) {
+  background-color: var(--red-500);
+}
+
+.fire-primary > .color-box:nth-child(4) {
+  background-color: var(--red-600);
+  color: var(--white);
+}
+
+.fire-primary > .color-box:nth-child(5) {
+  background-color: var(--red-700);
+  color: var(--white);
+}
+
+.fire-secondary > .color-box:nth-child(1) {
+  background-color: var(--orange-300);
+}
+
+.fire-secondary > .color-box:nth-child(2) {
+  background-color: var(--orange-400);
+}
+
+.fire-secondary > .color-box:nth-child(3) {
+  background-color: var(--orange-500);
+}
+
+.fire-secondary > .color-box:nth-child(4) {
+  background-color: var(--orange-600);
+  color: var(--white);
+}
+
+.fire-secondary > .color-box:nth-child(5) {
+  background-color: var(--orange-700);
+  color: var(--white);
+}
+
+.fire-tertiary > .color-box:nth-child(1) {
+  background-color: var(--yellow-300);
+}
+
+.fire-tertiary > .color-box:nth-child(2) {
+  background-color: var(--yellow-400);
+}
+
+.fire-tertiary > .color-box:nth-child(3) {
+  background-color: var(--yellow-500);
+}
+
+.fire-tertiary > .color-box:nth-child(4) {
+  background-color: var(--yellow-600);
+  color: var(--white);
+}
+
+.fire-tertiary > .color-box:nth-child(5) {
+  background-color: var(--yellow-700);
   color: var(--white);
 }
