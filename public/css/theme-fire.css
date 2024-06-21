@@ -17,26 +17,30 @@ body.light-theme {
   --__link-clr: var(--red-600);
   --__link-hover-clr: var(--orange-600);
 
-  --__highlight-clr: var(--red-600);
+  --__highlight-clr: var(--orange-500);
 
-  --__btn-bg: linear-gradient(42deg, var(--red-700), var(--red-600));
+  --__btn-bg: linear-gradient(42deg, var(--orange-700), var(--orange-600));
   --__btn-text: var(--white);
-  --__btn-hover-bg: linear-gradient(42deg, var(--red-600), var(--red-700));
+  --__btn-hover-bg: linear-gradient(
+    42deg,
+    var(--orange-600),
+    var(--orange-700)
+  );
   --__btn-hover-text: var(--orange-500);
 
   --__hero-bg-clr: var(--orange-500);
-  --__hero-border-clr: var(--red-600);
+  --__hero-border-clr: var(--orange-600);
   --__masthead-tagline-clr: var(--orange-700);
 
-  --__toolbar-bg-clr: var(--black);
-  --__toolbar-text-clr: var(--white);
-  --__tags-bg-clr: var(--black);
-  --__tags-link-clr: var(--orange-300);
-  --__tags-hover-bg-clr: var(--orange-600);
+  --__toolbar-bg-clr: var(--orange-300);
+  --__toolbar-text-clr: var(--black);
+  --__tags-bg-clr: var(--orange-300);
+  --__tags-link-clr: var(--black);
+  --__tags-hover-bg-clr: var(--red-600);
   --__tags-hover-link-clr: var(--orange-300);
 
-  --__search-toggle-clr: var(--white);
-  --__search-toggle-hover-clr: var(--orange-300);
+  --__search-toggle-clr: var(--black);
+  --__search-toggle-hover-clr: var(--orange-600);
   --__search-overlay-bg-clr: rgba(15, 16, 17, 0.95);
   --__search-overlay-text-clr: var(--white);
   --__search-overlay-close-clr: var(--white);
@@ -48,6 +52,51 @@ body.light-theme {
   --__feed-item-latest-clr: var(--orange-500);
   --__feed-item-date-clr: var(--shadow);
   --__feed-item-date-hover-clr: var(--black);
+}
+
+body.dark-theme {
+  --__scheme: dark;
+  --__bg-clr: var(--black);
+  --__text-clr: var(--white);
+
+  --__link-clr: var(--orange-500);
+  --__link-hover-clr: var(--red-500);
+
+  --__highlight-clr: var(--orange-500);
+
+  --__btn-bg: linear-gradient(42deg, var(--orange-700), var(--orange-600));
+  --__btn-text: var(--white);
+  --__btn-hover-bg: linear-gradient(
+    42deg,
+    var(--orange-600),
+    var(--orange-700)
+  );
+  --__btn-hover-text: var(--yellow-500);
+
+  --__hero-bg-clr: var(--orange-500);
+  --__hero-border-clr: var(--orange-500);
+  --__masthead-tagline-clr: var(--orange-400);
+
+  --__toolbar-bg-clr: var(--orange-600);
+  --__toolbar-text-clr: var(--white);
+  --__tags-bg-clr: var(--orange-600);
+  --__tags-link-clr: var(--orange-300);
+  --__tags-hover-bg-clr: var(--orange-400);
+  --__tags-hover-link-clr: var(--red-700);
+
+  --__search-toggle-clr: var(--white);
+  --__search-toggle-hover-clr: var(--orange-400);
+  --__search-overlay-bg-clr: rgba(15, 16, 17, 0.95);
+  --__search-overlay-text-clr: var(--white);
+  --__search-overlay-close-clr: var(--white);
+  --__search-overlay-border-clr: var(--white);
+
+  --__feed-item-bg-clr: #000;
+  --__feed-item-shadow-1: 0 0 0.25rem rgba(15, 16, 17, 0.95);
+  --__feed-item-shadow-2: 0 0 0.75rem rgba(15, 16, 17, 0.5);
+  --__feed-item-latest-clr: var(--orange-500);
+  --__feed-item-date-clr: var(--orange-300);
+  --__feed-item-date-hover-clr: var(--white);
 }
 
 body.theme-fire {
@@ -119,7 +168,7 @@ input[type='reset']:hover {
   background-position: center;
   min-height: 16rem;
   background-blend-mode: multiply;
-  transition: all 300ms;
+  transition: all 200ms;
   border-top: 4px solid var(--__hero-border-clr);
 }
 
@@ -223,7 +272,7 @@ input[type='reset']:hover {
   background-color: var(--__search-overlay-bg-clr);
   z-index: 250;
   opacity: 0;
-  transition: all 300ms;
+  transition: all 200ms;
   padding: 0;
 }
 
@@ -326,11 +375,12 @@ input[type='reset']:hover {
   font-size: 0.75rem;
   border: 1px solid var(--__feed-item-latest-clr);
   border-radius: var(--half-gap);
+  font-weight: 700;
 }
 
 .main-feed > article > strong > span {
   opacity: 0;
-  transition: opacity 300ms;
+  transition: opacity 200ms;
   margin-left: var(--half-gap);
 }
 
