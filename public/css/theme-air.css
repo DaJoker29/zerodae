@@ -19,6 +19,7 @@ body.light-theme {
   --__hero-text-clr: var(--black);
   --__hero-title-clr: var(--black);
   --__hero-title-glow-clr: var(--cream-400);
+  --__hero-title-highlight: var(--cream-600);
   --__hero-scroll-clr: var(--shale-700);
   --__hero-scroll-hover-clr: var(--cream-600);
   --__hero-gradient-clr-1: var(--cream-300);
@@ -82,6 +83,7 @@ body.dark-theme {
   --__hero-text-clr: var(--white);
   --__hero-title-clr: var(--cream-400);
   --__hero-title-glow-clr: var(--cream-500);
+  --__hero-title-highlight: var(--cream-500);
   --__hero-scroll-clr: var(--cream-400);
   --__hero-scroll-hover-clr: var(--white);
   --__hero-gradient-clr-1: var(--shale-700);
@@ -222,6 +224,7 @@ input[type='reset']:hover {
 
 .hero > h1 > span {
   display: inline-block;
+  color: var(--__hero-title-highlight);
 }
 
 .hero-container {
