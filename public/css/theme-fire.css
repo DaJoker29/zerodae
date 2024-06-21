@@ -436,6 +436,12 @@ input[type='reset']:hover {
   display: inline-block;
 }
 
+.reading-time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: var(--half-gap) 0;
+}
+
 /*
            _____   _____ _    _ _______      ________
      /\   |  __ \ / ____| |  | |_   _\ \    / /  ____|
