@@ -119,9 +119,9 @@
 .theme-water .nav {
   background: linear-gradient(
     28deg,
-    var(--shale) 20%,
-    var(--skyblue),
-    var(--darkblue)
+    var(--blue-300) 20%,
+    var(--blue-500),
+    var(--blue-700)
   );
 }
 
