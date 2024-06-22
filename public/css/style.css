@@ -67,26 +67,6 @@
   --quarter-gap: calc(var(--gap) / 4);
   --eighth-gap: calc(var(--gap) / 8);
   --fluid-gap: clamp(0.75rem, 3vw, 1.5rem);
-
-  /* Keep above properties. Replace the ones below. */
-  --light-gray: #b1b1b1;
-  --light-grey: #e1e1e1; /* Keep the British spelling */
-  --red: #be0027;
-  --orange: #fb8a2e;
-  --yellow: hsl(60, 100%, 50%);
-  --cream: #decba5;
-  --shale: #abb8af;
-  --darkcyan: #38423b;
-  --gold: #dbc65d;
-  --bronze: #4b4111;
-  --darkblue: #001630;
-  --skyblue: #00c4cc;
-  --oceangreen: #1f2e22;
-  --neongreen: #5ecc62;
-  --brown: #4d3c2d;
-
-  --reading-width: clamp(45ch, 70%, 75ch);
-  --content-width: max(90%, 1400px);
 }
 
 /* raleway-regular - latin */
