@@ -8,28 +8,89 @@
 
 
 */
-.theme-earth {
-  color-scheme: dark;
-  background-color: var(--darkcyan);
-  color: var(--white);
+
+body.light-theme {
+  --__scheme: light;
+  --__bg-clr: var(--brown-300);
+  --__text-clr: var(--black);
+
+  --__link-clr: var(--green-700);
+  --__link-hover-clr: var(--green-600);
+
+  --__highlight-clr: var(--brown-300);
+  --__hero-highlight-bg-clr: var(--brown-700);
+
+  --__btn-bg: linear-gradient(42deg, var(--green-700), var(--green-600));
+  --__btn-text: var(--brown-300);
+  --__btn-hover-bg: linear-gradient(42deg, var(--green-600), var(--green-700));
+  --__btn-hover-text: var(--green-300);
 }
 
-/*
-  _      _____ _   _ _  __ _____
- | |    |_   _| \ | | |/ // ____|
- | |      | | |  \| | ' /| (___
- | |      | | | . ` |  <  \___ \
- | |____ _| |_| |\  | . \ ____) |
- |______|_____|_| \_|_|\_\_____/
+body.dark-theme {
+  --__scheme: dark;
+  --__bg-clr: var(--brown-700);
+  --__text-clr: var(--white);
 
+  --__link-clr: var(--green-300);
+  --__link-hover-clr: var(--brown-300);
 
-*/
+  --__highlight-clr: var(--green-700);
+  --__hero-highlight-bg-clr: var(--brown-300);
+
+  --__btn-bg: linear-gradient(42deg, var(--green-700), var(--green-600));
+  --__btn-text: var(--brown-300);
+  --__btn-hover-bg: linear-gradient(42deg, var(--green-600), var(--green-700));
+  --__btn-hover-text: var(--green-300);
+}
+
+body.theme-earth {
+  color-scheme: var(--__scheme);
+  background-color: var(--__bg-clr);
+  color: var(--__text-clr);
+}
+
+.highlight {
+  color: var(--__highlight-clr);
+}
+
+section {
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+}
+
 a {
-  color: var(--neongreen);
+  color: var(--__link-clr);
 }
 
 a:hover {
-  color: var(--cream);
+  color: var(--__link-hover-clr);
+}
+
+.btn,
+button,
+input[type='submit'],
+input[type='button'],
+input[type='reset'] {
+  appearance: none;
+  text-decoration: none;
+  background: var(--__btn-bg);
+  color: var(--__btn-text);
+  border-width: 0;
+  border-radius: 4px;
+  padding: var(--quarter-gap) var(--half-gap);
+  cursor: pointer;
+  font-weight: 600;
+  transition-property: color, background-image;
+  transition-duration: 200ms;
+}
+
+.btn:hover,
+button:hover,
+input[type='submit']:hover,
+input[type='button']:hover,
+input[type='reset']:hover {
+  background: var(--__btn-hover-bg);
+  color: var(--__btn-hover-text);
 }
 
 /*
@@ -44,43 +105,33 @@ a:hover {
 */
 
 .hero {
-  padding-top: var(--half-gap);
-  padding-bottom: var(--half-gap);
-  background-color: var(--black);
-  background-image: url(../img/oriental-tiles.png);
-  background-blend-mode: darken;
-  background-attachment: fixed;
-  border-width: 1px 0;
-  border-color: rgba(110, 110, 110, 0.2);
-  border-style: solid;
-  color: var(--white);
-}
-
-.hero p {
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 85svh;
 }
 
-.subtitle span {
-  background-color: var(--cream);
-  padding: 4px 1px;
-  color: var(--black);
-}
-
-.photo-and-text {
+.hero > div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   gap: var(--gap);
 }
 
+.hero .highlight {
+  background-color: var(--__hero-highlight-bg-clr);
+  padding: 4px;
+}
+
 .profile-pic {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
 .social-tag {
   padding-top: var(--double-gap);
-  font-weight: bold;
 }
 
 .social-icons {
@@ -89,140 +140,4 @@ a:hover {
   gap: calc(var(--fluid-gap) / 4) var(--gap);
   list-style-type: none;
   flex-wrap: wrap;
-}
-
-/*
-  _____ _____ _____  ______   _____  _____   ____       _ ______ _____ _______ _____
-  / ____|_   _|  __ \|  ____| |  __ \|  __ \ / __ \     | |  ____/ ____|__   __/ ____|
- | (___   | | | |  | | |__    | |__) | |__) | |  | |    | | |__ | |       | | | (___
- \___ \  | | | |  | |  __|   |  ___/|  _  /| |  | |_   | |  __|| |       | |  \___ \
- ____) |_| |_| |__| | |____  | |    | | \ \| |__| | |__| | |___| |____   | |  ____) |
- |_____/|_____|_____/|______| |_|    |_|  \_\\____/ \____/|______\_____|  |_| |_____/
- 
- 
- */
-
-.side-projects article {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap);
-  grid-auto-rows: auto;
-  margin-bottom: var(--double-gap);
-  align-items: start;
-}
-
-.side-projects article p > a:hover {
-  letter-spacing: 0;
-}
-
-.side-projects img {
-  filter: opacity(0.8);
-}
-
-h3::before {
-  content: '\2192';
-  padding-right: 0.5rem;
-}
-
-article p,
-article ul {
-  margin-left: var(--double-gap);
-  margin-right: var(--double-gap);
-}
-
-@media only screen and (max-width: 900px) {
-  /* TODO: Split this into two separate media queries. */
-  .photo-and-text,
-  .side-projects article {
-    display: flex;
-    flex-direction: column;
-  }
-}
-/*
-______ __      ______  _____  _____ _______ ______  _____
- |  ____/\ \    / / __ \|  __ \|_   _|__   __|  ____|/ ____|
- | |__ /  \ \  / / |  | | |__) | | |    | |  | |__  | (___
- |  __/ /\ \ \/ /| |  | |  _  /  | |    | |  |  __|  \___ \
- | | / ____ \  / | |__| | | \ \ _| |_   | |  | |____ ____) |
- |_|/_/    \_\/   \____/|_|  \_\_____|  |_|  |______|_____/
-
-
-*/
-
-.list-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: var(--gap);
-  border-width: 0 0 1px;
-  border-color: rgba(110, 110, 110, 0.4);
-  border-style: solid;
-  padding: var(--gap) 0;
-  /* font-size: 0.95rem; */
-  transition: all 200ms;
-}
-
-@media screen and (max-width: 400px) {
-  .list-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.list-container li {
-  transition: all 250ms;
-  color: var(--neongreen);
-}
-
-.list-container li em {
-  font-weight: bold;
-  color: var(--var(--white));
-}
-
-.list-container:hover li {
-  margin-bottom: 0.75rem;
-  color: var(--white);
-}
-
-.list-container span {
-  color: var(--cream);
-
-  font-weight: bold;
-}
-
-.list-container ul {
-  margin-left: 0 !important;
-  list-style-type: none;
-}
-
-.list-container ul li::before {
-  content: '→';
-  margin-right: 0.2rem;
-  display: inline-block;
-}
-
-/*
-  _______ _    _ _____ _   _  _____  _____
- |__   __| |  | |_   _| \ | |/ ____|/ ____|
-    | |  | |__| | | | |  \| | |  __| (___
-    | |  |  __  | | | | . ` | | |_ |\___ \
-    | |  | |  | |_| |_| |\  | |__| |____) |
-    |_|  |_|  |_|_____|_| \_|\_____|_____/
-
-
-*/
-
-.text {
-  position: sticky;
-  top: var(--gap);
-}
-
-@media only screen and (max-width: 1000px) {
-  .side-projects article {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text {
-    position: relative;
-  }
 }
