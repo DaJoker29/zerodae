@@ -133,3 +133,12 @@
     var(--yellow-400)
   );
 }
+
+.theme-earth .nav {
+  background: linear-gradient(
+    28deg,
+    var(--brown-500) 20%,
+    var(--green-500),
+    var(--green-600)
+  );
+}

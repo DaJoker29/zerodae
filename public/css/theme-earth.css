@@ -14,26 +14,6 @@
   color: var(--white);
 }
 
-.theme-earth .nav {
-  background: linear-gradient(
-    28deg,
-    var(--cream) 20%,
-    var(--neongreen),
-    var(--skyblue)
-  );
-}
-
-.theme-earth .header__menu-icon:hover {
-  color: var(--neongreen);
-}
-
-.hero,
-.favorites,
-.side-projects {
-  padding-top: var(--half-gap);
-  padding-bottom: var(--half-gap);
-}
-
 /*
   _      _____ _   _ _  __ _____
  | |    |_   _| \ | | |/ // ____|
