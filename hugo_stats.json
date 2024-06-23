@@ -35,6 +35,7 @@
       "select",
       "span",
       "strong",
+      "style",
       "textarea",
       "title",
       "ul"

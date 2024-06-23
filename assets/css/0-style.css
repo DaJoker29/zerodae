@@ -67,7 +67,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/raleway-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/raleway-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* raleway-800 - latin */
@@ -76,7 +76,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
-  src: url('../fonts/raleway-v34-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/raleway-v34-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* raleway-900 - latin */
@@ -85,7 +85,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/raleway-v34-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/raleway-v34-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 *,

@@ -20,13 +20,16 @@
         <a href="#services">Scroll down to learn more</a>
       </p>
     </div>
+    {{ with resources.GetMatch "img/spaceship2.png"}} {{ with .Resize (printf
+    "%dx%d webp" .Width .Height)}}
     <img
-      src="img/spaceship2.png"
+      src="{{ .RelPermalink}}"
       alt="a spaceship blasting off into the stars."
-      height="600"
-      width="480"
+      height="{{ .Height }}"
+      width="{{ .Width }}"
       class="hero__img"
     />
+    {{ end }} {{ end }}
   </div>
 </section>
 <section id="services" class="services content-grid">
@@ -150,14 +153,17 @@
   <h2 class="breakout"><span class="highlight">OUR</span> PORTFOLIO</h2>
   <div class="portfolio-container">
     <article class="portfolio-item">
+      {{ with resources.GetMatch "img/portfolio_neologic.png"}} {{ with .Resize
+      (printf "%dx%d webp" .Width .Height)}}
       <img
-        defer
-        width="400"
-        height="250"
-        src="img/portfolio_neologic.png"
-        alt=""
+        loading="lazy"
+        src="{{ .RelPermalink}}"
+        alt="logo for Neologic Studios"
+        height="{{ .Height }}"
+        width="{{ .Width }}"
         class="portfolio-item__thumbnail"
       />
+      {{ end }} {{ end }}
       <header>
         <p class="portfolio-item__title">Neologic Studios</p>
         <p class="portfolio-item__location">Bay Area, California</p>
@@ -169,8 +175,17 @@
       <a href="/" class="btn">Visit Neologic</a>
     </article>
     <article class="portfolio-item">
-      <img defer width="400" height="250" width: src="img/portfolio_hisraft.png"
-      alt="" class="portfolio-item__thumbnail" />
+      {{ with resources.GetMatch "img/portfolio_hisraft.png"}} {{ with .Resize
+      (printf "%dx%d webp" .Width .Height)}}
+      <img
+        loading="lazy"
+        src="{{ .RelPermalink}}"
+        alt="logo for His RAFT"
+        height="{{ .Height }}"
+        width="{{ .Width }}"
+        class="portfolio-item__thumbnail"
+      />
+      {{ end }} {{ end }}
       <header>
         <p class="portfolio-item__title">His RAFT</p>
         <p class="portfolio-item__location">Stockton, California</p>
@@ -184,14 +199,17 @@
     </article>
 
     <article class="portfolio-item">
+      {{ with resources.GetMatch "img/portfolio_myq.png"}} {{ with .Resize
+      (printf "%dx%d webp" .Width .Height)}}
       <img
-        defer
-        width="400"
-        height="250"
-        src="img/portfolio_myq.png"
-        alt=""
+        loading="lazy"
+        src="{{ .RelPermalink}}"
+        alt="logo for Mmm, Yes, Quite"
+        height="{{ .Height }}"
+        width="{{ .Width }}"
         class="portfolio-item__thumbnail"
       />
+      {{ end }} {{ end }}
       <header>
         <p class="portfolio-item__title">Mmm, Yes, Quite</p>
         <p class="portfolio-item__location">Manteca, California</p>
@@ -215,14 +233,17 @@
       elevate a brand and boost business, and so I decided to devote my skills
       and expertise towards helping others reach those big dreams.
     </p>
+    {{ with resources.GetMatch "img/profile_pic.png"}} {{ with .Resize (printf
+    "%dx%d webp" .Width .Height)}}
     <img
-      defer
-      src="img/profile_pic.png"
+      loading="lazy"
+      src="{{ .RelPermalink}}"
       alt="Profile image of Dewitt Buckingham"
-      height="256"
-      width="256"
+      height="{{ .Height }}"
+      width="{{ .Width }}"
       class="about-img"
     />
+    {{ end }} {{ end }}
     <h3>Dewitt B.</h3>
     <h4>OWNER/DEVELOPER</h4>
   </div>
