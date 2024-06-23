@@ -1,0 +1,9 @@
+baseURL = "https://www.zerodaedal.us"
+languageCode = "en-us"
+title = "zeroDaedalus &amp; Web Design and Development"
+copyright = "Copyright &copy; 2024"
+enableRobotsTXT = true
+
+[build]
+  [build.buildStats]
+    enable = true
