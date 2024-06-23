@@ -1,0 +1,228 @@
+/*
+  _______ _    _ ______ __  __ ______
+ |__   __| |  | |  ____|  \/  |  ____|
+    | |  | |__| | |__  | \  / | |__
+    | |  |  __  |  __| | |\/| |  __|
+    | |  | |  | | |____| |  | | |____
+    |_|  |_|  |_|______|_|  |_|______|
+
+
+*/
+
+body.light-theme {
+  --__scheme: light;
+  --__bg-clr: var(--blue-300);
+  --__text-clr: var(--black);
+
+  --__link-clr: var(--blue-600);
+  --__link-hover-clr: var(--black);
+
+  --__highlight-clr: var(--blue-500);
+
+  --__btn-bg: linear-gradient(42deg, var(--blue-700), var(--blue-500));
+  --__btn-text: var(--white);
+  --__btn-hover-bg: linear-gradient(42deg, var(--blue-500), var(--blue-700));
+  --__btn-hover-text: var(--blue-300);
+
+  --__filter-text-clr: var(--blue-600);
+  --__filter-hover-text-clr: var(--black);
+  --__filter-checked-text-clr: var(--blue-400);
+
+  --__project-tags-text-clr: var(--blue-700);
+  --__project-tags-bg-clr: var(--blue-400);
+}
+
+body.dark-theme {
+  --__scheme: dark;
+  --__bg-clr: var(--blue-700);
+  --__text-clr: var(--white);
+
+  --__link-clr: var(--blue-400);
+  --__link-hover-clr: var(--white);
+
+  --__highlight-clr: var(--blue-400);
+
+  --__btn-bg: linear-gradient(42deg, var(--blue-400), var(--blue-500));
+  --__btn-text: var(--white);
+  --__btn-hover-bg: linear-gradient(42deg, var(--blue-500), var(--blue-400));
+  --__btn-hover-text: var(--blue-300);
+
+  --__filter-text-clr: var(--blue-400);
+  --__filter-hover-text-clr: var(--blue-300);
+  --__filter-checked-text-clr: var(--white);
+
+  --__project-tags-text-clr: var(--blue-700);
+  --__project-tags-bg-clr: var(--blue-300);
+}
+
+.theme-water {
+  color-scheme: var(--__scheme);
+  background-color: var(--__bg-clr);
+  color: var(--__text-clr);
+}
+
+section {
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+}
+
+a {
+  color: var(--__link-clr);
+}
+
+a:hover {
+  color: var(--__link-hover-clr);
+}
+
+.highlight {
+  color: var(--__highlight-clr);
+}
+
+.btn,
+button,
+input[type='submit'],
+input[type='button'],
+input[type='reset'] {
+  text-decoration: none;
+  background: var(--__btn-bg);
+  border-width: 0;
+  border-radius: 4px;
+  padding: var(--quarter-gap) var(--half-gap);
+  cursor: pointer;
+  color: var(--__btn-text);
+
+  font-weight: 600;
+  transition: all 300ms;
+}
+
+.btn:hover,
+button:hover,
+input[type='submit']:hover,
+input[type='button']:hover,
+input[type='reset']:hover {
+  background: var(--__btn-hover-bg);
+  color: var(--__btn-hover-text);
+  filter: drop-shadow(0 0 0.25rem var(--shadow));
+}
+
+/*
+  _    _ ______ _____   ____
+ | |  | |  ____|  __ \ / __ \
+ | |__| | |__  | |__) | |  | |
+ |  __  |  __| |  _  /| |  | |
+ | |  | | |____| | \ \| |__| |
+ |_|  |_|______|_|  \_\\____/
+
+
+*/
+
+.projects > h1 {
+  font-size: 8rem;
+  line-height: 0.9;
+  margin: 0;
+}
+
+.projects > fieldset {
+  outline: none;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--half-gap);
+  margin-top: var(--gap);
+}
+
+.projects > fieldset > label {
+  min-width: 2rem;
+  color: var(--__filter-text-clr);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.projects > fieldset > label:hover {
+  color: var(--__filter-hover-text-clr);
+}
+
+.projects > fieldset > label:has(:checked) {
+  color: var(--__filter-checked-text-clr);
+}
+
+.projects > fieldset > label > input {
+  opacity: 0;
+  position: absolute;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: var(--half-gap);
+}
+
+.catalog > li > a > img {
+  transition: filter 200ms;
+  filter: grayscale(100%) sepia(0.2) opacity(0.75);
+}
+
+.catalog > li > a > img:hover {
+  filter: none;
+}
+
+/*
+  _____  _____   ____       _ ______ _____ _______
+ |  __ \|  __ \ / __ \     | |  ____/ ____|__   __|
+ | |__) | |__) | |  | |    | | |__ | |       | |
+ |  ___/|  _  /| |  | |_   | |  __|| |       | |
+ | |    | | \ \| |__| | |__| | |___| |____   | |
+ |_|    |_|  \_\\____/ \____/|______\_____|  |_|
+
+
+*/
+
+.project > div {
+  padding-top: var(--gap);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--gap);
+}
+
+.info > header > h2 {
+  margin: 0;
+  line-height: 0.8;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--quarter-gap);
+  align-items: start;
+  justify-content: start;
+}
+
+.tags > span {
+  font-size: 0.75rem;
+  color: var(--__project-tags-text-clr);
+  background-color: var(--__project-tags-bg-clr);
+  border-radius: var(--eighth-gap);
+  padding: var(--eighth-gap) var(--quarter-gap);
+  font-weight: 900;
+  line-height: 1.5;
+  flex: 0 auto;
+  min-width: fit-content;
+  text-align: center;
+}
+
+.info > header > button {
+  margin-top: var(--half-gap);
+  margin-bottom: var(--half-gap);
+}
+
+.description > img {
+  margin-bottom: var(--half-gap);
+}
+
+@media screen and (max-width: 540px) {
+  .project > div {
+    display: flex;
+    flex-flow: column;
+  }
+}

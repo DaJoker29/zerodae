@@ -1,0 +1,221 @@
+:root {
+  --white: hsl(0, 0%, 90%);
+  --black: hsl(0, 0%, 11%);
+
+  --cream-300: hsl(40, 46%, 85%);
+  --cream-400: hsl(40, 46%, 70%);
+  --cream-500: hsl(40, 46%, 50%);
+  --cream-600: hsl(40, 51%, 30%);
+  --cream-700: hsl(40, 56%, 15%);
+
+  --shale-300: hsl(186, 8%, 85%);
+  --shale-400: hsl(186, 8%, 70%);
+  --shale-500: hsl(186, 8%, 50%);
+  --shale-600: hsl(186, 12%, 30%);
+  --shale-700: hsl(186, 18%, 15%);
+
+  --red-300: hsl(348, 69%, 85%);
+  --red-400: hsl(348, 69%, 70%);
+  --red-500: hsl(348, 69%, 50%);
+  --red-600: hsl(348, 79%, 30%);
+  --red-700: hsl(348, 89%, 15%);
+
+  --orange-300: hsl(27, 69%, 85%);
+  --orange-400: hsl(27, 69%, 70%);
+  --orange-500: hsl(27, 69%, 50%);
+  --orange-600: hsl(27, 79%, 30%);
+  --orange-700: hsl(27, 89%, 15%);
+
+  --yellow-300: hsl(60, 69%, 85%);
+  --yellow-400: hsl(60, 69%, 70%);
+  --yellow-500: hsl(60, 69%, 50%);
+  --yellow-600: hsl(60, 79%, 30%);
+  --yellow-700: hsl(60, 89%, 15%);
+
+  --blue-300: hsl(213, 69%, 85%);
+  --blue-400: hsl(213, 69%, 70%);
+  --blue-500: hsl(213, 69%, 50%);
+  --blue-600: hsl(213, 79%, 30%);
+  --blue-700: hsl(213, 89%, 15%);
+
+  --green-300: hsl(122, 69%, 85%);
+  --green-400: hsl(122, 69%, 70%);
+  --green-500: hsl(122, 69%, 50%);
+  --green-600: hsl(122, 79%, 30%);
+  --green-700: hsl(122, 89%, 15%);
+
+  --brown-300: hsl(28, 46%, 85%);
+  --brown-400: hsl(28, 36%, 70%);
+  --brown-500: hsl(28, 26%, 50%);
+  --brown-600: hsl(28, 36%, 30%);
+  --brown-700: hsl(28, 46%, 15%);
+
+  --shadow: rgba(29, 29, 29, 0.3);
+
+  --gap: 2rem;
+  --half-gap: calc(var(--gap) / 2);
+  --double-gap: calc(var(--gap) * 2);
+  --quad-gap: calc(var(--gap) * 4);
+  --quarter-gap: calc(var(--gap) / 4);
+  --eighth-gap: calc(var(--gap) / 8);
+  --fluid-gap: clamp(0.75rem, 3vw, 1.5rem);
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/raleway-v34-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* raleway-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/raleway-v34-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.75;
+  overflow-x: clip;
+  min-height: 100svh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/**
+ * GLOBAL
+ */
+
+p {
+  margin: 0 0 var(--half-gap);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: var(--gap);
+  font-family: 'Raleway', system-ui, sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(2.5rem, calc(2.2rem + 1.5vw), 4rem);
+  line-height: 1;
+}
+h2 {
+  font-size: clamp(2rem, calc(1.7rem + 1.5vw), 3.5rem);
+}
+h3 {
+  font-size: clamp(2rem, calc(1.8rem + 1vw), 3rem);
+}
+h4 {
+  font-size: clamp(1.5rem, calc(1.3rem + 1vw), 2.5rem);
+}
+h5 {
+  font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem);
+}
+h6 {
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.3em;
+  transition: all 200ms;
+}
+
+a:hover {
+  text-decoration-color: inherit;
+  text-decoration-thickness: 0.3rem;
+  letter-spacing: 1px;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+#layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
