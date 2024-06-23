@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head/meta.html" . }}
+    <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/theme-{{ .Params.Theme }}.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body class="theme-{{ .Params.Theme }} light-theme no-js is-loading">
+    {{ partial "header/secondary-nav.html" . }} {{ partial
+    "header/theme-toggle.html" .}}
+    <div id="layout">
+      {{ partial "header/main-nav.html" .}}
+      <!-- Start of Content -->
+      <main id="content">{{ block "main" . }} {{ end}}</main>
+      {{partial "footer/site-footer.html" . }}
+    </div>
+  </body>
+  {{ partial "footer/scripts.html" . }}
+</html>
