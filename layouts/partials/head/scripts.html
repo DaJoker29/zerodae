@@ -1,1 +1,4 @@
-<script type="module" src="js/index.js"></script>
+{{ $JS := resources.Get "js/index.js" | js.Build "main.js" | minify |
+fingerprint }}
+
+<script type="module" src="{{ $JS.RelPermalink }}"></script>
