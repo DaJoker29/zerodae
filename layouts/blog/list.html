@@ -1,0 +1,100 @@
+{{ define "main" }}
+
+<!-- Search Overlay -->
+<section class="search-overlay" data-search-overlay>
+  <button
+    id="search-overlay__close"
+    class="search-overlay__close"
+    data-search-close
+  >
+    <i class="fas fa-times"></i>
+  </button>
+  <div class="search-module content-grid">
+    <div class="search-form">
+      <div class="search-form__icon">
+        <i class="fas fa-search"></i>
+      </div>
+      <input
+        type="text"
+        class="search-form__input"
+        placeholder="Search"
+        data-search-input
+      />
+    </div>
+    <div class="search-results">
+      <p>Start typing to see results</p>
+    </div>
+  </div>
+</section>
+<!-- Hero -->
+{{ $img := resources.Get "img/volcano.jpg"}}
+<section
+  id="hero"
+  class="hero"
+  style="background-image: url('{{ $img.RelPermalink }}');"
+></section>
+<section id="masthead" class="masthead content-grid">
+  <div class="breakout">
+    <h1><span class="highlight">ZeroDae</span> Blog</h1>
+    <em>
+      Explore stories, gain insights, and find expert advice on web design and
+      business.
+    </em>
+  </div>
+</section>
+<!-- Toolbar -->
+<section class="toolbar content-grid">
+  <div class="toolbar-container breakout">
+    <ul class="tags">
+      <li>
+        <a href="archive.html">Design</a>
+      </li>
+      <li>
+        <a href="">Development</a>
+      </li>
+      <li>
+        <a href="">Writing</a>
+      </li>
+      <li>
+        <a href="">Games</a>
+      </li>
+      <li>
+        <a href="">Miscellaneous</a>
+      </li>
+    </ul>
+    <div class="search-toggle">
+      <a data-btn="search"> SEARCH <i class="fas fa-search"></i> </a>
+    </div>
+  </div>
+</section>
+<section class="main-content content-grid">
+  <div class="main-feed breakout">
+    <article>
+      <strong
+        >DESIGNER x DEVELOPER x CONSULTANT: Which to Use?
+        <span>&#x2197;</span></strong
+      >
+      <p>Latest</p>
+      <date>Jun 9, 2024</date>
+      <a href="/blog/posts.html"></a>
+    </article>
+    <article>
+      <strong
+        >What I Use to Build Websites (2024): IDEs<span>&#x2197;</span></strong
+      >
+      <date>Jun 1, 2024</date>
+      <a href=""></a>
+    </article>
+    <article>
+      <strong
+        >What I Use to Build Websites (2024): Hosting<span
+          >&#x2197;</span
+        ></strong
+      >
+      <date>May 29, 2024</date>
+      <a href=""></a>
+    </article>
+  </div>
+</section>
+
+{{ end }}
