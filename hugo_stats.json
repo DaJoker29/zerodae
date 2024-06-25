@@ -107,6 +107,7 @@
       "service-card__link",
       "service-card__title",
       "service-heading",
+      "service-page",
       "services",
       "services-container",
       "services-list",
@@ -115,6 +116,7 @@
       "theme-toggle"
     ],
     "ids": [
+      "a-seamless-journey-from-concept-to-launch",
       "about",
       "contact",
       "contact-form",
@@ -127,10 +129,13 @@
       "nav",
       "portfolio",
       "pricing",
+      "ready-to-transform-your-online-presence",
       "services",
       "site-footer",
       "theme-toggle",
-      "theme-toggle__checkbox"
+      "theme-toggle__checkbox",
+      "transforming-your-vision-into-a-high-performing-website",
+      "your-partners-in-digital-success"
     ]
   }
 }
