@@ -176,7 +176,7 @@ input[type='reset'] {
   padding: var(--quarter-gap) var(--half-gap);
   cursor: pointer;
   font-weight: 600;
-  transition-property: color, background-image;
+  transition-property: color, background-iginge;
   transition-duration: 200ms;
 }
 
@@ -718,7 +718,6 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
 .banner {
   min-height: max(16rem, 20vh);
   background-color: var(--__banner-bg-clr);
-  background-image: url(../img/sky.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: var(--__banner-blend-mode);
