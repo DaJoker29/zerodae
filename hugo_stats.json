@@ -4,6 +4,7 @@
       "a",
       "address",
       "article",
+      "blockquote",
       "body",
       "br",
       "button",
@@ -151,6 +152,7 @@
       "blog-filter__misc",
       "blog-filter__writing",
       "built-for-humans-yet-algorithm-friendly",
+      "conclusion",
       "contact",
       "contact-form",
       "contact-interest",
@@ -169,9 +171,11 @@
       "search-overlay__close",
       "services",
       "site-footer",
+      "sublime-text",
       "theme-toggle",
       "theme-toggle__checkbox",
       "transforming-your-vision-into-a-high-performing-website",
+      "vs-code",
       "your-partners-in-digital-success"
     ]
   }
