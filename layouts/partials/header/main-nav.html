@@ -1,3 +1,5 @@
+{{- $page := . }}
+
 <header id="header" class="header">
   <button
     class="header__menu-btn"
@@ -11,24 +13,23 @@
     </span>
   </button>
   <div class="js-menu" data-menu-wrapper>
+
+
     <nav id="nav" class="nav" role="navigation">
       <ul class="nav__list">
+        {{- range site.Menus.main}} 
         <li class="nav__item">
-          <a href="./" aria-current="page" class="nav__link"
-            ><i class="fas fa-wind"></i>Business</a
+          {{- if $page.IsMenuCurrent .Menu . }}
+          <a href="{{ .URL }}" class="nav__link" aria-current="page"
+          >
+          {{- else }}
+          <a href="{{ .URL }}" class="nav__link">
+            
+            {{- end }} {{- with .Params }} <i class="fas {{ .icon }}"></i> {{-
+            end }} {{ .Name | title }}</a
           >
         </li>
-        <li class="nav__item">
-          <a href="blog" class="nav__link"><i class="fas fa-fire"></i>Blog</a>
-        </li>
-        <li class="nav__item">
-          <a href="projects" class="nav__link"
-            ><i class="fas fa-tint"></i>Projects</a
-          >
-        </li>
-        <li class="nav__item">
-          <a href="me" class="nav__link"><i class="fas fa-seedling"></i>Me</a>
-        </li>
+        {{- end }}
       </ul>
     </nav>
   </div>

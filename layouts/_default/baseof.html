@@ -3,15 +3,13 @@
   <head>
     {{ partial "head/meta.html" . }}
     <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
-    {{ partial "head/styles.html" . }}
-    {{ partial "head/scripts.html" . }}
-    
+    {{ partial "head/styles.html" . }} {{ partial "head/scripts.html" . }}
   </head>
   <body class="theme-{{ .Params.Theme }} light-theme no-js is-loading">
     {{ partial "header/secondary-nav.html" . }} {{ partial
-    "header/theme-toggle.html" .}}
+    "header/theme-toggle.html" . }}
     <div id="layout">
-      {{ partial "header/main-nav.html" .}}
+      {{ partial "header/main-nav.html" . }}
       <!-- Start of Content -->
       <main id="content">{{ block "main" . }} {{ end}}</main>
       {{partial "footer/site-footer.html" . }}
