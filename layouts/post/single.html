@@ -1,7 +1,7 @@
-{{ define "main"}} {{ partial "blog/hero.html" . }}
+{{ define "main"}}
 <!-- Single Page -->
 <section class="single content-grid">
-  <div class="breakout">
+  <div class="breakout return-to-blog">
     <p>
       <i class="fas fa-arrow-left"></i>
       <a href="/blog">Return to Blog</a>
@@ -31,11 +31,11 @@
   <div class="reading-time"><p>{{ .ReadingTime}} minute read</p></div>
   <div class="post-content">{{ .Content }}</div>
   {{ if .Params.tags }}
-  <div class="tags">
+  <div class="blog-tags">
     Tags: {{range .Params.tags }}
     <strong>{{ . }}</strong> {{ end }}
   </div>
-  {{ end }}
+  {{ end }} {{ partial "blog/related.html" .}}
 </section>
 
 {{ end }}
