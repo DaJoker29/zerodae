@@ -1,7 +1,6 @@
 +++
 title = "What I Use to Build Websites (2024): Hosting"
 date = 2024-05-29T17:00:00.000Z
-theme = "fire"
 slug = "build-websites-2024-hosting"
 type = "post"
 keywords = [

@@ -1,6 +1,7 @@
 {{ $CSS := resources.Match "css/*.css" | resources.Concat "css/bundle.css" |
-minify | fingerprint }} {{ $THEME := replace "css/themes/theme-type.css" "type"
-.Params.Theme | resources.Get | minify | fingerprint}}
+minify | fingerprint }} {{ $tag := .Scratch.Get "theme"}} {{ $THEME := replace
+"css/themes/theme-type.css" "type" $tag | resources.Get | minify | fingerprint
+}}
 
 <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $THEME.RelPermalink }}" />

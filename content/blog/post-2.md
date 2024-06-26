@@ -1,7 +1,6 @@
 +++
 title = "What I Use to Build Websites (2024): IDEs"
 date = 2024-06-01T16:29:00.000Z
-theme = "fire"
 type = "post"
 keywords = [ "ide", "vscode", "web developer", "sublime-text" ]
 description = "I shine a little bit of light on the tools I use to build websites. Today, I focus on IDEs (integrated developer environments)—fancy editors used for coding."
