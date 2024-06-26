@@ -203,13 +203,21 @@ input[type='reset']:hover {
   padding: 0;
 }
 
-.tags {
+.blog-filter {
+  outline: 0;
+  border: 0;
   display: flex;
   flex-wrap: wrap;
   gap: var(--eighth-gap);
+  padding: 0;
 }
 
-.tags > li > a {
+.blog-filter input {
+  appearance: none;
+}
+
+.blog-filter > label {
+  cursor: pointer;
   display: block;
   text-decoration: none;
   font-size: 0.875rem;
@@ -217,10 +225,11 @@ input[type='reset']:hover {
   background-color: var(--__tags-bg-clr);
   color: var(--__tags-link-clr);
   padding: var(--quarter-gap);
+  font-weight: 700;
 }
 
-.tags > li > a:hover,
-.tags > li > a:active {
+.blog-filter > label:hover,
+.blog-filter > label:has(:checked) {
   letter-spacing: 0;
   background-color: var(--__tags-hover-bg-clr);
   color: var(--__tags-hover-link-clr);

@@ -12,3 +12,24 @@ cleanDestinationDir = true
 [build]
   [build.buildStats]
     enable = true
+
+
+[[params.blogFilters]]
+key = "design"
+label = "Design"
+
+[[params.blogFilters]]
+key = "development"
+label = "Development"
+
+[[params.blogFilters]]
+key = "writing"
+label = "Writing"
+
+[[params.blogFilters]]
+key = "games"
+label = "Games"
+
+[[params.blogFilters]]
+key = "misc"
+label = "Miscellaneous"

@@ -28,8 +28,14 @@
     &mdash;
     <span class="byline__date">June 7th, 2024</span>
   </div>
-  <div class="reading-time"><p>{{ .Params.Readtime}}</p></div>
+  <div class="reading-time"><p>{{ .ReadingTime}} minute read</p></div>
   <div class="post-content">{{ .Content }}</div>
+  {{ if .Params.tags }}
+  <div class="tags">
+    Tags: {{range .Params.tags }}
+    <strong>{{ . }}</strong> {{ end }}
+  </div>
+  {{ end }}
 </section>
 
 {{ end }}

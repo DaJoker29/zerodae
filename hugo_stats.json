@@ -47,6 +47,7 @@
       "about-body",
       "about-img",
       "banner",
+      "blog-filter",
       "breakout",
       "btn",
       "byline",
@@ -141,9 +142,14 @@
       "toolbar-container"
     ],
     "ids": [
-      "_this-post-contains-affiliate-links_",
       "a-seamless-journey-from-concept-to-launch",
       "about",
+      "blog-filter",
+      "blog-filter__design",
+      "blog-filter__development",
+      "blog-filter__games",
+      "blog-filter__misc",
+      "blog-filter__writing",
       "built-for-humans-yet-algorithm-friendly",
       "contact",
       "contact-form",

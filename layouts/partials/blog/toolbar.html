@@ -1,23 +1,17 @@
 <!-- Toolbar -->
 <section class="toolbar content-grid">
   <div class="toolbar-container breakout">
-    <ul class="tags">
-      <li>
-        <a href="archive.html">Design</a>
-      </li>
-      <li>
-        <a href="">Development</a>
-      </li>
-      <li>
-        <a href="">Writing</a>
-      </li>
-      <li>
-        <a href="">Games</a>
-      </li>
-      <li>
-        <a href="">Miscellaneous</a>
-      </li>
-    </ul>
+    <fieldset id="blog-filter" class="blog-filter" data-blog-filter>
+      {{ range .Site.Params.BlogFilters }} {{ with . }}
+      <label for="blog-filter__{{ .key }}"
+        >{{ .label }}
+        <input
+          type="checkbox"
+          id="blog-filter__{{ .key }}"
+          data-tag-flag="{{ .key }}"
+      /></label>
+      {{ end }} {{ end }}
+    </fieldset>
     <div class="search-toggle">
       <a data-btn="search"> SEARCH <i class="fas fa-search"></i> </a>
     </div>

@@ -1,3 +1,4 @@
+import blogFilter from './blog-filter.js';
 import intersect from './intersect.js';
 import lightDark from './light-dark.js';
 import menu from './menu.js';
@@ -24,4 +25,8 @@ if (document.body.classList.contains('theme-water')) {
 
 if (document.body.classList.contains('theme-fire')) {
   search();
+}
+
+if (document.querySelector('[data-blog-filter]') !== null) {
+  blogFilter();
 }

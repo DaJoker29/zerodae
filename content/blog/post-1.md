@@ -4,12 +4,11 @@ date = 2024-05-29T17:00:00.000Z
 theme = "fire"
 slug = "build-websites-2024-hosting"
 type = "post"
-readtime = "2 minute read"
 keywords = [
   "web developer toolkit, web hosting, what I use to build websites, DigitalOcean, GitHub Pages"
 ]
 description = "Every coder needs their own web developer toolkit. Here I will share some of the tools and techniques I use to design and build amazing websites."
-categories = [ "Design", "Development" ]
+tags = [ "Design", "Development" ]
 featuredImg = "img/toolbox-1.png"
 +++
 
