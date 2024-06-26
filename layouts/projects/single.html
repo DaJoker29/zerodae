@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="project content-grid">
+  <div class="breakout">
+    <div class="thumbnail">
+      {{ with resources.GetMatch .Params.thumbnailImg }} {{ with .Resize (printf
+      "%dx%d webp" .Width .Height)}}
+      <img
+        loading="lazy"
+        src="{{ .RelPermalink}}"
+        alt=""
+        height="{{ .Height }}"
+        width="{{ .Width }}"
+      />
+      {{ end }} {{ end }}
+    </div>
+    <div class="info">
+      <header>
+        <h2>
+          <a href="/projects"><i class="fas fa-arrow-left"></i></a> / {{ .Title
+          | title}}
+        </h2>
+        <p>{{ .Params.projectDate }} &bull; {{ .Params.location }}</p>
+        <div class="tags">
+          {{- range .Params.tags }}
+          <span>{{ . }}</span>
+          {{end}}
+        </div>
+        <a href="{{ .Params.projectUrl }}" class="btn">View Project</a>
+      </header>
+      <div class="description">
+        {{ with resources.GetMatch .Params.featuredImg }} {{ with .Resize
+        (printf "%dx%d webp" .Width .Height)}}
+        <img
+          loading="lazy"
+          src="{{ .RelPermalink}}"
+          alt=""
+          height="{{ .Height }}"
+          width="{{ .Width }}"
+          class="featured-img"
+        />
+        {{ end }} {{ end }} {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

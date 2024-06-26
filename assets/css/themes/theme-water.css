@@ -211,7 +211,8 @@ input[type='reset']:hover {
   text-align: center;
 }
 
-.info > header > button {
+.info > header > .btn {
+  display: inline-block;
   margin-top: var(--half-gap);
   margin-bottom: var(--half-gap);
 }
