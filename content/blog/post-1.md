@@ -3,16 +3,19 @@ title = "What I Use to Build Websites (2024): Hosting"
 date = 2024-05-29T17:00:00.000Z
 theme = "fire"
 slug = "build-websites-2024-hosting"
+type = "post"
+readtime = "2 minute read"
 keywords = [
   "web developer toolkit, web hosting, what I use to build websites, DigitalOcean, GitHub Pages"
 ]
+description = "Every coder needs their own web developer toolkit. Here I will share some of the tools and techniques I use to design and build amazing websites."
+categories = [ "Design", "Development" ]
+featuredImg = "img/toolbox-1.png"
 +++
 
-Every developer needs a good toolkit. Here are some of the tools I use when building a website.
-
-<!--more-->
-
 _This post contains affiliate links._
+
+---
 
 In Stephen King’s On Writing, he devotes a whole chapter to discussing ‘toolboxes’—the skills and knowledge each writer employs in their everyday practice.
 

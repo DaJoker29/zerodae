@@ -1,6 +1,4 @@
-{{ define "main"}}
-
-<div id="hero" class="hero"></div>
+{{ define "main"}} {{ partial "blog/hero.html" . }}
 <!-- Single Page -->
 <section class="single content-grid">
   <div class="breakout">
@@ -9,15 +7,19 @@
       <a href="/blog">Return to Blog</a>
     </p>
   </div>
-  <img
-    src="https://placehold.co/250x250"
-    height="250"
-    width="250"
-    alt=""
-    class="featured-img"
-  />
+  <div>
+    {{ with resources.GetMatch .Params.FeaturedImg | fingerprint }} {{ with
+    .Resize "600x600 webp"}}
+    <img
+      src="{{ .RelPermalink}}"
+      alt=""
+      height="{{ .Height }}"
+      width="{{ .Width }}"
+      class="featured-img"
+    />
+    {{ end }} {{ end }}
+  </div>
   <h1>{{ .Title }}</h1>
-  <div class="reading-time"><p>2 minute read</p></div>
   <div class="byline">
     <address>
       By
@@ -26,6 +28,7 @@
     &mdash;
     <span class="byline__date">June 7th, 2024</span>
   </div>
+  <div class="reading-time"><p>{{ .Params.Readtime}}</p></div>
   <div class="post-content">{{ .Content }}</div>
 </section>
 
