@@ -1,8 +1,14 @@
 +++
 title = "Mmm, Yes, Quite"
-projectDate = "Jan 2018"
+projectDate = "2018-01-01"
 location = "Central California"
-tags = ["WordPress", "eCommerce", "Merchandising", "Graphic Design", "Newsletter"]
+tags = [
+  "WordPress",
+  "eCommerce",
+  "Merchandising",
+  "Graphic Design",
+  "Newsletter"
+]
 category = "Website"
 projectUrl = "https://mmmyesquite.com"
 thumbnailImg = "img/myq-thumbnail-1.png"

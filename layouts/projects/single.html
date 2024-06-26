@@ -19,7 +19,14 @@
           <a href="/projects"><i class="fas fa-arrow-left"></i></a> / {{ .Title
           | title}}
         </h2>
-        <p>{{ .Params.projectDate }} &bull; {{ .Params.location }}</p>
+
+        <p>
+          <time
+            >{{- time.AsTime .Params.projectDate | time.Format "January 2006"
+            }}</time
+          >
+          &bull; {{ .Params.location }}
+        </p>
         <div class="tags">
           {{- range .Params.tags }}
           <span>{{ . }}</span>
