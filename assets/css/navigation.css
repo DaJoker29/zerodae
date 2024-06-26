@@ -31,7 +31,7 @@
   top: 0;
   right: 0;
   overflow-y: none;
-  z-index: 100;
+  z-index: 800;
 }
 
 .nav__list {
@@ -84,7 +84,7 @@
 
 .header__menu-btn {
   appearance: none;
-  z-index: 200;
+  z-index: 900;
   cursor: pointer;
   border: none;
   border-radius: 50% 25%;

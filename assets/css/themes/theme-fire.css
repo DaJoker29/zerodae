@@ -290,7 +290,7 @@ input[type='reset']:hover {
   width: 100vw;
   height: 100svh;
   background-color: var(--__search-overlay-bg-clr);
-  z-index: 250;
+  z-index: 1000;
   opacity: 0;
   transition: all 200ms;
   padding: 0;
@@ -407,7 +407,7 @@ input[type='reset']:hover {
 
 .main-feed > article > a {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
