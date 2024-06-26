@@ -61,47 +61,47 @@ body.dark-theme {
   --__scheme: dark;
   --__bg-clr: var(--black);
   --__text-clr: var(--white);
-  
+
   --__link-clr: var(--orange-500);
   --__link-hover-clr: var(--red-500);
-  
+
   --__highlight-clr: var(--orange-500);
-  
+
   --__btn-bg: linear-gradient(42deg, var(--orange-700), var(--orange-600));
   --__btn-text: var(--white);
   --__btn-hover-bg: linear-gradient(
     42deg,
     var(--orange-600),
     var(--orange-700)
-    );
-    --__btn-hover-text: var(--yellow-500);
-    
-    --__hero-bg-clr: var(--orange-500);
-    --__hero-border-clr: var(--orange-500);
-    --__masthead-tagline-clr: var(--orange-400);
+  );
+  --__btn-hover-text: var(--yellow-500);
 
-    --__toolbar-bg-clr: var(--orange-600);
-    --__toolbar-text-clr: var(--white);
-    --__tags-bg-clr: var(--orange-600);
-    --__tags-link-clr: var(--orange-300);
-    --__tags-hover-bg-clr: var(--orange-400);
-    --__tags-hover-link-clr: var(--red-700);
-    
-    --__search-toggle-clr: var(--white);
-    --__search-toggle-hover-clr: var(--orange-400);
+  --__hero-bg-clr: var(--orange-500);
+  --__hero-border-clr: var(--orange-500);
+  --__masthead-tagline-clr: var(--orange-400);
+
+  --__toolbar-bg-clr: var(--orange-600);
+  --__toolbar-text-clr: var(--white);
+  --__tags-bg-clr: var(--orange-600);
+  --__tags-link-clr: var(--orange-300);
+  --__tags-hover-bg-clr: var(--orange-400);
+  --__tags-hover-link-clr: var(--red-700);
+
+  --__search-toggle-clr: var(--white);
+  --__search-toggle-hover-clr: var(--orange-400);
   --__search-overlay-bg-clr: rgba(15, 16, 17, 0.95);
   --__search-overlay-text-clr: var(--white);
   --__search-overlay-close-clr: var(--white);
   --__search-overlay-border-clr: var(--white);
-  
+
   --__feed-item-bg-clr: #000;
   --__feed-item-shadow-1: 0 0 0.25rem rgba(15, 16, 17, 0.95);
   --__feed-item-shadow-2: 0 0 0.75rem rgba(15, 16, 17, 0.5);
   --__feed-item-date-clr: var(--orange-300);
   --__feed-item-date-hover-clr: var(--white);
-  
-    --__blockquote-text-clr: var(--white);
-    --__blockquote-bg-clr: var(--orange-600);
+
+  --__blockquote-text-clr: var(--white);
+  --__blockquote-bg-clr: var(--orange-600);
 }
 
 body.theme-fire {
@@ -276,6 +276,12 @@ input[type='reset']:hover {
 
 
 */
+
+.no-js .search-toggle,
+.no-js .search-overlay,
+.no-js .search-module {
+  display: none;
+}
 
 .search-overlay {
   position: fixed;

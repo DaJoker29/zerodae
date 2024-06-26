@@ -1,16 +1,20 @@
+{{- $page := . }}
+
 <nav class="navbar">
   <ul>
-    <li>
-      <a href="./" aria-current="page"><i class="fas fa-wind"></i>Business</a>
-    </li>
-    <li>
-      <a href="blog"><i class="fas fa-fire"></i>Blog</a>
-    </li>
-    <li>
-      <a href="projects"><i class="fas fa-tint"></i>Projects</a>
-    </li>
-    <li>
-      <a href="me"><i class="fas fa-seedling"></i>Me</a>
-    </li>
+    {{- range site.Menus.main}} 
+        <li>
+          {{- if $page.IsMenuCurrent .Menu . }}
+          <a href="{{ .URL }}" aria-current="page"
+          >
+          {{- else }}
+          <a href="{{ .URL }}">
+            
+            {{- end }} {{- with .Params }} <i class="fas {{ .icon }}"></i> {{-
+            end }} {{ .Name | title }}</a
+          >
+        </li>
+        {{- end }}
+    
   </ul>
 </nav>
