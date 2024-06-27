@@ -115,7 +115,7 @@ input[type='reset']:hover {
 
 .hero > div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   align-items: center;
   gap: var(--gap);
 }
@@ -137,7 +137,11 @@ input[type='reset']:hover {
 .social-icons {
   margin: 1rem 0;
   display: flex;
-  gap: calc(var(--fluid-gap) / 4) var(--gap);
+  gap: calc(var(--fluid-gap) / 4) var(--half-gap);
   list-style-type: none;
   flex-wrap: wrap;
+}
+
+.contact-links > p:first-child {
+  margin-bottom: var(--eighth-gap);
 }
