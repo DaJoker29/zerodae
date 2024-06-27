@@ -1,6 +1,7 @@
 public/
 resources/
-hugo_stats.json
 .vscode/*
 .frontmatter
 frontmatter.json
+hugo_stats.json
+jsconfig.json
