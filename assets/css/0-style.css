@@ -195,12 +195,16 @@ a {
   text-decoration-line: underline;
   text-decoration-thickness: 0.15em;
   text-underline-offset: 0.3em;
+  /* text-decoration-color: transparent; */
   transition: all 200ms;
 }
 
 a:hover {
   text-decoration-color: inherit;
   text-decoration-thickness: 0.3rem;
+}
+
+a:hover:not(.btn, button) {
   letter-spacing: 1px;
 }
 

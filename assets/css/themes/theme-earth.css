@@ -19,11 +19,12 @@ body.light-theme {
 
   --__highlight-clr: var(--brown-300);
   --__hero-highlight-bg-clr: var(--brown-700);
+  --__hero-border-clr: var(--brown-400);
 
   --__btn-bg: linear-gradient(42deg, var(--green-700), var(--green-600));
   --__btn-text: var(--brown-300);
   --__btn-hover-bg: linear-gradient(42deg, var(--green-600), var(--green-700));
-  --__btn-hover-text: var(--green-300);
+  --__btn-hover-text: var(--brown-400);
 }
 
 body.dark-theme {
@@ -31,16 +32,17 @@ body.dark-theme {
   --__bg-clr: var(--brown-700);
   --__text-clr: var(--white);
 
-  --__link-clr: var(--green-300);
+  --__link-clr: var(--green-400);
   --__link-hover-clr: var(--brown-300);
 
   --__highlight-clr: var(--green-700);
   --__hero-highlight-bg-clr: var(--brown-300);
+  --__hero-border-clr: var(--brown-300);
 
-  --__btn-bg: linear-gradient(42deg, var(--green-700), var(--green-600));
-  --__btn-text: var(--brown-300);
-  --__btn-hover-bg: linear-gradient(42deg, var(--green-600), var(--green-700));
-  --__btn-hover-text: var(--green-300);
+  --__btn-bg: var(--green-600);
+  --__btn-text: var(--white);
+  --__btn-hover-bg: var(--green-700);
+  --__btn-hover-text: var(--brown-300);
 }
 
 body.theme-earth {
@@ -80,7 +82,7 @@ input[type='reset'] {
   padding: var(--quarter-gap) var(--half-gap);
   cursor: pointer;
   font-weight: 600;
-  transition-property: color, background-image;
+  transition-property: color, background-color, filter;
   transition-duration: 200ms;
 }
 
@@ -91,6 +93,7 @@ input[type='button']:hover,
 input[type='reset']:hover {
   background: var(--__btn-hover-bg);
   color: var(--__btn-hover-text);
+  filter: drop-shadow(0 0 var(--eighth-gap) var(--shadow));
 }
 
 /*
@@ -113,11 +116,14 @@ input[type='reset']:hover {
   min-height: 85svh;
 }
 
-.hero > div {
+.hero-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   align-items: center;
   gap: var(--gap);
+  border-top: 2px solid var(--__hero-border-clr);
+  border-bottom: 2px solid var(--__hero-border-clr);
+  padding-block: var(--gap);
 }
 
 .hero .highlight {
