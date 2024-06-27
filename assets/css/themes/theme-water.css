@@ -127,6 +127,7 @@ input[type='reset']:hover {
   border: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
   gap: var(--half-gap);
   margin-top: var(--gap);
   margin-bottom: var(--gap);
@@ -170,6 +171,9 @@ input[type='reset']:hover {
 
 .filter-close {
   display: none;
+  padding: 1px var(--eighth-gap);
+  line-height: 1;
+  align-self: center;
 }
 
 .isFilterActive .filter-close {
