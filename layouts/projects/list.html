@@ -2,24 +2,9 @@
 
 <section class="projects content-grid">
   <h1 class="breakout">PROJECTS</h1>
-  <fieldset>
-    <label>
-      Design (3)
-      <input id="Design" type="checkbox" />
-    </label>
-    <label>
-      Development (5)
-      <input id="Development" type="checkbox" />
-    </label>
-    <label>
-      Production (8)
-      <input id="Production" type="checkbox" />
-    </label>
-    <label>
-      Writing (11)
-      <input id="Writing" type="checkbox" />
-    </label>
-  </fieldset>
+
+  {{ partial "projects/filter.html" .}}
+
   <ul class="catalog">
     {{ range .Pages }} {{ .Render "summary" }} {{ end}}
   </ul>

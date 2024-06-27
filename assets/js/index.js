@@ -19,14 +19,14 @@ menu();
 intersect();
 lightDark();
 
-if (document.body.classList.contains('theme-water')) {
-  projectFilter();
-}
-
 if (document.body.classList.contains('theme-fire')) {
   search();
 }
 
 if (document.querySelector('[data-blog-filter]') !== null) {
   blogFilter();
+}
+
+if (document.querySelector('[data-project-filter]') !== null) {
+  projectFilter();
 }

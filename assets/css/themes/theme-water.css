@@ -122,16 +122,17 @@ input[type='reset']:hover {
   margin: 0;
 }
 
-.projects > fieldset {
+.project-filter {
   outline: none;
   border: none;
   display: flex;
   flex-wrap: wrap;
   gap: var(--half-gap);
   margin-top: var(--gap);
+  margin-bottom: var(--gap);
 }
 
-.projects > fieldset > label {
+.project-filter > label {
   min-width: 2rem;
   color: var(--__filter-text-clr);
   font-weight: 600;
@@ -139,15 +140,15 @@ input[type='reset']:hover {
   transition: color 200ms;
 }
 
-.projects > fieldset > label:hover {
+.project-filter > label:hover {
   color: var(--__filter-hover-text-clr);
 }
 
-.projects > fieldset > label:has(:checked) {
+.project-filter > label:has(:checked) {
   color: var(--__filter-checked-text-clr);
 }
 
-.projects > fieldset > label > input {
+.project-filter > label > input {
   opacity: 0;
   position: absolute;
 }
@@ -165,6 +166,14 @@ input[type='reset']:hover {
 
 .catalog > li > a > img:hover {
   filter: none;
+}
+
+.filter-close {
+  display: none;
+}
+
+.isFilterActive .filter-close {
+  display: inherit;
 }
 
 /*
