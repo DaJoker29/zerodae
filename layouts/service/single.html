@@ -1,0 +1,14 @@
+{{ define "main" }} {{ $bg := resources.Get "/img/sky.jpg"}}
+
+<div
+  class="banner"
+  style="background-image: url('{{ $bg.RelPermalink }}');"
+></div>
+<div class="service-page content-grid">
+  <h2 class="service-heading">
+    <a href="/"><i class="fas fa-arrow-left"></i></a> / {{ .Page.Title }}
+  </h2>
+  {{.Content }}
+</div>
+
+{{ end }}

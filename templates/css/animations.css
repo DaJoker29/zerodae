@@ -1,0 +1,26 @@
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    scale: 0.8;
+    opacity: 0;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(var(--half-gap));
+  transition: filter 1200ms, opacity 1200ms, transform 1200ms;
+  transform: translateX(-100%);
+}
+
+.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0) !important;
+}

@@ -1,0 +1,19 @@
+<!-- Toolbar -->
+<section class="toolbar content-grid">
+  <div class="toolbar-container breakout">
+    <fieldset id="blog-filter" class="blog-filter" data-blog-filter>
+      {{ range .Site.Params.BlogFilters }} {{ with . }}
+      <label for="blog-filter__{{ .key }}"
+        >{{ .label }}
+        <input
+          type="checkbox"
+          id="blog-filter__{{ .key }}"
+          data-tag-flag="{{ .key }}"
+      /></label>
+      {{ end }} {{ end }}
+    </fieldset>
+    <div class="search-toggle">
+      <a data-btn="search"> SEARCH <i class="fas fa-search"></i> </a>
+    </div>
+  </div>
+</section>

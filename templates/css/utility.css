@@ -1,0 +1,10 @@
+.content {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: var(--reading-width);
+  max-width: var(--content-width);
+  margin: 0 auto;
+}

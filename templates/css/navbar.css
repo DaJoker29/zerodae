@@ -1,0 +1,93 @@
+/*
+  _   _     __      ______          _____
+ | \ | |   /\ \    / /  _ \   /\   |  __ \
+ |  \| |  /  \ \  / /| |_) | /  \  | |__) |
+ | . ` | / /\ \ \/ / |  _ < / /\ \ |  _  /
+ | |\  |/ ____ \  /  | |_) / ____ \| | \ \
+ |_| \_/_/    \_\/   |____/_/    \_\_|  \_\
+
+
+*/
+
+.js > .navbar {
+  display: none;
+}
+
+.theme-air.light-theme > .navbar {
+  background-color: var(--white);
+}
+
+.theme-air.dark-theme > .navbar {
+  background-color: var(--shale-700);
+}
+
+.theme-earth.light-theme > .navbar {
+  background-color: var(--white);
+}
+
+.theme-earth.dark-theme > .navbar {
+  background-color: var(--shale-700);
+}
+
+.theme-water.light-theme > .navbar {
+  background-color: var(--white);
+}
+
+.theme-water.dark-theme > .navbar {
+  background-color: var(--shale-700);
+}
+
+.theme-fire.light-theme > .navbar {
+  background-color: var(--white);
+}
+
+.theme-fire.dark-theme > .navbar {
+  background-color: var(--shale-700);
+}
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar > ul > li {
+  flex: 1 200px;
+}
+
+.navbar > ul > li:not(:last-child) {
+  border-right: 2px solid var(--shadow);
+}
+
+.navbar > ul > li > a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-top: var(--half-gap);
+  padding-bottom: var(--half-gap);
+  padding-inline: var(--gap);
+}
+
+.navbar > ul > li > a[aria-current='page'] {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+@media screen and (max-width: 880px) {
+  .navbar > ul > li {
+    border-bottom: 2px solid var(--shadow);
+    border-right: 2px solid var(--shadow);
+    flex-basis: 300px;
+  }
+}

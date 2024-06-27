@@ -1,0 +1,357 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section id="hero" class="hero content-grid">
+  <h1 class="breakout"><span>zero</span>DAEDALUS</h1>
+  <div class="hero-container breakout">
+    <div class="hero__copy">
+      <h2>
+        Let Us Navigate You Through the Digital Odyssey
+        <i class="fas fa-rocket"></i>
+      </h2>
+      <p class="hero__lead">
+        Your online presence is your spacecraft, and
+        <strong>Zero Daedalus</strong> is your expert co-pilot in all things web
+        related. We transform visions into reality and empower small businesses
+        one website at a time.
+      </p>
+      <button class="hero__cta">Get in touch!</button>
+      <p class="hero__scroll-tease">
+        <a href="#services">Scroll down to learn more</a>
+      </p>
+    </div>
+    {{ with resources.GetMatch "img/spaceship2.png"}} {{ with .Resize (printf
+    "%dx%d webp" .Width .Height)}}
+    <img
+      src="{{ .RelPermalink}}"
+      alt="a spaceship blasting off into the stars."
+      height="{{ .Height }}"
+      width="{{ .Width }}"
+      class="hero__img"
+    />
+    {{ end }} {{ end }}
+  </div>
+</section>
+<section id="services" class="services content-grid">
+  <h2 class="breakout"><span class="highlight">WHAT</span> WE DO</h2>
+  <p>
+    Zero Daedalus specializes in web design and development for small businesses
+    across the US. We hand-craft websites, line by line, to ensure optimal
+    performance, attracting more customers to your site and boosting your
+    business's revenue.
+    <a
+      href="https://blog.zerodaedal.us/designer-x-developer-x-consultant-which-to-use/"
+      >Learn more.</a
+    >
+
+    <!-- Include Link to Designer x Developer x Consultant Blog Post. -->
+  </p>
+  <div class="services-container breakout">
+    <div class="services-list">
+      <article class="service-card hidden">
+        <i class="service-card__icon fas fa-code"></i>
+        <h3 class="service-card__title">Web Design &amp; Development</h3>
+        <p class="service-card__arrow">&#x2197;</p>
+        <p class="service-card__body">
+          We build websites that are as slick as they are functional. Whether
+          you’re starting from scratch or need a serious upgrade, count on us to
+          bring your digital vision to life.
+        </p>
+        <a
+          href="service/design"
+          class="service-card__link"
+          aria-label="Learn more about our design service"
+        >
+        </a>
+      </article>
+      <article class="service-card hidden">
+        <i class="service-card__icon fas fa-search"></i>
+        <h3 class="service-card__title">Search Engine Optimization (SEO)</h3>
+        <p class="service-card__arrow">&#x2197;</p>
+        <p class="service-card__body">
+          Get ready to climb the Google ladder. Using SEO wizardry, we will
+          sprinkle magic keywords and strategic tactics to get your site noticed
+          by all the right people.
+        </p>
+        <a
+          href="service/seo"
+          class="service-card__link"
+          aria-label="Learn more about our SEO service"
+        >
+        </a>
+      </article>
+      <article class="service-card hidden">
+        <i class="service-card__icon fas fa-shopping-cart"></i>
+        <h3 class="service-card__title">Ecommerce</h3>
+        <p class="service-card__arrow">&#x2197;</p>
+        <p class="service-card__body">
+          Turn window shoppers into loyal customers with our e-commerce
+          expertise. We can whip up a digital storefront that’s not just pretty
+          but also a selling machine.
+        </p>
+        <a
+          href="service/ecommerce"
+          class="service-card__link"
+          aria-label="Learn more about our ecommerce service"
+        >
+        </a>
+      </article>
+      <article class="service-card hidden">
+        <i class="service-card__icon fas fa-bookmark"></i>
+        <h3 class="service-card__title">Content Marketing</h3>
+        <p class="service-card__arrow">&#x2197;</p>
+        <p class="service-card__body">
+          We’re not just about pretty pixels – we keep wordsmiths on retainer.
+          Let us weave captivating stories and craft killer content to keep your
+          audience hooked and coming back for more.
+        </p>
+        <a
+          href="service/content"
+          class="service-card__link"
+          aria-label="Learn more about our content marketing service."
+        >
+        </a>
+      </article>
+      <article class="service-card hidden">
+        <i class="service-card__icon fas fa-lightbulb"></i>
+        <h3 class="service-card__title">Digital Strategy</h3>
+        <p class="service-card__arrow">&#x2197;</p>
+        <p class="service-card__body">
+          Think of us as your digital sherpa, guiding you through the wilds of
+          the internet. We’ll help you map out a plan that’s as smart as it is
+          effective, so you can conquer the online world with confidence.
+        </p>
+        <a
+          href="service/strategy"
+          class="service-card__link"
+          aria-label="Learn more about our digital strategy service."
+        >
+        </a>
+      </article>
+      <article class="service-card hidden">
+        <i class="service-card__icon fas fa-wrench"></i>
+        <h3 class="service-card__title">Maintenance &amp; Support</h3>
+        <p class="service-card__arrow">&#x2197;</p>
+        <p class="service-card__body">
+          We’ve got your back, even after the confetti has settled. From
+          software updates to security patches, we’ll keep your website running
+          smoother than a well-oiled machine. So you can focus on what you do
+          best – while we handle the tech stuff.
+        </p>
+        <a
+          href="service/maintenance"
+          class="service-card__link"
+          aria-label="Learn more about our maintenance and support service."
+        >
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio content-grid">
+  <h2 class="breakout"><span class="highlight">OUR</span> PORTFOLIO</h2>
+  <div class="portfolio-container">
+    <article class="portfolio-item">
+      {{ with resources.GetMatch "img/portfolio_neologic.png"}} {{ with .Resize
+      (printf "%dx%d webp" .Width .Height)}}
+      <img
+        loading="lazy"
+        src="{{ .RelPermalink}}"
+        alt="logo for Neologic Studios"
+        height="{{ .Height }}"
+        width="{{ .Width }}"
+        class="portfolio-item__thumbnail"
+      />
+      {{ end }} {{ end }}
+      <header>
+        <p class="portfolio-item__title">Neologic Studios</p>
+        <p class="portfolio-item__location">Bay Area, California</p>
+      </header>
+      <p class="portfolio-item__copy">
+        Neologic Studios is a professional sound engineering and multimedia
+        production company. We've hosted their website since 2017.
+      </p>
+      <a href="/" class="btn">Visit Neologic</a>
+    </article>
+    <article class="portfolio-item">
+      {{ with resources.GetMatch "img/portfolio_hisraft.png"}} {{ with .Resize
+      (printf "%dx%d webp" .Width .Height)}}
+      <img
+        loading="lazy"
+        src="{{ .RelPermalink}}"
+        alt="logo for His RAFT"
+        height="{{ .Height }}"
+        width="{{ .Width }}"
+        class="portfolio-item__thumbnail"
+      />
+      {{ end }} {{ end }}
+      <header>
+        <p class="portfolio-item__title">His RAFT</p>
+        <p class="portfolio-item__location">Stockton, California</p>
+      </header>
+      <p class="portfolio-item__copy">
+        His R.A.F.T. is a nonprofit supplying food and other goods to the
+        underserved throughout the Central Valley. I designed their logo and
+        website back in 2015.
+      </p>
+      <a href="/" class="btn">Visit His RAFT</a>
+    </article>
+
+    <article class="portfolio-item">
+      {{ with resources.GetMatch "img/portfolio_myq.png"}} {{ with .Resize
+      (printf "%dx%d webp" .Width .Height)}}
+      <img
+        loading="lazy"
+        src="{{ .RelPermalink}}"
+        alt="logo for Mmm, Yes, Quite"
+        height="{{ .Height }}"
+        width="{{ .Width }}"
+        class="portfolio-item__thumbnail"
+      />
+      {{ end }} {{ end }}
+      <header>
+        <p class="portfolio-item__title">Mmm, Yes, Quite</p>
+        <p class="portfolio-item__location">Manteca, California</p>
+      </header>
+      <p class="portfolio-item__copy">
+        Mmm, Yes, Quite is a nerdy online shop selling hand-designed tee shirts
+        and accessories. This store has been a pet project since 2018.
+      </p>
+      <a href="/" class="btn">Visit MyQ</a>
+    </article>
+  </div>
+</section>
+<section id="about" class="about content-grid">
+  <h2 class="breakout"><span class="highlight">WHO</span> WE ARE</h2>
+  <div class="about-body">
+    <p>
+      <strong>My name is Dewitt</strong>, the nerdy code wizard behind this
+      operation. I've been tinkering with websites since the days of dial-up
+      (seriously). More than just a web geek, I'm also an advocate for small
+      business and freelancers. I've seen what a killer website can do to
+      elevate a brand and boost business, and so I decided to devote my skills
+      and expertise towards helping others reach those big dreams.
+    </p>
+    {{ with resources.GetMatch "img/profile_pic.png"}} {{ with .Resize (printf
+    "%dx%d webp" .Width .Height)}}
+    <img
+      loading="lazy"
+      src="{{ .RelPermalink}}"
+      alt="Profile image of Dewitt Buckingham"
+      height="{{ .Height }}"
+      width="{{ .Width }}"
+      class="about-img"
+    />
+    {{ end }} {{ end }}
+    <h3>Dewitt B.</h3>
+    <h4>OWNER/DEVELOPER</h4>
+  </div>
+</section>
+<section id="pricing" class="pricing content-grid">
+  <h5>
+    <span>NEW PRICING</span><br />$0 Down &bull; $150 Per Month &bull; 12-Month
+    Commitment
+  </h5>
+  <p>
+    You can have a standard 5-page website built, and get the full suite of
+    ongoing services needed to make your website successful, all for a single
+    monthly rate. After the first year, cancel anytime with no fees or hassle.
+  </p>
+  <p>
+    Larger projects and ecommerce websites will be custom priced based on the
+    scope and time required.
+  </p>
+
+  <div class="breakout">
+    <hr />
+  </div>
+
+  <ul class="included-services">
+    <li>
+      <strong>Hosting</strong>
+      <p>Hosting fees are baked right into the plan.</p>
+    </li>
+    <li>
+      <strong>Unlimited Edits</strong>
+      <p>
+        Want something on the site tweaked? Just let me know and I'll make it
+        happen.
+      </p>
+    </li>
+    <li>
+      <strong>Round-the-Clock Customer Service</strong>
+      <p>Call direct day or night, no hold music or support tickets.</p>
+    </li>
+    <li>
+      <strong>Web Design &amp; Development</strong>
+      <p>
+        Each site is thoughtfully crafted through dozens of hours of design,
+        development, and testing.
+      </p>
+    </li>
+    <li>
+      <strong>High-Performing Page Speed</strong>
+      <p>
+        Boost your search ranking by ensuring top Page Speed scores in Google
+        and other engines.
+      </p>
+    </li>
+    <li>
+      <strong>Professional Analytics</strong>
+      <p>
+        I'll personally monitor your Analytics and SEMRush data to ensure you're
+        getting the best traffic to your site.
+      </p>
+    </li>
+  </ul>
+</section>
+<section id="contact" class="contact content-grid">
+  <div class="contact-container">
+    <form action="" id="contact-form" class="contact-form">
+      <fieldset>
+        <h2><span class="highlight">GET</span> IN TOUCH</h2>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Business" />
+        <input type="text" placeholder="Email" />
+        <input type="tel" placeholder="Phone Number" />
+        <select
+          name="interest"
+          id="contact-interest"
+          aria-label="Select your interest."
+        >
+          <option value selected disabled>Select</option>
+          <option value="Website">Website</option>
+          <option value="Search Engine Optimization">
+            Search Engine Optimization
+          </option>
+          <option value="E-commerce">E-commerce</option>
+          <option value="Content Marketing">Content Marketing</option>
+          <option value="Digital Strategy">Digital Strategy</option>
+          <option value="Maintenance & Support">
+            Maintenance &amp; Support
+          </option>
+          <option value="Other">Other</option>
+        </select>
+        <textarea
+          name="message"
+          id="contact-msg"
+          placeholder="Type your message here..."
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <div class="contact-info">
+      <div class="contact-group">
+        <p>Email:</p>
+        <p>dewitt@zerodaedalus.net</p>
+      </div>
+      <div class="contact-group">
+        <p>Phone:</p>
+        <p>(209) 740-9063</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end}}

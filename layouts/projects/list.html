@@ -1,0 +1,13 @@
+{{ define "main"}}
+
+<section class="projects content-grid">
+  <h1 class="breakout">PROJECTS</h1>
+
+  {{ partial "projects/filter.html" .}}
+
+  <ul class="catalog">
+    {{ range .Pages }} {{ .Render "summary" }} {{ end}}
+  </ul>
+</section>
+
+{{ end }}

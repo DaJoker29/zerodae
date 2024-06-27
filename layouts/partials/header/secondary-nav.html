@@ -1,0 +1,20 @@
+{{- $page := . }}
+
+<nav class="navbar">
+  <ul>
+    {{- range site.Menus.main}} 
+        <li>
+          {{- if $page.IsMenuCurrent .Menu . }}
+          <a href="{{ .URL }}" aria-current="page"
+          >
+          {{- else }}
+          <a href="{{ .URL }}">
+            
+            {{- end }} {{- with .Params }} <i class="fas {{ .icon }}"></i> {{-
+            end }} {{ .Name | title }}</a
+          >
+        </li>
+        {{- end }}
+    
+  </ul>
+</nav>

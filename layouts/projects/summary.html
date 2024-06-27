@@ -1,0 +1,20 @@
+<li data-category="{{ .Params.category }}">
+  <a href="{{ .RelPermalink }}">
+    {{ with resources.GetMatch .Params.thumbnailImg }} {{ with .Resize (printf
+    "%dx%d webp" .Width .Height)}}
+    <img
+      loading="lazy"
+      src="{{ .RelPermalink}}"
+      alt=""
+      height="{{ .Height }}"
+      width="{{ .Width }}"
+    />
+    {{ end }} {{ end }}
+  </a>
+  <p>
+    <time>{{- time.AsTime .Params.projectDate | time.Format "Jan 2006" }}</time>
+    {{- $t := time.AsTime .Params.projectDate}} {{- if .Params.active }}
+    <span>&bull; Active</span>
+    {{ end }}
+  </p>
+</li>

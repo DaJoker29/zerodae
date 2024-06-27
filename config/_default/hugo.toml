@@ -1,0 +1,35 @@
+baseURL = "https://www.zerodaedal.us"
+languageCode = "en-us"
+title = "Web Design & Development for Small Business • ZeroDaedalus"
+copyright = "Copyright &copy; 2024"
+enableRobotsTXT = true
+cleanDestinationDir = true
+
+[params] 
+  description = "Affordable web design and development agency helping small businesses build and maintain successful websites."
+  keywords = "website services for small business usa, WordPress design and development usa, small business web consultant usa, small business web designer usa, small business web developer usa"
+
+[build]
+  [build.buildStats]
+    enable = true
+
+
+[[params.blogFilters]]
+key = "design"
+label = "Design"
+
+[[params.blogFilters]]
+key = "development"
+label = "Development"
+
+[[params.blogFilters]]
+key = "writing"
+label = "Writing"
+
+[[params.blogFilters]]
+key = "games"
+label = "Games"
+
+[[params.blogFilters]]
+key = "misc"
+label = "Miscellaneous"

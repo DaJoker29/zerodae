@@ -1,0 +1,6 @@
+.copyright {
+  position: sticky;
+  top: 100svh;
+  margin: var(--double-gap) 0 var(--gap);
+  font-size: 1rem;
+}

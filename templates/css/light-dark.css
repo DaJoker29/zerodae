@@ -1,0 +1,67 @@
+.theme-toggle {
+  --__moon-clr: var(--yellow);
+  --__sun-clr: var(--orange);
+  --__shadow-clr: rgba(0, 0, 0, 0.3);
+  --__toggle-spacing: var(--quarter-gap);
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  transition: all 300ms;
+  border-top-right-radius: var(--__toggle-spacing);
+  z-index: 1000;
+}
+
+.theme-toggle > label > input {
+  opacity: 0;
+  position: absolute;
+}
+
+.theme-toggle:hover {
+  background: var(--__shadow-clr);
+}
+
+.theme-toggle:hover > label > .fa-moon {
+  color: var(--__moon-clr);
+  filter: drop-shadow(0 0 0.2rem var(--__shadow-clr));
+}
+
+.theme-toggle:hover > label > .fa-sun {
+  color: var(--__sun-clr);
+  filter: drop-shadow(0 0 0.2rem var(--__shadow-clr));
+}
+
+.theme-toggle > label {
+  padding: var(--__toggle-spacing);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
+}
+
+.fa-moon,
+.fa-sun {
+  color: var(--__shadow-clr);
+  transition: all 300ms;
+  position: absolute;
+  bottom: var(--__toggle-spacing);
+  left: var(--__toggle-spacing);
+}
+
+.theme-toggle > label > .fa-moon {
+  opacity: 1;
+}
+
+.theme-toggle > label > .fa-sun {
+  opacity: 0;
+}
+
+.theme-toggle > label:has(input:checked) > .fa-moon {
+  opacity: 0;
+}
+
+.theme-toggle > label:has(input:checked) > .fa-sun {
+  opacity: 1;
+}

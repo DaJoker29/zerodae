@@ -1,0 +1,143 @@
+/*
+  ______          _____ _______ _    _   _______ _    _ ______ __  __ ______
+ |  ____|   /\   |  __ \__   __| |  | | |__   __| |  | |  ____|  \/  |  ____|
+ | |__     /  \  | |__) | | |  | |__| |    | |  | |__| | |__  | \  / | |__
+ |  __|   / /\ \ |  _  /  | |  |  __  |    | |  |  __  |  __| | |\/| |  __|
+ | |____ / ____ \| | \ \  | |  | |  | |    | |  | |  | | |____| |  | | |____
+ |______/_/    \_\_|  \_\ |_|  |_|  |_|    |_|  |_|  |_|______|_|  |_|______|
+
+
+*/
+
+body.light-theme {
+  --__scheme: light;
+  --__bg-clr: var(--brown-300);
+  --__text-clr: var(--black);
+
+  --__link-clr: var(--green-700);
+  --__link-hover-clr: var(--green-600);
+
+  --__highlight-clr: var(--brown-300);
+  --__hero-highlight-bg-clr: var(--brown-700);
+
+  --__btn-bg: linear-gradient(42deg, var(--green-700), var(--green-600));
+  --__btn-text: var(--brown-300);
+  --__btn-hover-bg: linear-gradient(42deg, var(--green-600), var(--green-700));
+  --__btn-hover-text: var(--green-300);
+}
+
+body.dark-theme {
+  --__scheme: dark;
+  --__bg-clr: var(--brown-700);
+  --__text-clr: var(--white);
+
+  --__link-clr: var(--green-300);
+  --__link-hover-clr: var(--brown-300);
+
+  --__highlight-clr: var(--green-700);
+  --__hero-highlight-bg-clr: var(--brown-300);
+
+  --__btn-bg: linear-gradient(42deg, var(--green-700), var(--green-600));
+  --__btn-text: var(--brown-300);
+  --__btn-hover-bg: linear-gradient(42deg, var(--green-600), var(--green-700));
+  --__btn-hover-text: var(--green-300);
+}
+
+body.theme-earth {
+  color-scheme: var(--__scheme);
+  background-color: var(--__bg-clr);
+  color: var(--__text-clr);
+}
+
+.highlight {
+  color: var(--__highlight-clr);
+}
+
+section {
+  padding-top: var(--gap);
+  padding-bottom: var(--gap);
+}
+
+a {
+  color: var(--__link-clr);
+}
+
+a:hover {
+  color: var(--__link-hover-clr);
+}
+
+.btn,
+button,
+input[type='submit'],
+input[type='button'],
+input[type='reset'] {
+  appearance: none;
+  text-decoration: none;
+  background: var(--__btn-bg);
+  color: var(--__btn-text);
+  border-width: 0;
+  border-radius: 4px;
+  padding: var(--quarter-gap) var(--half-gap);
+  cursor: pointer;
+  font-weight: 600;
+  transition-property: color, background-image;
+  transition-duration: 200ms;
+}
+
+.btn:hover,
+button:hover,
+input[type='submit']:hover,
+input[type='button']:hover,
+input[type='reset']:hover {
+  background: var(--__btn-hover-bg);
+  color: var(--__btn-hover-text);
+}
+
+/*
+  _    _ ______ _____   ____
+ | |  | |  ____|  __ \ / __ \
+ | |__| | |__  | |__) | |  | |
+ |  __  |  __| |  _  /| |  | |
+ | |  | | |____| | \ \| |__| |
+ |_|  |_|______|_|  \_\\____/
+
+
+*/
+
+.hero {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 85svh;
+}
+
+.hero > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: var(--gap);
+}
+
+.hero .highlight {
+  background-color: var(--__hero-highlight-bg-clr);
+  padding: 4px;
+}
+
+.profile-pic {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.social-tag {
+  padding-top: var(--double-gap);
+}
+
+.social-icons {
+  margin: 1rem 0;
+  display: flex;
+  gap: calc(var(--fluid-gap) / 4) var(--gap);
+  list-style-type: none;
+  flex-wrap: wrap;
+}

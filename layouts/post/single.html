@@ -1,0 +1,41 @@
+{{ define "main"}}
+<!-- Single Page -->
+<section class="single content-grid">
+  <div class="breakout return-to-blog">
+    <p>
+      <i class="fas fa-arrow-left"></i>
+      <a href="/blog">Return to Blog</a>
+    </p>
+  </div>
+  <div>
+    {{ with resources.GetMatch .Params.FeaturedImg | fingerprint }} {{ with
+    .Resize "600x600 webp"}}
+    <img
+      src="{{ .RelPermalink}}"
+      alt=""
+      height="{{ .Height }}"
+      width="{{ .Width }}"
+      class="featured-img"
+    />
+    {{ end }} {{ end }}
+  </div>
+  <h1>{{ .Title }}</h1>
+  <div class="byline">
+    <address>
+      By
+      <a rel="author" href="/me">Dewitt Buckingham</a>
+    </address>
+    &mdash;
+    <span class="byline__date">June 7th, 2024</span>
+  </div>
+  <div class="reading-time"><p>{{ .ReadingTime}} minute read</p></div>
+  <div class="post-content">{{ .Content }}</div>
+  {{ if .Params.tags }}
+  <div class="blog-tags">
+    Tags: {{range .Params.tags }}
+    <strong>{{ . }}</strong> {{ end }}
+  </div>
+  {{ end }} {{ partial "blog/related.html" .}}
+</section>
+
+{{ end }}
