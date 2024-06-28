@@ -3,7 +3,7 @@ type = 'me'
 layout = 'single'
 +++
 
-_Updated: June 2024_
+_Updated &bull; June 2024_
 
 ### Recommendations
 
