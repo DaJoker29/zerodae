@@ -1,10 +1,10 @@
 <footer id="site-footer" class="site-footer content-grid">
   <div class="copyright">
-    {{- with .GitInfo }}
+    {{- if .GitInfo}} {{- with .GitInfo }}
     <span
       >{{ .AbbreviatedHash }} | {{ .Subject }} | {{ .AuthorDate }} <br
     /></span>
-    {{ end }} Copyright &copy; 2024 &bull; Zero Daedalus &bull;
+    {{ end }} {{ end }}Copyright &copy; 2024 &bull; Zero Daedalus &bull;
     <a href="https://www.linkedin.com/in/dewittbuck/">LinkedIn</a> &bull;
     <a href="https://github.com/DaJoker29">GitHub</a> &bull;
     <a href="mailto:dewitt@zerodaedalus.net">Email</a> &bull;
