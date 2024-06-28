@@ -1,6 +1,7 @@
 +++
 type = 'me'
 layout = 'single'
+title = 'Dewitt'
 +++
 
 _Updated &bull; June 2024_

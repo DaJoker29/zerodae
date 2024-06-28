@@ -4,7 +4,10 @@
 <html lang="en">
   <head>
     {{ partial "head/meta.html" . }}
-    <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+    <title>
+      {{ block "title" . }} Web Design & Development for Small Business • {{
+      .Site.Title }} {{ end }}
+    </title>
     {{ partial "head/styles.html" . }} {{ partial "head/scripts.html" . }}
   </head>
   <body class="theme-air light-theme no-js is-loading">

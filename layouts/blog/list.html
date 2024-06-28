@@ -1,5 +1,6 @@
-{{ define "main" }} {{ partial "blog/search-overlay.html" . }} {{ partial
-"blog/hero.html" .}} {{ partial "blog/toolbar.html" . }}
+{{ define "title" }} {{ .Title }} &bull; {{ .Site.Title }} {{ end }} {{ define
+"main" }} {{ partial "blog/search-overlay.html" . }} {{ partial "blog/hero.html"
+.}} {{ partial "blog/toolbar.html" . }}
 <section class="main-content content-grid">
   <div class="main-feed breakout">
     {{ range .Pages }} {{ .Render "summary" }} {{ end}}

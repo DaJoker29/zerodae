@@ -1,4 +1,4 @@
 +++
-title = "ZeroDae Blog"
+title = "Blog"
 layout = "blog"
 +++

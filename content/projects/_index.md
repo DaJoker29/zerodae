@@ -1,3 +1,3 @@
 +++
-title = "Something"
+title = "Projects"
 +++

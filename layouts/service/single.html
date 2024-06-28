@@ -1,4 +1,5 @@
-{{ define "main" }} {{ $bg := resources.Get "/img/sky.jpg"}}
+{{ define "title" }} {{ .Title }} &bull; {{ .Site.Title }} {{ end }}{{ define
+"main" }} {{ $bg := resources.Get "/img/sky.jpg"}}
 
 <div
   class="banner"
