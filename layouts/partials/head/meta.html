@@ -6,6 +6,7 @@
 />
 <meta
   name="keywords"
-  content="{{ .Params.keywords | default .Site.Params.Keywords }}"
+  content="{{ delimit .Keywords `, ` |
+default .Site.Params.Keywords }}"
 />
 <link rel="canonical" href="{{ .Permalink }}" />
