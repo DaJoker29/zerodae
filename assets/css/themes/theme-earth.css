@@ -161,9 +161,10 @@ input[type='reset']:hover {
 }
 
 .recommendations > ul {
-  list-style-type: disc;
+  list-style-type: '→';
 }
 
 .recommendations > ul > li {
   margin-left: var(--gap);
+  padding-left: var(--quarter-gap);
 }
