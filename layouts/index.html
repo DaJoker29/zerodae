@@ -48,11 +48,8 @@
     Zero Daedalus specializes in web design and development for small businesses
     across the US. We hand-craft websites, line by line, to ensure optimal
     performance, attracting more customers to your site and boosting your
-    business's revenue.
-    <a
-      href="https://blog.zerodaedal.us/designer-x-developer-x-consultant-which-to-use/"
-      >Learn more.</a
-    >
+    business's revenue. {{- $opts := dict "path" "/blog/post-3"}}
+    <a href="{{  .RelRef $opts }}">Learn more.</a>
 
     <!-- Include Link to Designer x Developer x Consultant Blog Post. -->
   </p>

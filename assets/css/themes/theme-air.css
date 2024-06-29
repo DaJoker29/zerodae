@@ -735,7 +735,7 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   align-items: center;
 }
 
-.service-page h5 {
+.service-page > h5 {
   margin: var(--gap) 0;
   color: var(--__service-pg-heading-clr);
 }
@@ -755,4 +755,8 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
 .service-page .btn {
   margin-top: var(--gap);
   display: inline-block;
+}
+
+.service-page > h3 {
+  line-height: 1.5;
 }

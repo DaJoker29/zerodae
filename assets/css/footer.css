@@ -1,6 +1,24 @@
 .copyright {
-  position: sticky;
-  top: 100svh;
-  margin: var(--double-gap) 0 var(--gap);
   font-size: 1rem;
+}
+
+.site-footer {
+  margin: var(--double-gap) 0 var(--gap);
+  padding-top: var(--quad-gap);
+  display: flex;
+  gap: var(--half-gap);
+}
+
+.site-footer > .footer-contacts {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+}
+
+.site-footer > .footer-contacts > li > svg {
+  opacity: 0.5;
+}
+
+#layout {
+  position: relative;
 }
