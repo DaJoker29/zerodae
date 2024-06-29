@@ -71,11 +71,8 @@
   color: var(--shadow);
 }
 
-.fa-tint,
-.fa-wind,
-.fa-fire,
-.fa-seedling {
-  margin-right: var(--half-gap);
+nav svg {
+  margin-right: var(--quarter-gap);
 }
 
 .no-js .header__menu-btn {

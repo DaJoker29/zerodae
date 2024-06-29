@@ -1,8 +1,8 @@
 .theme-toggle {
-  --__moon-clr: var(--yellow);
-  --__sun-clr: var(--orange);
+  --__moon-clr: lightblue;
+  --__sun-clr: orange;
   --__shadow-clr: rgba(0, 0, 0, 0.3);
-  --__toggle-spacing: var(--quarter-gap);
+  --__toggle-spacing: var(--eighth-gap);
 
   position: fixed;
   bottom: 0;
@@ -22,12 +22,12 @@
   background: var(--__shadow-clr);
 }
 
-.theme-toggle:hover > label > .fa-moon {
+.theme-toggle:hover > label > .moon {
   color: var(--__moon-clr);
   filter: drop-shadow(0 0 0.2rem var(--__shadow-clr));
 }
 
-.theme-toggle:hover > label > .fa-sun {
+.theme-toggle:hover > label > .sun {
   color: var(--__sun-clr);
   filter: drop-shadow(0 0 0.2rem var(--__shadow-clr));
 }
@@ -37,12 +37,12 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  width: 2em;
-  height: 2em;
+  width: 2.75em;
+  height: 2.75em;
 }
 
-.fa-moon,
-.fa-sun {
+.moon,
+.sun {
   color: var(--__shadow-clr);
   transition: all 200ms;
   position: absolute;
@@ -50,18 +50,18 @@
   left: var(--__toggle-spacing);
 }
 
-.theme-toggle > label > .fa-moon {
+.theme-toggle > label > .moon {
   opacity: 1;
 }
 
-.theme-toggle > label > .fa-sun {
+.theme-toggle > label > .sun {
   opacity: 0;
 }
 
-.theme-toggle > label:has(input:checked) > .fa-moon {
+.theme-toggle > label:has(input:checked) > .moon {
   opacity: 0;
 }
 
-.theme-toggle > label:has(input:checked) > .fa-sun {
+.theme-toggle > label:has(input:checked) > .sun {
   opacity: 1;
 }
