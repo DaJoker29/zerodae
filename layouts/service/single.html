@@ -1,9 +1,10 @@
 {{ define "title" }} {{ .Title }} &bull; {{ .Site.Title }} {{ end }}{{ define
-"main" }} {{ $bg := resources.Get "/img/sky.jpg"}}
+"main" }} {{ $jpg := resources.Get "/img/sky.jpg"}} {{ $img := $jpg.Process
+"webp"}}
 
 <div
   class="banner"
-  style="background-image: url('{{ $bg.RelPermalink }}');"
+  style="background-image: url('{{ $img.RelPermalink }}');"
 ></div>
 <div class="service-page content-grid">
   <h1 class="service-heading">

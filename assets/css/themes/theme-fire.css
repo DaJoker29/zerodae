@@ -167,7 +167,6 @@ input[type='reset']:hover {
 
 .hero {
   background-color: var(--__hero-bg-clr);
-  background-image: url('../img/volcano.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

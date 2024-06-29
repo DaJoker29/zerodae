@@ -1,10 +1,18 @@
-<!-- Hero -->
-{{ $img := resources.Get "img/volcano.jpg"}}
+{{ $jpg := resources.Get "img/volcano.jpg" }} {{ $img := $jpg.Process "webp"}}
+
 <section
   id="hero"
   class="hero"
+  {{
+  with
+  $img
+  }}
   style="background-image: url('{{ $img.RelPermalink }}');"
+  {{
+  end
+  }}
 ></section>
+
 <section id="masthead" class="masthead content-grid">
   <div class="breakout">
     <h1><span class="highlight">ZeroDae</span> Blog</h1>
