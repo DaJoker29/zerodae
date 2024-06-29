@@ -416,39 +416,7 @@
 </section>
 <section id="contact" class="contact content-grid">
   <div class="contact-container">
-    <form action="" id="contact-form" class="contact-form">
-      <fieldset>
-        <h2><span class="highlight">GET</span> IN TOUCH</h2>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Business" />
-        <input type="text" placeholder="Email" />
-        <input type="tel" placeholder="Phone Number" />
-        <select
-          name="interest"
-          id="contact-interest"
-          aria-label="Select your interest."
-        >
-          <option value selected disabled>Select</option>
-          <option value="Website">Website</option>
-          <option value="Search Engine Optimization">
-            Search Engine Optimization
-          </option>
-          <option value="E-commerce">E-commerce</option>
-          <option value="Content Marketing">Content Marketing</option>
-          <option value="Digital Strategy">Digital Strategy</option>
-          <option value="Maintenance & Support">
-            Maintenance &amp; Support
-          </option>
-          <option value="Other">Other</option>
-        </select>
-        <textarea
-          name="message"
-          id="contact-msg"
-          placeholder="Type your message here..."
-        ></textarea>
-        <input type="submit" value="Submit" />
-      </fieldset>
-    </form>
+    {{ partial "landing/contact.html" . }}
     <div class="contact-info">
       <div class="contact-group">
         <p>Email:</p>

@@ -1,0 +1,38 @@
+<form
+  action="https://formspree.io/f/manwywrd"
+  method="POST"
+  id="contact-form"
+  class="contact-form"
+>
+  <fieldset>
+    <h2><span class="highlight">GET</span> IN TOUCH</h2>
+    <input type="text" placeholder="First Name" name="first-name" required />
+    <input type="text" placeholder="Last Name" name="last-name" />
+    <input type="text" placeholder="Company" name="company" />
+    <input type="tel" placeholder="Phone Number" name="telephone" required />
+    <input type="email" placeholder="Email" name="email" required />
+    <select
+      name="interest"
+      id="contact-interest"
+      aria-label="Select your interest."
+    >
+      <option value selected disabled>Select</option>
+      <option value="Website">Website</option>
+      <option value="Search Engine Optimization">
+        Search Engine Optimization
+      </option>
+      <option value="E-commerce">E-commerce</option>
+      <option value="Content Marketing">Content Marketing</option>
+      <option value="Digital Strategy">Digital Strategy</option>
+      <option value="Maintenance & Support">Maintenance &amp; Support</option>
+      <option value="Other">Other</option>
+    </select>
+    <textarea
+      name="message"
+      id="contact-msg"
+      placeholder="Type your message here..."
+      required
+    ></textarea>
+    <input type="submit" value="Submit" />
+  </fieldset>
+</form>
