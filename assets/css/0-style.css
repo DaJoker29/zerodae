@@ -218,6 +218,10 @@ ul {
   list-style: none;
 }
 
+hr {
+  margin-block: var(--gap);
+}
+
 #layout {
   display: flex;
   flex-direction: column;

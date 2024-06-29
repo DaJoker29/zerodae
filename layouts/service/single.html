@@ -6,6 +6,7 @@
   class="banner"
   style="background-image: url('{{ $img.RelPermalink }}');"
 ></div>
+
 <div class="service-page content-grid">
   <h1 class="service-heading">
     <a href="/"
@@ -35,7 +36,9 @@
     ></a>
     <span>{{ .Page.Title }}</span>
   </h1>
-  {{.Content }}
-</div>
 
+  {{.Content }}
+  <hr />
+  {{ partial "blog/related.html" . }}
+</div>
 {{ end }}

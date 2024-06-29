@@ -1,6 +1,8 @@
 +++
 title = "Search Engine Optimization"
 layout = "service"
+tags = ["service"]
+
 +++
 
 It's sad to say but building a beautiful website, by itself, does nothing to grow your business. A beautiful website that no one visits is a waste of time, energy, and money. That's why we use the best tools and techniques to optimize your website so that search engines like Google will notice your site and share it with the right people.
