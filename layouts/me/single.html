@@ -84,11 +84,17 @@
         </p>
       </div>
     </div>
+    {{ with resources.GetMatch "img/profile_pic__full.png"}} {{ with .Resize
+    (printf "%dx%d webp" .Width .Height)}}
     <img
+      loading="lazy"
+      src="{{ .RelPermalink}}"
+      alt="Profile image of Dewitt Buckingham"
+      height="{{ .Height }}"
+      width="{{ .Width }}"
       class="profile-pic hidden"
-      src="https://cdn.zerodaedal.us/2024.03.17%20-%20Profile%20Picture.png"
-      alt="Dewitt Buckingham"
     />
+    {{ end }} {{ end }}
   </div>
 </section>
 <section class="recommendations">{{ .Content }}</section>
