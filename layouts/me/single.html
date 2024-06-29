@@ -87,7 +87,6 @@
     {{ with resources.GetMatch "img/profile_pic__full.png"}} {{ with .Resize
     (printf "%dx%d webp" .Width .Height)}}
     <img
-      loading="lazy"
       src="{{ .RelPermalink}}"
       alt="Profile image of Dewitt Buckingham"
       height="{{ .Height }}"
