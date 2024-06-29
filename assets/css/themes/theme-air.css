@@ -379,7 +379,7 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   filter: drop-shadow(0 0 0.5rem var(--__service-card-shadow-hover-clr));
 }
 
-.service-card__icon {
+.service-card > svg {
   font-size: 3rem;
   line-height: 1;
   margin-top: var(--gap);
@@ -729,8 +729,10 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   margin-bottom: var(--double-gap);
 }
 
-.service-heading > a {
-  text-decoration: none;
+.service-heading {
+  display: flex;
+  gap: var(--half-gap);
+  align-items: center;
 }
 
 .service-page h5 {
