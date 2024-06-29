@@ -61,7 +61,9 @@
           <span>{{ . }}</span>
           {{end}}
         </div>
-        <a href="{{ .Params.projectUrl }}" class="btn">View Project</a>
+        <a href="{{ .Params.projectUrl }}" target="_blank" class="btn"
+          >View Project</a
+        >
       </header>
       <div class="description">
         {{ with resources.GetMatch .Params.featuredImg }} {{ with .Resize

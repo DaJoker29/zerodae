@@ -258,72 +258,97 @@
   <h2 class="breakout"><span class="highlight">OUR</span> PORTFOLIO</h2>
   <div class="portfolio-container">
     <article class="portfolio-item">
-      {{ with resources.GetMatch "img/portfolio_neologic.png"}} {{ with .Resize
-      (printf "%dx%d webp" .Width .Height)}}
-      <img
-        loading="lazy"
-        src="{{ .RelPermalink}}"
-        alt=""
-        height="{{ .Height }}"
-        width="{{ .Width }}"
-        class="portfolio-item__thumbnail"
-      />
-      {{ end }} {{ end }}
-      <header>
-        <p class="portfolio-item__title">Neologic Studios</p>
-        <p class="portfolio-item__location">Bay Area, California</p>
-      </header>
-      <p class="portfolio-item__copy">
-        Neologic Studios is a professional sound engineering and multimedia
-        production company. We've hosted their website since 2017.
-      </p>
-      <a href="/" class="btn">Visit Neologic</a>
-    </article>
-    <article class="portfolio-item">
-      {{ with resources.GetMatch "img/portfolio_hisraft.png"}} {{ with .Resize
-      (printf "%dx%d webp" .Width .Height)}}
-      <img
-        loading="lazy"
-        src="{{ .RelPermalink}}"
-        alt=""
-        height="{{ .Height }}"
-        width="{{ .Width }}"
-        class="portfolio-item__thumbnail"
-      />
-      {{ end }} {{ end }}
-      <header>
-        <p class="portfolio-item__title">His RAFT</p>
-        <p class="portfolio-item__location">Stockton, California</p>
-      </header>
-      <p class="portfolio-item__copy">
-        His R.A.F.T. is a nonprofit supplying food and other goods to the
-        underserved throughout the Central Valley. I designed their logo and
-        website back in 2015.
-      </p>
-      <a href="/" class="btn">Visit His RAFT</a>
+      <div class="portfolio-img">
+        {{ with resources.GetMatch "img/neologic-thumbnail-1.png"}} {{ with
+        .Resize (printf "%dx%d webp" .Width .Height)}}
+        <img
+          loading="lazy"
+          src="{{ .RelPermalink}}"
+          alt=""
+          height="{{ .Height }}"
+          width="{{ .Width }}"
+          class="portfolio-item__thumbnail"
+        />
+        {{ end }} {{ end }}
+      </div>
+      <div class="portfolio-copy">
+        <header>
+          <p class="portfolio-item__title">Neologic Studios</p>
+          <p class="portfolio-item__location">Bay Area, California</p>
+        </header>
+        <p class="portfolio-item__copy">
+          Neologic Studios is a professional sound engineering and multimedia
+          production company. We've hosted their website since 2017.
+        </p>
+        <div>
+          <a href="https://www.neologicstudios.com" target="_blank" class="btn"
+            >Visit Neologic</a
+          >
+        </div>
+      </div>
     </article>
 
     <article class="portfolio-item">
-      {{ with resources.GetMatch "img/portfolio_myq.png"}} {{ with .Resize
+      {{ with resources.GetMatch "img/portfolio_hisraft.png"}} {{ with .Resize
       (printf "%dx%d webp" .Width .Height)}}
-      <img
-        loading="lazy"
-        src="{{ .RelPermalink}}"
-        alt=""
-        height="{{ .Height }}"
-        width="{{ .Width }}"
-        class="portfolio-item__thumbnail"
-      />
+      <div class="portfolio-img">
+        <img
+          loading="lazy"
+          src="{{ .RelPermalink}}"
+          alt=""
+          height="{{ .Height }}"
+          width="{{ .Width }}"
+          class="portfolio-item__thumbnail"
+        />
+      </div>
       {{ end }} {{ end }}
-      <header>
-        <p class="portfolio-item__title">Mmm, Yes, Quite</p>
-        <p class="portfolio-item__location">Manteca, California</p>
-      </header>
-      <p class="portfolio-item__copy">
-        Mmm, Yes, Quite is a nerdy online shop selling hand-designed tee shirts
-        and accessories. This store has been a pet project since 2018.
-      </p>
-      <a href="/" class="btn">Visit MyQ</a>
+      <div class="portfolio-copy">
+        <header>
+          <p class="portfolio-item__title">His RAFT</p>
+          <p class="portfolio-item__location">Stockton, California</p>
+        </header>
+        <p class="portfolio-item__copy">
+          His R.A.F.T. is a nonprofit supplying food and other goods to the
+          underserved throughout the Central Valley. I designed their logo and
+          website back in 2015.
+        </p>
+        <div>
+          <a href="https://www.hisraftinc.org" target="_blank" class="btn"
+            >Visit His RAFT</a
+          >
+        </div>
+      </div>
+    </article>
+
+    <article class="portfolio-item">
+      <div class="portfolio-img">
+        {{ with resources.GetMatch "img/portfolio_myq.png"}} {{ with .Resize
+        (printf "%dx%d webp" .Width .Height)}}
+        <img
+          loading="lazy"
+          src="{{ .RelPermalink}}"
+          alt=""
+          height="{{ .Height }}"
+          width="{{ .Width }}"
+          class="portfolio-item__thumbnail"
+        />
+        {{ end }} {{ end }}
+      </div>
+      <div class="portfolio-copy">
+        <header>
+          <p class="portfolio-item__title">Mmm, Yes, Quite</p>
+          <p class="portfolio-item__location">Manteca, California</p>
+        </header>
+        <p class="portfolio-item__copy">
+          Mmm, Yes, Quite is a nerdy online shop selling hand-designed tee
+          shirts and accessories. This store has been a pet project since 2018.
+        </p>
+        <div>
+          <a href="https://mmmyesquite.com/" class="btn" target="_blank"
+            >Visit MyQ</a
+          >
+        </div>
+      </div>
     </article>
   </div>
 </section>
