@@ -92,7 +92,7 @@ input[type='reset'] {
   color: var(--__btn-text);
 
   font-weight: 600;
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .btn:hover,
@@ -171,8 +171,8 @@ input[type='reset']:hover {
 
 .filter-close {
   display: none;
-  padding: 1px var(--eighth-gap);
-  line-height: 1;
+  padding: 2px var(--eighth-gap);
+  line-height: 0.8;
   align-self: center;
 }
 
@@ -198,9 +198,12 @@ input[type='reset']:hover {
   gap: var(--gap);
 }
 
-.info > header > h2 {
-  margin: 0;
+.info > header > h1 {
+  margin: 0 0 var(--gap) 0;
   line-height: 0.8;
+  display: flex;
+  align-items: center;
+  gap: var(--half-gap);
 }
 
 .tags {

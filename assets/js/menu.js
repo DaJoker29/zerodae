@@ -1,15 +1,15 @@
 const btn = document.querySelector('[data-btn="menu"]');
 const menuWrapper = document.querySelector('[data-menu-wrapper]');
 let icon = document.querySelector('[data-menu-icon]');
+const openIcon = document.querySelector('[data-menu-open-icon]');
+const closeIcon = document.querySelector('[data-menu-close-icon]');
 
 const open = () => {
   menuWrapper.hidden = false;
   btn.setAttribute('aria-expanded', true);
   btn.setAttribute('aria-label', 'Close menu');
-  icon = document.querySelector('[data-menu-icon]');
-  icon.setAttribute('data-icon', 'times');
-  icon.classList.toggle('fa-bars');
-  icon.classList.toggle('fa-times');
+  openIcon.style.display = 'none';
+  closeIcon.style.display = 'block';
 
   setTimeout(() => {
     menuWrapper.classList.add('is-visible');
@@ -20,10 +20,8 @@ const open = () => {
 const close = () => {
   menuWrapper.classList.remove('is-visible');
   document.body.classList.remove('is-menu-visible');
-  icon = document.querySelector('[data-menu-icon]');
-  icon.setAttribute('data-icon', 'bars');
-  icon.classList.toggle('fa-bars');
-  icon.classList.toggle('fa-times');
+  openIcon.style.display = 'block';
+  closeIcon.style.display = 'none';
 
   setTimeout(() => {
     menuWrapper.hidden = true;

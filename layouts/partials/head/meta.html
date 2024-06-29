@@ -1,4 +1,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{ .Site.Params.Description}}" />
-<meta name="keywords" content="{{ .Site.Params.Keywords }}" />
+<meta
+  name="description"
+  content="{{ .Description | default .Site.Params.Description}}"
+/>
+<meta
+  name="keywords"
+  content="{{ delimit .Keywords `, ` |
+default .Site.Params.Keywords }}"
+/>
+<link rel="canonical" href="{{ .Permalink }}" />

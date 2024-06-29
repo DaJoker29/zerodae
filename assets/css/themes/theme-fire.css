@@ -167,7 +167,6 @@ input[type='reset']:hover {
 
 .hero {
   background-color: var(--__hero-bg-clr);
-  background-image: url('../img/volcano.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -441,6 +440,11 @@ input[type='reset']:hover {
   margin-top: var(--gap);
 }
 
+.single > h1 {
+  margin-top: var(--half-gap);
+  margin-bottom: var(--half-gap);
+}
+
 .byline {
   font-size: 0.8rem;
 }
@@ -485,8 +489,15 @@ input[type='reset']:hover {
   margin-top: var(--double-gap);
 }
 
-.return-to-blog a {
+.return-to-blog > a {
+  display: flex;
+  gap: var(--quarter-gap);
+  align-content: center;
   text-decoration: none;
+}
+
+.return-to-blog svg {
+  font-size: 2em;
 }
 
 /*

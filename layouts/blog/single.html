@@ -1,11 +1,31 @@
-{{ define "main"}}
+{{ define "title" }} {{ .Title }} &bull; {{ .Site.Title }} {{ end }}{{ define
+"main"}}
 <!-- Single Page -->
 <section class="single content-grid">
   <div class="breakout return-to-blog">
-    <p>
-      <i class="fas fa-arrow-left"></i>
-      <a href="/blog">Return to Blog</a>
-    </p>
+    <a href="/blog/">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 48 48"
+      >
+        <defs>
+          <mask id="ipSLeftC0">
+            <g fill="none" stroke-linejoin="round" stroke-width="4">
+              <path
+                fill="#fff"
+                stroke="#fff"
+                d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
+              />
+              <path stroke="#000" stroke-linecap="round" d="m27 33l-9-9l9-9" />
+            </g>
+          </mask>
+        </defs>
+        <path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSLeftC0)" />
+      </svg>
+      <span>Return to Blog</span></a
+    >
   </div>
   <div>
     {{ with resources.GetMatch .Params.FeaturedImg | fingerprint }} {{ with
@@ -23,7 +43,7 @@
   <div class="byline">
     <address>
       By
-      <a rel="author" href="/me">Dewitt Buckingham</a>
+      <a rel="author" href="/me/">Dewitt Buckingham</a>
     </address>
     &mdash;
     <span class="byline__date">June 7th, 2024</span>
