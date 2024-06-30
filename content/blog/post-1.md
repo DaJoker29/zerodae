@@ -8,6 +8,7 @@ keywords = [
 description = "Every coder needs their own web developer toolkit. Here I will share some of the tools and techniques I use to design and build amazing websites."
 tags = [ "Design", "Development" ]
 featuredImg = "img/toolbox-1.png"
+author = "Dewitt Buckingham"
 +++
 
 _This post contains affiliate links._
