@@ -594,8 +594,18 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   color: var(--__pricing-text-clr);
 }
 
-.pricing p {
-  font-weight: 500;
+.pricing-heading > p > strong {
+  font-weight: 700;
+  font-size: clamp(1rem, calc(0.8rem + 1vw), 2rem);
+}
+
+.pricing-heading > p {
+  margin-bottom: var(--quarter-gap);
+  line-height: 1;
+}
+
+.pricing-pitch > p {
+  font-weight: 600;
 }
 
 .pricing-copy > div > div > .pill {
