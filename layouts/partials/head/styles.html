@@ -6,6 +6,13 @@ minify | fingerprint }} {{ $tag := .Scratch.Get "theme"}} {{ $THEME := replace
 <link rel="preload" href="{{ $CSS.RelPermalink }}" as="style" />
 <link rel="preload" href="{{ $THEME.RelPermalink }}" as="style" />
 
+{{ with resources.GetMatch "img/spaceship2.png" }} {{ with .Resize (printf
+"%dx%d webp" .Width .Height)}}
+
+<link rel="preload" href="{{ .RelPermalink }}" as="image" type="image/webp" />
+
+{{ end }} {{ end }}
+
 <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $THEME.RelPermalink }}" />
 <link
