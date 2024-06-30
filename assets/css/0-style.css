@@ -221,7 +221,3 @@ ul {
 hr {
   margin-block: var(--gap);
 }
-
-#layout {
-  min-height: 100svh;
-}
