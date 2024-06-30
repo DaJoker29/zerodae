@@ -5,3 +5,24 @@ minify | fingerprint }} {{ $tag := .Scratch.Get "theme"}} {{ $THEME := replace
 
 <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $THEME.RelPermalink }}" />
+<link
+  rel="preload"
+  href="/fonts/raleway-v34-latin-800.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/raleway-v34-latin-900.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/raleway-v34-latin-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
