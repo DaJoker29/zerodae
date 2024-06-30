@@ -3,6 +3,9 @@ minify | fingerprint }} {{ $tag := .Scratch.Get "theme"}} {{ $THEME := replace
 "css/themes/theme-type.css" "type" $tag | resources.Get | minify | fingerprint
 }}
 
+<link rel="preload" href="{{ $CSS.RelPermalink }}" as="style" />
+<link rel="preload" href="{{ $THEME.RelPermalink }}" as="style" />
+
 <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $THEME.RelPermalink }}" />
 <link
