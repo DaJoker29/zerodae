@@ -1,7 +1,7 @@
 +++
 type = 'me'
 layout = 'single'
-title = 'Dewitt'
+title = 'Dewitt Buckingham'
 +++
 
 _Updated &bull; June 2024_
