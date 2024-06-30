@@ -15,7 +15,7 @@
 .hidden {
   opacity: 0.2;
   filter: blur(var(--half-gap));
-  transition: filter 1200ms, opacity 1200ms, transform 1200ms;
+  transition: filter 1000ms, opacity 1000ms, transform 1000ms;
   transform: translateX(-100%);
 }
 

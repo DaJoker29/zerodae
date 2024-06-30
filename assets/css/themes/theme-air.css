@@ -220,14 +220,15 @@ input[type='reset']:hover {
 }
 
 .hero > h1 {
-  opacity: 0;
+  opacity: 0.2;
   scale: 0.8;
-  animation: fade-in 200ms ease forwards;
+  animation: fade-in 1000ms ease forwards;
   font-size: clamp(2.5rem, 5vw + 1rem, 6.5rem);
   margin-top: var(--fluid-gap);
   margin-bottom: var(--fluid-gap);
   color: var(--__hero-title-clr);
-  animation: air-neon 1s linear alternate infinite, fade-in 1800ms ease forwards;
+  animation: air-neon 1000ms linear alternate infinite,
+    fade-in 1000ms ease forwards;
 }
 
 .hero > h1 > span {
@@ -241,15 +242,15 @@ input[type='reset']:hover {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--gap);
   align-items: center;
-  opacity: 0;
+  opacity: 0.2;
   scale: 0.8;
-  animation: fade-in 1800ms ease forwards;
+  animation: fade-in 1000ms ease forwards;
 }
 
 .hero__img {
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: var(--gap);
-  transition: all 400ms ease-in-out;
+  transition: all 1000ms ease-in-out;
   filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr));
 }
 
