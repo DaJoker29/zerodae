@@ -3,5 +3,36 @@ minify | fingerprint }} {{ $tag := .Scratch.Get "theme"}} {{ $THEME := replace
 "css/themes/theme-type.css" "type" $tag | resources.Get | minify | fingerprint
 }}
 
+<link rel="preload" href="{{ $CSS.RelPermalink }}" as="style" />
+<link rel="preload" href="{{ $THEME.RelPermalink }}" as="style" />
+
+{{ with resources.GetMatch "img/spaceship2.png" }} {{ with .Resize (printf
+"%dx%d webp" .Width .Height)}}
+
+<link rel="preload" href="{{ .RelPermalink }}" as="image" type="image/webp" />
+
+{{ end }} {{ end }}
+
 <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" />
 <link rel="stylesheet" href="{{ $THEME.RelPermalink }}" />
+<link
+  rel="preload"
+  href="/fonts/raleway-v34-latin-800.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/raleway-v34-latin-900.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="/fonts/raleway-v34-latin-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>

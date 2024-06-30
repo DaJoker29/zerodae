@@ -7,7 +7,7 @@
 
 @keyframes fade-out {
   to {
-    scale: 0.8;
+    scale: 0.9;
     opacity: 0;
   }
 }
@@ -15,8 +15,8 @@
 .hidden {
   opacity: 0.2;
   filter: blur(var(--half-gap));
-  transition: filter 1200ms, opacity 1200ms, transform 1200ms;
-  transform: translateX(-100%);
+  transition: filter 1000ms, opacity 1000ms, transform 1000ms;
+  transform: translateX(-50%);
 }
 
 .visible {

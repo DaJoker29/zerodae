@@ -1,4 +1,5 @@
 {{ $JS := resources.Get "js/index.js" | js.Build "main.js" | minify |
 fingerprint }}
 
+<link rel="preload" href="{{ $JS.RelPermalink }}" as="script" />
 <script type="module" src="{{ $JS.RelPermalink }}"></script>
