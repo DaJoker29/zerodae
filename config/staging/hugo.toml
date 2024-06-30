@@ -1,1 +1,4 @@
 baseURL = "https://staging.zerodaedalus.net"
+
+[params]
+    GoogleID = "G-TR91MW0P6W"
