@@ -221,7 +221,7 @@ input[type='reset']:hover {
 
 .hero > h1 {
   opacity: 0.2;
-  scale: 0.8;
+  scale: 0.9;
   animation: fade-in 1000ms ease forwards;
   font-size: clamp(2.5rem, 5vw + 1rem, 6.5rem);
   margin-top: var(--fluid-gap);
@@ -243,7 +243,7 @@ input[type='reset']:hover {
   gap: var(--gap);
   align-items: center;
   opacity: 0.2;
-  scale: 0.8;
+  scale: 0.9;
   animation: fade-in 1000ms ease forwards;
 }
 
