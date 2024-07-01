@@ -485,10 +485,6 @@ input[type='reset']:hover {
   line-height: 1.5;
 }
 
-.related {
-  margin-top: var(--double-gap);
-}
-
 .return-to-blog > a {
   display: flex;
   gap: var(--quarter-gap);

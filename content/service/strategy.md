@@ -9,7 +9,7 @@ At ZeroDae, we understand that a strong digital strategy is crucial for the succ
 
 ---
 
-### Our Services
+## Our Services
 
 - **Market Research and Analysis**
 
@@ -36,13 +36,13 @@ At ZeroDae, we understand that a strong digital strategy is crucial for the succ
 
 ---
 
-### Included in Our Monthly Package
+## Included in Our Monthly Package
 
 Our Digital Strategy services are included in our regular monthly package. This ensures you have a comprehensive, ongoing strategy to drive your business forward without any additional costs.
 
 ---
 
-### Why Choose Us?
+## Why Choose Us?
 
 - **Experienced Team:** Our digital strategists have extensive experience in developing and implementing successful digital strategies for businesses of all sizes.
 - **Client-Centric Approach:** We work closely with you to understand your business goals and create a strategy that aligns with your vision.
@@ -50,7 +50,7 @@ Our Digital Strategy services are included in our regular monthly package. This 
 
 ---
 
-### Ready to Transform Your Digital Presence?
+## Ready to Transform Your Digital Presence?
 
 Contact us today to discuss your digital strategy needs and find out how we can help you achieve your business goals.
 

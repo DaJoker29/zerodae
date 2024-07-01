@@ -9,7 +9,7 @@ At ZeroDae, we specialize in creating visually stunning, user-friendly websites 
 
 ---
 
-### Transforming Your Vision into a Supercharged Website
+## Transforming Your Vision into a Supercharged Website
 
 - **Custom Web Design**
 
@@ -31,7 +31,7 @@ At ZeroDae, we specialize in creating visually stunning, user-friendly websites 
 
   - If your existing website feels outdated, we can give it a fresh, modern look while improving functionality and performance.
 
-##### A Seamless Journey from Concept to Launch
+## A Seamless Journey from Concept to Launch
 
 - **Step 1: Discovery**
 
@@ -52,14 +52,14 @@ At ZeroDae, we specialize in creating visually stunning, user-friendly websites 
 - **Step 5: Launch**
   - After your approval, we launch your website and provide training and support to help you get started.
 
-##### Your Partners in Digital Success
+## Your Partners in Digital Success
 
 - **Experienced:** Our designers/developers have years of experience creating successful websites for small businesses.
 - **Client-Focused:** We prioritize your needs and are committed to exceeding your expectations.
 - **Ongoing Support:** We offer maintenance and support services to ensure your website remains up-to-date and performs optimally.
 - **Affordable Solutions:** Our services are competitively priced to provide excellent value for your investment.
 
-##### Ready to Transform Your Online Presence?
+## Ready to Transform Your Online Presence?
 
 Contact us today to discuss your project and learn how we can help you create a website that drives results. Let's build something great together!
 

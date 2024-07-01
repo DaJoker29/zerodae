@@ -221,3 +221,11 @@ ul {
 hr {
   margin-block: var(--gap);
 }
+
+.related {
+  margin-top: var(--quad-gap);
+}
+
+.related > h2 {
+  margin-bottom: var(--half-gap);
+}

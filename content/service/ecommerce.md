@@ -9,7 +9,7 @@ We specialize in creating powerful, user-friendly ecommerce websites that help s
 
 ---
 
-### Our Services
+## Our Services
 
 - **Custom Ecommerce Development**
 
@@ -32,13 +32,13 @@ We specialize in creating powerful, user-friendly ecommerce websites that help s
 
 ---
 
-### Custom Pricing
+## Custom Pricing
 
 Ecommerce projects are custom priced starting at $2,000. We tailor our solutions to meet the specific needs of your business, ensuring you get the best value for your investment.
 
 ---
 
-### Why Choose Us?
+## Why Choose Us?
 
 - **Expert Team:** Our experienced developers are well-versed in the latest ecommerce technologies and trends.
 - **Client-Centric Approach:** We work closely with you to understand your business goals and create a store that reflects your brand.
@@ -46,7 +46,7 @@ Ecommerce projects are custom priced starting at $2,000. We tailor our solutions
 
 ---
 
-### Ready to Launch Your Online Store?
+## Ready to Launch Your Online Store?
 
 Contact us today to discuss your ecommerce project and discover how we can help you grow your business online.
 
