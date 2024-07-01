@@ -16,7 +16,7 @@ Having been away for a while, meant I had to adapt my old workflow to my new env
 
 > I can already hear some of you asking “What’s an IDE?” It stands for Integrated Developer Environment and is a fancy text editor (like Notepad on steroids). Programmers use them to save time and reduce errors when writing tons and tons of code.
 
-### VS Code
+## VS Code
 
 If you had told me in 2019 that I’d be using a Visual Studio product as my main editor, I’d think you were literally bonkers. I’ve had gripes against the entire platform since I dabbled with Unity in 2013.
 
@@ -26,10 +26,10 @@ I’m avoiding the GitHub CoPilot feature, opting instead for TabNine assistance
 
 Automation is much easier with VS Code, and the GitHub integration is seamless, as it should be.
 
-### Sublime Text
+## Sublime Text
 
 That’s not to say that I don’t still love Sublime Text 4. I still use it for various tasks. However, my rapid, design-in-the-browser methodology is better supported by VS Code, especially given the subpar Windows tools for building the toolchain I’m familiar with.
 
-### Conclusion
+## Conclusion
 
 While Sublime Text remains a beloved tool in my toolkit, VS Code has become indispensable in my current workflow, particularly on a Windows platform. Its powerful extensions and seamless integrations make it the ideal choice for my web development needs.

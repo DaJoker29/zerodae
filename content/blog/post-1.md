@@ -23,7 +23,7 @@ I think this is going to be **most useful to other web developers**, but also **
 
 I plan to start with my go-to **_Hosting Providers_** and branch out to other tools in future posts, so be sure to stay tuned to my [LinkedIn feed](https://www.linkedin.com/in/dewittbuck/) for more updates.
 
-### DigitalOcean
+## DigitalOcean
 
 [DigitalOcean is a cloud provider](https://m.do.co/c/4cb94260759c) that offers **a wide array of services related to hosting websites and web apps**. I find their services to rival Amazon’s AWS platform but with a much simpler interface and pricing model.
 
@@ -31,7 +31,7 @@ Before switching to DO in 2022, I used **Linode (now Akamai)** to host all websi
 
 While their tools are relatively easy compared to competitors, **I wouldn’t recommend them for a tech novice.** These are bare-bones hosting tools and your average user may not know what to do with them. But definitely my recommendation for other programmers, developers, or even tech-savvy individuals looking to host multiple websites or robust web applications.
 
-### GitHub Pages
+## GitHub Pages
 
 This is a neat little hack for my fellow lazy developers. If you have a simple static site that you need hosted in a jiffy, one quick-and-dirty method is redirecting a domain to a free GitHub project page. GitHub has integrated build tools and you can configure DNS in the repository settings.
 
