@@ -1,7 +1,7 @@
 +++
 title = "Designer x Developer x Consultant: Which to Hire?"
 date = "2024-06-09T17:00:00.000Z"
-keywords = [ "web designer", "web developer", "web consultant" ]
+keywords = [ "web designer", "web developer", "web consultant", "web design consultant", "web development consulting" ]
 description = "Here I breakdown the differences between web designers, web developers, and web consultants. Useful for any business owners looking to get a site built."
 tags = [ "Misc" ]
 featuredImg = "img/code-wizard-1.png"

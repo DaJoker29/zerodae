@@ -2,6 +2,7 @@
 title = "Mmm, Yes, Quite"
 projectDate = "2018-01-01"
 location = "Central California"
+keywords = ["portfolio", "website", "small business"]
 tags = [
   "WordPress",
   "eCommerce",

@@ -2,6 +2,7 @@
 title = "Neologic Studios"
 projectDate = "2017-03-01"
 location = "Central California"
+keywords = ["portfolio", "website", "small business"]
 tags = [ "WordPress", "eCommerce", "Hosting", "Maintenance" ]
 category = "Website"
 projectUrl = "https://www.neologicstudios.com"
