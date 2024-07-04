@@ -4,6 +4,7 @@ title = "Zero Daedalus Design"
 copyright = "Copyright &copy; 2024"
 enableRobotsTXT = true
 cleanDestinationDir = true
+disableKinds = ['taxonomy', 'term']
 
 [params] 
   description = "Affordable web design and development agency helping small businesses build and maintain successful websites."
