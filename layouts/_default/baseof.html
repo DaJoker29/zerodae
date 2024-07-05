@@ -10,9 +10,8 @@
     </title>
     {{ partial "head/styles.html" . }} {{ partial "head/scripts.html" . }}
   </head>
-  <body class="theme-air light-theme no-js is-loading">
-    {{ partial "header/secondary-nav.html" . }} {{ partial
-    "header/theme-toggle.html" . }}
+  <body class="theme-air no-js is-loading" data-theme="light">
+    {{ partial "header/secondary-nav.html" . }}
     <div id="layout" style="min-height: 100svh">
       {{ partial "header/main-nav.html" . }}
       <!-- Start of Content -->

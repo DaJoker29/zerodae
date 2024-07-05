@@ -13,35 +13,35 @@
   display: none;
 }
 
-.theme-air.light-theme > .navbar {
+.theme-air[data-theme='light'] > .navbar {
   background-color: var(--white);
 }
 
-.theme-air.dark-theme > .navbar {
+.theme-air[data-theme='dark'] > .navbar {
   background-color: var(--shale-700);
 }
 
-.theme-earth.light-theme > .navbar {
+.theme-earth[data-theme='light'] > .navbar {
   background-color: var(--white);
 }
 
-.theme-earth.dark-theme > .navbar {
+.theme-earth[data-theme='dark'] > .navbar {
   background-color: var(--shale-700);
 }
 
-.theme-water.light-theme > .navbar {
+.theme-water[data-theme='light'] > .navbar {
   background-color: var(--white);
 }
 
-.theme-water.dark-theme > .navbar {
+.theme-water[data-theme='dark'] > .navbar {
   background-color: var(--shale-700);
 }
 
-.theme-fire.light-theme > .navbar {
+.theme-fire[data-theme='light'] > .navbar {
   background-color: var(--white);
 }
 
-.theme-fire.dark-theme > .navbar {
+.theme-fire[data-theme='dark'] > .navbar {
   background-color: var(--shale-700);
 }
 

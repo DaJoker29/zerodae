@@ -9,7 +9,7 @@
 
 */
 
-body.light-theme {
+[data-theme='light'] {
   --__scheme: light;
   --__bg-clr: var(--brown-300);
   --__text-clr: var(--black);
@@ -27,7 +27,7 @@ body.light-theme {
   --__btn-hover-text: var(--brown-400);
 }
 
-body.dark-theme {
+[data-theme='dark'] {
   --__scheme: dark;
   --__bg-clr: var(--brown-700);
   --__text-clr: var(--white);
