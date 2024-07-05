@@ -1,18 +1,22 @@
 .copyright {
   font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copyright > li:not(:last-child)::after {
+  content: '\2022';
+  margin: 0;
+  margin-inline: var(--eighth-gap);
 }
 
 .site-footer {
   margin: var(--double-gap) 0 var(--gap);
   padding-top: var(--quad-gap);
-  display: flex;
-  gap: var(--half-gap);
 }
 
-.site-footer > .footer-contacts {
-  display: flex;
-  flex-direction: row;
-  gap: var(--gap);
+.footer-contacts {
+  margin-block: var(--gap);
 }
 
 .site-footer > .footer-contacts > li > svg {

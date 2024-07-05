@@ -230,11 +230,6 @@ hr {
   margin-bottom: var(--half-gap);
 }
 
-ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .related > ul > li {
   display: inline-block;
 }
