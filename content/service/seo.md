@@ -62,4 +62,4 @@ Our SEO services are included in our regular monthly package. This comprehensive
 
 Contact us today to discuss your SEO needs and discover how we can help you boost your online visibility and drive more traffic to your website.
 
-- {{< btn href="/#contact" text="Get in Touch Today" >}}
+- {{< cta >}}

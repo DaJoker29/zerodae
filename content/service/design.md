@@ -63,4 +63,4 @@ At ZeroDae, we specialize in creating visually stunning, user-friendly websites 
 
 Contact us today to discuss your project and learn how we can help you create a website that drives results. Let's build something great together!
 
-- {{< btn href="/#contact" text="Get in Touch Today" >}}
+- {{< cta >}}

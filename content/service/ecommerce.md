@@ -50,4 +50,4 @@ Ecommerce projects are custom priced starting at $2,000. We tailor our solutions
 
 Contact us today to discuss your ecommerce project and discover how we can help you grow your business online.
 
-- {{< btn href="/#contact" text="Get in Touch Today" >}}
+- {{< cta >}}

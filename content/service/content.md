@@ -49,4 +49,4 @@ Our content marketing services are custom priced to fit your specific needs and 
 
 Contact us today to discuss your content marketing needs and find out how we can help you build your brand and drive engagement.
 
-- {{< btn href="/#contact" text="Get in Touch Today" >}}
+- {{< cta >}}

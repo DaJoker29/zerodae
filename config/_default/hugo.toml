@@ -12,6 +12,8 @@ disableKinds = ['taxonomy', 'term']
   title = "Zero Daedalus Design"
   images = ["img/featured.png"]
 
+  CTA = "https://zerodae.setmore.com/beta"
+
   [params.author]
     name = "Dewitt Buckingham"
     email = "dewitt@zerodaedalus.net"

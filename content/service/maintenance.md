@@ -54,4 +54,4 @@ Our Maintenance and Support services are included in our regular monthly package
 
 Contact us today to discuss your maintenance and support needs and find out how we can keep your website running smoothly and securely.
 
-- {{< btn href="/#contact" text="Get in Touch Today" >}}
+- {{< cta >}}
