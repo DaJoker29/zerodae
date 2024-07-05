@@ -263,6 +263,10 @@ input[type='reset']:hover {
   font-weight: 500;
 }
 
+.hero_cta {
+  font-size: 1.5em;
+}
+
 .hero__lead {
   margin-bottom: var(--double-gap);
   margin-inline: var(--fluid-gap);
