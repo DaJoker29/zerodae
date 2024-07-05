@@ -229,3 +229,18 @@ hr {
 .related > h2 {
   margin-bottom: var(--half-gap);
 }
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.related > ul > li {
+  display: inline-block;
+}
+
+.related > ul > li:not(:last-child)::after {
+  content: '\2022';
+  margin: 0;
+  margin-inline: var(--eighth-gap);
+}

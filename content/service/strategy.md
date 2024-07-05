@@ -54,4 +54,4 @@ Our Digital Strategy services are included in our regular monthly package. This 
 
 Contact us today to discuss your digital strategy needs and find out how we can help you achieve your business goals.
 
-- {{< btn href="/#contact" text="Get in Touch Today" >}}
+- {{< cta >}}

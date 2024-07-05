@@ -263,6 +263,10 @@ input[type='reset']:hover {
   font-weight: 500;
 }
 
+.hero_cta {
+  font-size: 1.5em;
+}
+
 .hero__lead {
   margin-bottom: var(--double-gap);
   margin-inline: var(--fluid-gap);
@@ -792,9 +796,13 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
   align-items: center;
 }
 
-.service-page > h5 {
-  margin: var(--gap) 0;
+.service-page > h2 {
+  margin: var(--double-gap) 0 var(--half-gap);
   color: var(--__service-pg-heading-clr);
+}
+
+.service-page > h2:first-of-type {
+  margin-top: 0;
 }
 
 .service-page p {
