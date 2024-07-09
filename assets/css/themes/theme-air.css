@@ -1,6 +1,6 @@
 /* Light / Dark Mode Overrides */
 
-body.light-theme {
+[data-theme='light'] {
   --__scheme: light;
   --__bg-clr: var(--white);
   --__text-clr: var(--black);
@@ -68,7 +68,7 @@ body.light-theme {
   --__service-pg-heading-clr: var(--cream-600);
 }
 
-body.dark-theme {
+[data-theme='dark'] {
   --__scheme: dark;
   --__bg-clr: var(--black);
   --__text-clr: var(--white);

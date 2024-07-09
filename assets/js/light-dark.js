@@ -1,34 +1,22 @@
-const toggle = document.querySelector('#theme-toggle__checkbox');
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
-  ? 'dark'
-  : 'light';
-const currentTheme = localStorage.getItem('theme') || prefersDarkMode;
-
-const setTheme = () => {
-  if (toggle.checked) {
-    localStorage.setItem('theme', 'dark');
-    document.body.classList.remove('light-theme');
-    document.body.classList.add('dark-theme');
-  } else {
-    localStorage.setItem('theme', 'light');
-    document.body.classList.remove('dark-theme');
-    document.body.classList.add('light-theme');
-  }
+const setTheme = (theme) => {
+  localStorage.setItem('theme', theme);
+  document.body.dataset.theme = theme;
 };
 
-const getTheme = () => {
-  if (currentTheme === 'light') {
-    toggle.checked = false;
-  } else {
-    toggle.checked = true;
-  }
+const toggleTheme = () => {
+  const theme = document.body.dataset.theme;
+  setTheme(theme === 'light' ? 'dark' : 'light');
 };
 
 const lightDark = () => {
-  getTheme();
-  setTheme();
+  const toggle = document.querySelector('[data-theme-toggle]');
+  const currentTheme = localStorage.getItem('theme') || prefersDarkMode;
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+    ? 'dark'
+    : 'light';
 
-  toggle.addEventListener('change', setTheme);
+  setTheme(currentTheme);
+  toggle.addEventListener('click', toggleTheme);
 };
 
 export default lightDark;

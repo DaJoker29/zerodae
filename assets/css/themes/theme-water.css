@@ -9,7 +9,7 @@
 
 */
 
-body.light-theme {
+[data-theme='light'] {
   --__scheme: light;
   --__bg-clr: var(--blue-300);
   --__text-clr: var(--black);
@@ -32,7 +32,7 @@ body.light-theme {
   --__project-tags-bg-clr: var(--blue-400);
 }
 
-body.dark-theme {
+[data-theme='dark'] {
   --__scheme: dark;
   --__bg-clr: var(--blue-700);
   --__text-clr: var(--white);

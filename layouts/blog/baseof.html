@@ -7,9 +7,8 @@
     <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
     {{ partial "head/styles.html" . }} {{ partial "head/scripts.html" . }}
   </head>
-  <body class="theme-fire light-theme no-js is-loading">
-    {{ partial "header/secondary-nav.html" . }} {{ partial
-    "header/theme-toggle.html" . }}
+  <body class="theme-fire no-js is-loading" data-theme="light">
+    {{ partial "header/secondary-nav.html" . }}
     <div id="layout" style="min-height: 100svh">
       {{ partial "header/main-nav.html" . }}
       <!-- Start of Content -->
