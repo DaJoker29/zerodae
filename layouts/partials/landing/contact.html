@@ -1,11 +1,16 @@
 <form
-  action="https://formspree.io/f/manwywrd"
+  action="https://api.web3forms.com/submit"
   method="POST"
   id="contact-form"
   class="contact-form"
 >
   <fieldset>
     <h2><span class="highlight">GET</span> IN TOUCH</h2>
+    <input
+      type="hidden"
+      name="access_key"
+      value="64a4133b-e67f-4e7a-a61e-3494ae7f818f"
+    />
     <input type="text" placeholder="First Name" name="first-name" required />
     <input type="text" placeholder="Last Name" name="last-name" />
     <input type="text" placeholder="Company" name="company" />
@@ -33,6 +38,12 @@
       placeholder="Type your message here..."
       required
     ></textarea>
+    <input
+      type="checkbox"
+      name="botcheck"
+      class="hidden"
+      style="display: none"
+    />
     <input type="submit" value="Submit" />
   </fieldset>
 </form>
