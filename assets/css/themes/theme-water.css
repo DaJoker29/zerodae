@@ -9,7 +9,7 @@
 
 */
 
-[data-theme='light'] {
+[data-theme="light"] {
   --__scheme: light;
   --__bg-clr: var(--blue-300);
   --__text-clr: var(--black);
@@ -32,7 +32,7 @@
   --__project-tags-bg-clr: var(--blue-400);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --__scheme: dark;
   --__bg-clr: var(--blue-700);
   --__text-clr: var(--white);
@@ -80,9 +80,9 @@ a:hover {
 
 .btn,
 button,
-input[type='submit'],
-input[type='button'],
-input[type='reset'] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
   text-decoration: none;
   background: var(--__btn-bg);
   border-width: 0;
@@ -97,9 +97,9 @@ input[type='reset'] {
 
 .btn:hover,
 button:hover,
-input[type='submit']:hover,
-input[type='button']:hover,
-input[type='reset']:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
   background: var(--__btn-hover-bg);
   color: var(--__btn-hover-text);
   filter: drop-shadow(0 0 0.25rem var(--shadow));

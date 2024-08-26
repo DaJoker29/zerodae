@@ -9,7 +9,7 @@
 
 */
 
-[data-theme='light'] {
+[data-theme="light"] {
   --__scheme: light;
   --__bg-clr: var(--brown-300);
   --__text-clr: var(--black);
@@ -27,7 +27,7 @@
   --__btn-hover-text: var(--brown-400);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --__scheme: dark;
   --__bg-clr: var(--brown-700);
   --__text-clr: var(--white);
@@ -70,9 +70,9 @@ a:hover {
 
 .btn,
 button,
-input[type='submit'],
-input[type='button'],
-input[type='reset'] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
   appearance: none;
   text-decoration: none;
   background: var(--__btn-bg);
@@ -88,9 +88,9 @@ input[type='reset'] {
 
 .btn:hover,
 button:hover,
-input[type='submit']:hover,
-input[type='button']:hover,
-input[type='reset']:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
   background: var(--__btn-hover-bg);
   color: var(--__btn-hover-text);
   filter: drop-shadow(0 0 var(--eighth-gap) var(--shadow));
@@ -161,7 +161,7 @@ input[type='reset']:hover {
 }
 
 .recommendations > ul {
-  list-style-type: '→';
+  list-style-type: "→";
 }
 
 .recommendations > ul > li {
