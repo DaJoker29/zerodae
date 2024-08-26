@@ -11,31 +11,14 @@
       name="access_key"
       value="64a4133b-e67f-4e7a-a61e-3494ae7f818f"
     />
-    <input type="text" placeholder="First Name" name="first-name" required />
-    <input type="text" placeholder="Last Name" name="last-name" />
+    <input type="text" placeholder="Name (required)" name="name" required />
+    <input type="email" placeholder="Email (required)" name="email" required />
     <input type="text" placeholder="Company" name="company" />
-    <input type="tel" placeholder="Phone Number" name="telephone" required />
-    <input type="email" placeholder="Email" name="email" required />
-    <select
-      name="interest"
-      id="contact-interest"
-      aria-label="Select your interest."
-    >
-      <option value selected disabled>Select</option>
-      <option value="Website">Website</option>
-      <option value="Search Engine Optimization">
-        Search Engine Optimization
-      </option>
-      <option value="E-commerce">E-commerce</option>
-      <option value="Content Marketing">Content Marketing</option>
-      <option value="Digital Strategy">Digital Strategy</option>
-      <option value="Maintenance & Support">Maintenance &amp; Support</option>
-      <option value="Other">Other</option>
-    </select>
+    <input type="tel" placeholder="Phone Number" name="telephone" />
     <textarea
       name="message"
       id="contact-msg"
-      placeholder="Type your message here..."
+      placeholder="Type your message here"
       required
     ></textarea>
     <input
@@ -44,6 +27,6 @@
       class="hidden"
       style="display: none"
     />
-    <input type="submit" value="Submit" />
+    <input type="submit" value="Send Message" />
   </fieldset>
 </form>
