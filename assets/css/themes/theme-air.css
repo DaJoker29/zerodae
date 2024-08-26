@@ -1,6 +1,6 @@
 /* Light / Dark Mode Overrides */
 
-[data-theme='light'] {
+[data-theme="light"] {
   --__scheme: light;
   --__bg-clr: var(--white);
   --__text-clr: var(--black);
@@ -68,7 +68,7 @@
   --__service-pg-heading-clr: var(--cream-600);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --__scheme: dark;
   --__bg-clr: var(--black);
   --__text-clr: var(--white);
@@ -172,9 +172,9 @@ a:hover {
 
 .btn,
 button,
-input[type='submit'],
-input[type='button'],
-input[type='reset'] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
   appearance: none;
   text-decoration: none;
   background: var(--__btn-bg);
@@ -190,9 +190,9 @@ input[type='reset'] {
 
 .btn:hover,
 button:hover,
-input[type='submit']:hover,
-input[type='button']:hover,
-input[type='reset']:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
   background: var(--__btn-hover-bg);
   color: var(--__btn-hover-text);
 }
@@ -225,7 +225,7 @@ input[type='reset']:hover {
   animation: fade-in 1000ms ease forwards;
   font-size: clamp(2.5rem, 5vw + 1rem, 6.5rem);
   margin-top: var(--fluid-gap);
-  margin-bottom: var(--fluid-gap);
+  margin-bottom: var(--double-gap);
   color: var(--__hero-title-clr);
   animation: air-neon 1000ms linear alternate infinite,
     fade-in 1000ms ease forwards;
@@ -240,7 +240,7 @@ input[type='reset']:hover {
   margin-bottom: var(--gap);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--gap);
+  gap: var(--gap) var(--double-gap);
   align-items: center;
   opacity: 0.2;
   scale: 0.9;
@@ -254,6 +254,14 @@ input[type='reset']:hover {
   filter: drop-shadow(0 0 0.25rem var(--__hero-img-shadow-clr));
 }
 
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  justify-content: space-between;
+  text-align: right;
+}
+
 .hero__copy > h2 {
   font-size: 2rem;
   line-height: 1.5;
@@ -261,6 +269,7 @@ input[type='reset']:hover {
   text-transform: lowercase;
   letter-spacing: 2px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .hero_cta {
@@ -269,12 +278,22 @@ input[type='reset']:hover {
 
 .hero__lead {
   margin-bottom: var(--double-gap);
-  margin-inline: var(--fluid-gap);
   font-weight: 600;
+  max-width: 70%;
+  margin-left: auto;
 }
 
+@media screen and (max-width: 760px) {
+  .hero__copy {
+    text-align: center;
+  }
+
+  .hero__lead {
+    margin-inline: auto;
+  }
+}
 .hero__scroll-tease {
-  margin: var(--gap) 0;
+  margin: var(--half-gap) 0;
 }
 
 .hero__scroll-tease a {
@@ -291,8 +310,7 @@ input[type='reset']:hover {
 }
 
 .hero__scroll-tease a::before {
-  content: '\2193';
-
+  content: "\2193";
   margin-right: var(--quarter-gap);
 }
 
@@ -694,7 +712,7 @@ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
 }
 
 .included-services > li > strong::before {
-  content: '\2713';
+  content: "\2713";
   display: inline-block;
   background-color: inherit;
   position: absolute;

@@ -9,7 +9,7 @@
 
 */
 
-[data-theme='light'] {
+[data-theme="light"] {
   --__scheme: light;
   --__bg-clr: var(--white);
   --__text-clr: var(--black);
@@ -57,7 +57,7 @@
   --__blockquote-bg-clr: var(--orange-600);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --__scheme: dark;
   --__bg-clr: var(--black);
   --__text-clr: var(--white);
@@ -129,9 +129,9 @@ a:hover {
 
 .btn,
 button,
-input[type='submit'],
-input[type='button'],
-input[type='reset'] {
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
   appearance: none;
   text-decoration: none;
   background: var(--__btn-bg);
@@ -147,9 +147,9 @@ input[type='reset'] {
 
 .btn:hover,
 button:hover,
-input[type='submit']:hover,
-input[type='button']:hover,
-input[type='reset']:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
   background: var(--__btn-hover-bg);
   color: var(--__btn-hover-text);
 }
