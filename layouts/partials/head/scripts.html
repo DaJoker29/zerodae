@@ -1,5 +1,5 @@
-{{ $JS := resources.Get "js/index.js" | js.Build "main.js" | minify |
-fingerprint }}
+{{ $opts := dict "targetPath" "main.js" "sourceMap" "external"}} {{ $JS :=
+resources.Get "js/index.js" | js.Build $opts | minify | fingerprint }}
 
 <link rel="preload" href="{{ $JS.RelPermalink }}" as="script" />
 <script type="module" src="{{ $JS.RelPermalink }}"></script>
@@ -15,9 +15,9 @@ fingerprint }}
   function gtag() {
     dataLayer.push(arguments);
   }
-  gtag('js', new Date());
+  gtag("js", new Date());
 
-  gtag('config', '{{ . }}');
+  gtag("config", "{{ . }}");
 </script>
 
 {{- end }}
